@@ -1,6 +1,6 @@
 % Chapter 1
 
-\chapter{Chapter 1} % Main chapter title
+\chapter{Introduction} % Main chapter title
 
 \label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
@@ -15,51 +15,14 @@
 
 %----------------------------------------------------------------------------------------
 
-\section{Introduction}
+\section{Welcome and Thank You}
+Welcome to this \LaTeX{} Thesis Template, a beautiful and easy to use template for writing a thesis using the \LaTeX{} typesetting system.
 
+If you are writing a thesis (or will be in the future) and its subject is technical or mathematical (though it doesn't have to be), then creating it in \LaTeX{} is highly recommended as a way to make sure you can just get down to the essential writing without having to worry over formatting or wasting time arguing with your word processor.
 
-Evolutionary computing (EC) is a branch of computer science research inspired by the Darwinian process of evolution through natural selection\cite{RefWorks:33}. Given the complexity and non-linearity of real world problems, traditional controller design is impractical since they rely on linear mathematical models \cite{RefWorks:32}, making it unsurprising that computer scientists have turned to natural processes for inspiration. The problem solving power of evolution is abundantly clear in nature with the diverse range of organisms on Earth, each specially designed for optimal survival in its own niche environment \cite{RefWorks:33}.
+\LaTeX{} is easily able to professionally typeset documents that run to hundreds or thousands of pages long. With simple mark-up commands, it automatically sets out the table of contents, margins, page headers and footers and keeps the formatting consistent and beautiful. One of its main strengths is the way it can easily typeset mathematics, even \emph{heavy} mathematics. Even if those equations are the most horribly twisted and most difficult mathematical problems that can only be solved on a super-computer, you can at least count on \LaTeX{} to make them look stunning.
 
-[There is probably something that can also be said about how this applies to finding solution controllers that are highly effective in extremely specific tasks, but barely effective at all when it comes to attempting any other task]
-
-Although Reinforcement Learning (RL) techniques can theoretically solve a number of problems without examples of correct behaviour, in practice they scale poorly with problems that have large state spaces or non-Markov tasks, which are tasks where the state of the environment is only partially observable \cite{RefWorks:32}.
-
-[can probably elaborate a bit more on the different types of tasks that can be accomplished here]
-
-Neuroevolution (NE) is a method of artificially evolving Artificial Neural Networks (ANNs) by implementing Evolutionary Algorithms (EAs) to perform tasks such as training the connection weights and designing the network topology\cite{RefWorks:31,RefWorks:1}. 
-
-By evolving a population of ANNs, NE searches through the space of possible controllers by evaluating each candidate solution using a fitness function and selecting the most successful individuals for reproduction, a process analogous to natural selection \cite{RefWorks:32,gomez2001neuro}. 
-
-This predetermined fitness function must be designed so that its implementation will guide the NE's search through the problem space, such that it indicates the desired behaviour from the ANN.
-
-The different NE methods can be roughly split into two categories according to their encoding method, either direct or indirect. In direct encoding methods, each element in the genotype explicitly encodes an independent aspect of the phenotype, such that there is a one-to-one mapping between the genotype and the phenotype. In indirect (also called generative or developmental) encoding methods, each element in the genotype is implicitly described by a computable function allowing for a much more compact representation of the genotype. It also allows for genetic information to be reused \cite{clune2011performance,Stanley2003}.
-
-The high level of complexity inherent in real life tasks tend to result in deceptive fitness landscapes \cite{RefWorks:11}. These are fitness landscapes of multimodal problems that have numerous local optima \cite{RefWorks:33}. In multimodal problems, it is possible for the NE search to get stuck around a local optima and lead to the NE method prematurely converging to a suboptimal solution \cite{RefWorks:11}.
-
-For this reason, various NE search functions (also referred to as fitness functions) are investigated. The first search function being the objective search which simply evaluates the suitability of a solution by using an objective fitness function \cite{lehman2011abandoning}.
-Novelty search is an approach that provides candidate solutions with a reward based how different their behaviour is from other candidate solutions \cite{RefWorks:11}. The third approach is a hybrid search which attempts to combine EAs with a local search \cite{Castillo2007}.
-
-The collective construction task requires that a team of agents cooperate by coordinating their behaviours in order to assemble various structures within their environment \cite{RefWorks:15}.
-
-The collective gathering task requires a team of agents to coordinate sub-tasks amongst themselves in order to produce a collective behaviour that maximises the resources gathered \cite{RefWorks:15}.
-
-It has been shown that NE can successfully be applied to complex control tasks that require collective behaviour. These control tasks have no obvious mapping between the input from sensory configurations and motor outputs \cite{RefWorks:15}
-
-The ability to automate construction tasks through evolving ANN controllers for multi-robot teams using EAs presents several considerable benefits. Automation such as this could be used to assist in projects such as producing low-cost housing and reduce high accident rates due to human error that accompany traditional construction methods \cite{Khoshnevis2003}. It would be useful to send multi-robot construction teams to extraterrestrial planets in order to build habitable structures in anticipation of humans arriving. These robot teams would also be useful in underwater construction which is difficult and often extremely dangerous \cite{RefWorks:30}.
-
-This thesis is therefore focussed on investigating the effectiveness of various NE methods in solving collective behaviour tasks, with specific emphasis on the indirect encoding method called HyperNEAT \cite{stanley2009hypercube}, as well as the aforementioned search functions.
-
-
-Another reason for using HyperNEAT is its success in evolving team (collective) behaviours for various multi-agent tasks including RoboCup soccer and pursuit evasion \cite{hausknecht2012hyperneat}.
 %----------------------------------------------------------------------------------------
-
-\subsection{Possible Applications}
-Just a list of all the possible future applications for the research that is being performed in this investigation.
-
--> Terraforming remote planets: Can mention something to do with all of the Mars missions being performed at the moment and how that could be the next frontier considering we are fucking up the Earth so much. This could allow us to jumpstart the terraforming process without needing to figure out how to get humans+resources+equipment on the planet. We can send a team of robots ahead while we figure things out here. We can send them up to a planet several years ahead of us. These robots will arrive and begin to explore the planet, figuring out which resources are available and how they can be used to build any sort of structural habitat that would be safe for humans to arrive at in the future.
-
--> Underwater construction: This is one of the most dangerous occupations in the entire world. Be sure to give some research and 
-
 
 \section{Learning \LaTeX{}}
 
