@@ -1,0 +1,1782 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{AsaiArita2003}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=AY}{%
+         family={Asai},
+         familyi={A\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=AT}{%
+         family={Arita},
+         familyi={A\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {The Society of Instrument}%
+      {Control Engineers}%
+    }
+    \strng{namehash}{AYAT1}
+    \strng{fullhash}{AYAT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{Proceedings of the SICE 30th Intelligent System
+  Symposium}
+    \field{pages}{61\bibrangedash 66}
+    \field{title}{Coevolution of Morphology and Behavior of Robots in a
+  Multiagent Environment}
+    \list{location}{1}{%
+      {Tokyo, Japan}%
+    }
+    \field{year}{2003}
+  \endentry
+
+  \entry{AuerbachBongard2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AJ}{%
+         family={Auerbach},
+         familyi={A\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bongard},
+         familyi={B\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AJBJ1}
+    \strng{fullhash}{AJBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{pages}{e1003399. doi:10.1371/journal.pcbi.1003399}
+    \field{title}{Environmental Influence on the Evolution of Morphological
+  Complexity in Machines}
+    \field{volume}{10(1)}
+    \field{journaltitle}{PLoS Computational Biology}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Beni2004}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BG}{%
+         family={Beni},
+         familyi={B\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BG1}
+    \strng{fullhash}{BG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Proceedings of the First International Workshop on Swarm
+  Robotics}
+    \field{pages}{1–\bibrangedash 9}
+    \field{title}{From Swarm Intelligence to Swarm Robotics}
+    \list{location}{1}{%
+      {Santa Monica, USA}%
+    }
+    \field{year}{2004}
+  \endentry
+
+  \entry{BuasonBergfeldtZiemke2005}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BG}{%
+         family={Buason},
+         familyi={B\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Bergfeldt},
+         familyi={B\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=ZT}{%
+         family={Ziemke},
+         familyi={Z\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BGBNZT1}
+    \strng{fullhash}{BGBNZT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{25\bibrangedash 51}
+    \field{title}{Brains, bodies, and beyond: Competitive co-evolution of robot
+  controllers, morphologies and environments}
+    \field{volume}{6(1)}
+    \field{journaltitle}{Genetic Programming and Evolvable Machines}
+    \field{year}{2005}
+  \endentry
+
+  \entry{CheneyLipson2013}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=CN}{%
+         family={Cheney},
+         familyi={C\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={MacCurdy},
+         familyi={M\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Clune},
+         familyi={C\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Lipson},
+         familyi={L\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM Press}%
+    }
+    \strng{namehash}{CN+1}
+    \strng{fullhash}{CNMRCJLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Proceedings of the Genetic and Evolutionary Computation
+  Conference}
+    \field{pages}{167\bibrangedash 174}
+    \field{title}{Unshackling Evolution: Evolving Soft Robots with Multiple
+  Materials and a Powerful Generative Encoding}
+    \list{location}{1}{%
+      {Amsterdam, Netherlands}%
+    }
+    \field{year}{2013}
+  \endentry
+
+  \entry{clune2011performance}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CJ}{%
+         family={Clune},
+         familyi={C\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SKO}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={Kenneth\bibnamedelima O},
+         giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=PRT}{%
+         family={Pennock},
+         familyi={P\bibinitperiod},
+         given={Robert\bibnamedelima T},
+         giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=OC}{%
+         family={Ofria},
+         familyi={O\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CJ+1}
+    \strng{fullhash}{CJSKOPRTOC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{346\bibrangedash 367}
+    \field{title}{{On the performance of indirect encoding across the continuum
+  of regularity}}
+    \field{volume}{15}
+    \field{journaltitle}{Evolutionary Computation, IEEE Transactions on}
+    \field{year}{2011}
+  \endentry
+
+  \entry{DAmbrosio2013}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DD}{%
+         family={{D'Ambrosio}},
+         familyi={D\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DDSK1}
+    \strng{fullhash}{DDSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 26}
+    \field{title}{Scalable Multiagent Learning through Indirect Encoding of
+  Policy Geometry}
+    \field{volume}{6}
+    \field{journaltitle}{Evolutionary Intelligence Journal}
+    \field{year}{2013}
+  \endentry
+
+  \entry{dayhoff2001artificial}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DJE}{%
+         family={Dayhoff},
+         familyi={D\bibinitperiod},
+         given={Judith\bibnamedelima E},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=DJM}{%
+         family={DeLeo},
+         familyi={D\bibinitperiod},
+         given={James\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \keyw{computational methodology, medicine, paradigm,artificial neural
+  networks}
+    \strng{namehash}{DJEDJM1}
+    \strng{fullhash}{DJEDJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1002/1097-0142(20010415)91:8+<1615::AID-CNCR1175>3.0.CO;2-L
+    \endverb
+    \field{issn}{1097-0142}
+    \field{number}{S8}
+    \field{pages}{1615\bibrangedash 1635}
+    \field{title}{Artificial neural networks}
+    \verb{url}
+    \verb http://dx.doi.org/10.1002/1097-0142(20010415)91:8+{\textless}1615::AI
+    \verb D-CNCR1175{\textgreater}3.0.CO;2-L
+    \endverb
+    \field{volume}{91}
+    \field{journaltitle}{Cancer}
+    \field{year}{2001}
+  \endentry
+
+  \entry{DoncieuxBredecheMouretEiben2015}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DS}{%
+         family={Doncieux},
+         familyi={D\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Bredeche},
+         familyi={B\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MJB}{%
+         family={Mouret},
+         familyi={M\bibinitperiod},
+         given={J-B},
+         giveni={J\bibinitperiod-B\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Eiben},
+         familyi={E\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DS+1}
+    \strng{fullhash}{DSBNMJBEA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{pages}{1\bibrangedash 18}
+    \field{title}{Evolutionary robotics: what, why, and where to}
+    \field{volume}{2(4)}
+    \field{journaltitle}{Frontiers in Robotics and AI | Evolutionary Robotics}
+    \field{year}{2015}
+  \endentry
+
+  \entry{EibenSmith2003}{book}{}
+    \name{author}{2}{}{%
+      {{hash=EA}{%
+         family={Eiben},
+         familyi={E\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{EASJ1}
+    \strng{fullhash}{EASJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{Introduction to Evolutionary Computing}
+    \list{location}{1}{%
+      {Berlin, Germany}%
+    }
+    \field{year}{2003}
+  \endentry
+
+  \entry{RefWorks:33}{article}{}
+    \name{author}{2}{}{%
+      {{hash=EAE}{%
+         family={Eiben},
+         familyi={E\bibinitperiod},
+         given={Agoston\bibnamedelima E},
+         giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SJE}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={James\bibnamedelima E},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{EAESJE1}
+    \strng{fullhash}{EAESJE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{{Introduction to evolutionary computing}}
+    \field{volume}{53}
+    \field{year}{2003}
+  \endentry
+
+  \entry{FloreanoDurrMattiussi2008}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FD}{%
+         family={Floreano},
+         familyi={F\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={D{\"{u}}rr},
+         familyi={D\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Mattiussi},
+         familyi={M\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FDDPMC1}
+    \strng{fullhash}{FDDPMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{1}
+    \field{pages}{47\bibrangedash 62}
+    \field{title}{Neuroevolution: from architectures to learning}
+    \field{volume}{1}
+    \field{journaltitle}{Evolutionary Intelligence}
+    \field{year}{2008}
+  \endentry
+
+  \entry{RefWorks:31}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GJ}{%
+         family={Ghosh},
+         familyi={G\bibinitperiod},
+         given={Joydeep},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KBJ}{%
+         family={Kuipers},
+         familyi={K\bibinitperiod},
+         given={Benjamin\bibnamedelima J},
+         giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MRJ}{%
+         family={Mooney},
+         familyi={M\bibinitperiod},
+         given={Raymond\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GJKBJMRJ1}
+    \strng{fullhash}{GJKBJMRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{{Efficient evolution of neural networks through
+  complexification}}
+    \field{year}{2004}
+  \endentry
+
+  \entry{goldberg1988genetic}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GDE}{%
+         family={Goldberg},
+         familyi={G\bibinitperiod},
+         given={David\bibnamedelima E},
+         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HJH}{%
+         family={Holland},
+         familyi={H\bibinitperiod},
+         given={John\bibnamedelima H},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{GDEHJH1}
+    \strng{fullhash}{GDEHJH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{2}
+    \field{pages}{95\bibrangedash 99}
+    \field{title}{{Genetic algorithms and machine learning}}
+    \field{volume}{3}
+    \field{journaltitle}{Machine learning}
+    \field{year}{1988}
+  \endentry
+
+  \entry{RefWorks:11}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GJ}{%
+         family={Gomes},
+         familyi={G\bibinitperiod},
+         given={Jorge},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=UP}{%
+         family={Urbano},
+         familyi={U\bibinitperiod},
+         given={Paulo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CAL}{%
+         family={Christensen},
+         familyi={C\bibinitperiod},
+         given={Anders\bibnamedelima Lyhne},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GJUPCAL1}
+    \strng{fullhash}{GJUPCAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{2-3}
+    \field{pages}{115\bibrangedash 144}
+    \field{title}{{Evolution of swarm robotics systems with novelty search}}
+    \field{volume}{7}
+    \field{journaltitle}{Swarm Intelligence}
+    \field{year}{2013}
+  \endentry
+
+  \entry{gomez2001neuro}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=GFJ}{%
+         family={Gomez},
+         familyi={G\bibinitperiod},
+         given={Faustino\bibnamedelima J},
+         giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Burger},
+         familyi={B\bibinitperiod},
+         given={Doug},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Miikkulainen},
+         familyi={M\bibinitperiod},
+         given={Risto},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{GFJBDMR1}
+    \strng{fullhash}{GFJBDMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{Neural Networks, 2001. Proceedings. IJCNN'01.
+  International Joint Conference on}
+    \field{pages}{2355\bibrangedash 2360}
+    \field{title}{{A neuro-evolution method for dynamic resource allocation on
+  a chip multiprocessor}}
+    \field{volume}{4}
+    \field{year}{2001}
+  \endentry
+
+  \entry{gomez1999solving}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=GFJ}{%
+         family={Gomez},
+         familyi={G\bibinitperiod},
+         given={Faustino\bibnamedelima J},
+         giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Miikkulainen},
+         familyi={M\bibinitperiod},
+         given={Risto},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GFJMR1}
+    \strng{fullhash}{GFJMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{IJCAI}
+    \field{pages}{1356\bibrangedash 1361}
+    \field{title}{{Solving non-Markovian control tasks with neuroevolution}}
+    \field{volume}{99}
+    \field{year}{1999}
+  \endentry
+
+  \entry{RefWorks:32}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GFJ}{%
+         family={Gomez},
+         familyi={G\bibinitperiod},
+         given={Faustino\bibnamedelima John},
+         giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Miikkulainen},
+         familyi={M\bibinitperiod},
+         given={Risto},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GFJMR2}
+    \strng{fullhash}{GFJMR2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{{Robust non-linear control through neuroevolution}}
+    \field{year}{2003}
+  \endentry
+
+  \entry{hausknecht2012hyperneat}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=HM}{%
+         family={Hausknecht},
+         familyi={H\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KP}{%
+         family={Khandelwal},
+         familyi={K\bibinitperiod},
+         given={Piyush},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Miikkulainen},
+         familyi={M\bibinitperiod},
+         given={Risto},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Stone},
+         familyi={S\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{HM+1}
+    \strng{fullhash}{HMKPMRSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Proceedings of the 14th annual conference on Genetic and
+  evolutionary computation}
+    \field{pages}{217\bibrangedash 224}
+    \field{title}{{HyperNEAT-GGP: A HyperNEAT-based Atari general game player}}
+    \field{year}{2012}
+  \endentry
+
+  \entry{HewlandNitschke2015}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=HJ}{%
+         family={Hewland},
+         familyi={H\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Nitschke},
+         familyi={N\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{HJNG1}
+    \strng{fullhash}{HJNG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{The Benefits of Adaptive Behavior and Morphology for
+  Cooperation in Robot Teams}
+    \field{pages}{1047\bibrangedash 1054}
+    \field{title}{Evolving Robust Robot Team Morphologies for Collective
+  Construction}
+    \list{location}{1}{%
+      {Cape Town, South Africa}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{HornbyPollack2002}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HG}{%
+         family={Hornby},
+         familyi={H\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pollack},
+         familyi={P\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HGPJ1}
+    \strng{fullhash}{HGPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{Creating High-Level Components with a Generative
+  Representation for Body-Brain Evolution}
+    \field{volume}{8(3)}
+    \field{journaltitle}{Artificial Life}
+    \field{year}{2002}
+  \endentry
+
+  \entry{igel2003neuroevolution}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=IC}{%
+         family={Igel},
+         familyi={I\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{IC1}
+    \strng{fullhash}{IC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{booktitle}{Evolutionary Computation, 2003. CEC'03. The 2003 Congress
+  on}
+    \field{pages}{2588\bibrangedash 2595}
+    \field{title}{{Neuroevolution for reinforcement learning using evolution
+  strategies}}
+    \field{volume}{4}
+    \field{year}{2003}
+  \endentry
+
+  \entry{jain1996artificial}{article}{}
+    \name{author}{3}{}{%
+      {{hash=JAK}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Anil\bibnamedelima K},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Mao},
+         familyi={M\bibinitperiod},
+         given={Jianchang},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MKM}{%
+         family={Mohiuddin},
+         familyi={M\bibinitperiod},
+         given={K\bibnamedelima Moidin},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{JAKMJMKM1}
+    \strng{fullhash}{JAKMJMKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{number}{3}
+    \field{pages}{31\bibrangedash 44}
+    \field{title}{Artificial neural networks: A tutorial}
+    \field{volume}{29}
+    \field{journaltitle}{Computer}
+    \field{year}{1996}
+  \endentry
+
+  \entry{KaelblingLittmanMoore1996}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KL}{%
+         family={Kaelbling},
+         familyi={K\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Littman},
+         familyi={L\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Moore},
+         familyi={M\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KLLMMA1}
+    \strng{fullhash}{KLLMMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{1}
+    \field{pages}{237–\bibrangedash 285}
+    \field{title}{Reinforcement learning: A survey.}
+    \field{volume}{4}
+    \field{journaltitle}{Journal of Artificial Intelligence}
+    \field{year}{1996}
+  \endentry
+
+  \entry{KitanoTadokoro1999}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=KH}{%
+         family={Kitano},
+         familyi={K\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tadokoro},
+         familyi={T\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NI}{%
+         family={Noda},
+         familyi={N\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Matsubara},
+         familyi={M\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Takahashi},
+         familyi={T\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Shinjoh},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Shimada},
+         familyi={S\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM Press}%
+    }
+    \strng{namehash}{KH+1}
+    \strng{fullhash}{KHTSNIMHTTSASS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{Proceedsings of the Conference on Systems, Man and
+  Cybernetics}
+    \field{title}{RoboCup Rescue: Search and Rescue in Large-Scale Disasters as
+  a Domain for Autonomous Agents Research}
+  \endentry
+
+  \entry{KubeZhang1994B}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KR}{%
+         family={Kube},
+         familyi={K\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KRZH1}
+    \strng{fullhash}{KRZH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{2}
+    \field{pages}{189\bibrangedash 218}
+    \field{title}{Collective robotics: from social insects to robots}
+    \field{volume}{2}
+    \field{journaltitle}{Adaptive Behaviour}
+    \field{year}{1994}
+  \endentry
+
+  \entry{lehman2011abandoning}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LJ}{%
+         family={Lehman},
+         familyi={L\bibinitperiod},
+         given={Joel},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SKO}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={Kenneth\bibnamedelima O},
+         giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{LJSKO1}
+    \strng{fullhash}{LJSKO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{2}
+    \field{pages}{189\bibrangedash 223}
+    \field{title}{{Abandoning objectives: Evolution through the search for
+  novelty alone}}
+    \field{volume}{19}
+    \field{journaltitle}{Evolutionary computation}
+    \field{year}{2011}
+  \endentry
+
+  \entry{LipsonPollack2000}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LH}{%
+         family={Lipson},
+         familyi={L\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pollack},
+         familyi={P\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LHPJ1}
+    \strng{fullhash}{LHPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{1}
+    \field{pages}{974\bibrangedash 978}
+    \field{title}{Automatic design and manufacture of robotic life forms}
+    \field{volume}{406}
+    \field{journaltitle}{Nature}
+    \field{year}{2000}
+  \endentry
+
+  \entry{Lund2003}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=LH}{%
+         family={Lund},
+         familyi={L\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=FH}{%
+         family={Fumio},
+         familyi={F\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Pfeifer},
+         familyi={P\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LH1}
+    \strng{fullhash}{LH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Morpho-functional Machines: The New Species (Designing
+  Embodied Intelligence)}
+    \field{pages}{59\bibrangedash 79}
+    \field{title}{Co-evolving Control and Morphology with LEGO Robots}
+    \list{location}{1}{%
+      {Berlin, Germany}%
+    }
+    \field{year}{2003}
+  \endentry
+
+  \entry{MautnerBelew2000}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MC}{%
+         family={Mautner},
+         familyi={M\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Belew},
+         familyi={B\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCBR1}
+    \strng{fullhash}{MCBR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{130\bibrangedash 136}
+    \field{title}{Evolving robot morphology and control}
+    \field{volume}{4(3)}
+    \field{journaltitle}{Artificial Life and Robotics}
+    \field{year}{2000}
+  \endentry
+
+  \entry{mcculloch1943logical}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MWS}{%
+         family={McCulloch},
+         familyi={M\bibinitperiod},
+         given={Warren\bibnamedelima S},
+         giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=PW}{%
+         family={Pitts},
+         familyi={P\bibinitperiod},
+         given={Walter},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MWSPW1}
+    \strng{fullhash}{MWSPW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{4}
+    \field{pages}{115\bibrangedash 133}
+    \field{title}{{A logical calculus of the ideas immanent in nervous
+  activity}}
+    \field{volume}{5}
+    \field{journaltitle}{The bulletin of mathematical biophysics}
+    \field{year}{1943}
+  \endentry
+
+  \entry{Miikkulainen2010}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=MR}{%
+         family={Miikkulainen},
+         familyi={M\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=SC}{%
+         family={Sammut},
+         familyi={S\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Webb},
+         familyi={W\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MR1}
+    \strng{fullhash}{MR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Encyclopedia of Machine Learning}
+    \field{pages}{716\bibrangedash 720}
+    \field{title}{Neuroevolution}
+    \list{location}{1}{%
+      {New York, USA}%
+    }
+    \field{year}{2010}
+  \endentry
+
+  \entry{Miikkulainen:2010:ENN:1830761.1830902}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=MR}{%
+         family={Miikkulainen},
+         familyi={M\bibinitperiod},
+         given={Risto},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{neural networks,evolutionary computation}
+    \strng{namehash}{MR2}
+    \strng{fullhash}{MR2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Proceedings of the 12th Annual Conference Companion on
+  Genetic and Evolutionary Computation}
+    \verb{doi}
+    \verb 10.1145/1830761.1830902
+    \endverb
+    \field{isbn}{978-1-4503-0073-5}
+    \field{pages}{2441\bibrangedash 2460}
+    \field{series}{GECCO '10}
+    \field{title}{{Evolving Neural Networks}}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/1830761.1830902
+    \endverb
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{year}{2010}
+  \endentry
+
+  \entry{NitschkeSchutEiben2010}{article}{}
+    \name{author}{3}{}{%
+      {{hash=NG}{%
+         family={Nitschke},
+         familyi={N\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schut},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Eiben},
+         familyi={E\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NGSMEA1}
+    \strng{fullhash}{NGSMEA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{pages}{13\bibrangedash 29}
+    \field{title}{Collective Neuro-Evolution for Evolving Specialized Sensor
+  Resolutions in a Multi-Rover Task}
+    \field{volume}{3(1)}
+    \field{journaltitle}{Evolutionary Intelligence}
+    \field{year}{2010}
+  \endentry
+
+  \entry{NitschkeSaEC2012}{article}{}
+    \name{author}{3}{}{%
+      {{hash=NG}{%
+         family={Nitschke},
+         familyi={N\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schut},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Eiben},
+         familyi={E\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NGSMEA1}
+    \strng{fullhash}{NGSMEA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{number}{1}
+    \field{pages}{25–\bibrangedash 38}
+    \field{title}{Evolving Behavioral Specialization in Robot Teams to Solve a
+  Collective Construction Task}
+    \field{volume}{2}
+    \field{journaltitle}{Swarm and Evolutionary Computation}
+    \field{year}{2012}
+  \endentry
+
+  \entry{RefWorks:15}{article}{}
+    \name{author}{3}{}{%
+      {{hash=NGS}{%
+         family={Nitschke},
+         familyi={N\bibinitperiod},
+         given={Geoff\bibnamedelima S},
+         giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SMC}{%
+         family={Schut},
+         familyi={S\bibinitperiod},
+         given={Martijn\bibnamedelima C},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=EAE}{%
+         family={Eiben},
+         familyi={E\bibinitperiod},
+         given={A\bibnamedelima E},
+         giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NGSSMCEAE1}
+    \strng{fullhash}{NGSSMCEAE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{pages}{25\bibrangedash 38}
+    \field{title}{{Evolving behavioral specialization in robot teams to solve a
+  collective construction task}}
+    \field{volume}{2}
+    \field{journaltitle}{Swarm and Evolutionary Computation}
+    \field{year}{2012}
+  \endentry
+
+  \entry{OGradyDorigo2012}{incollection}{}
+    \name{author}{3}{}{%
+      {{hash=OR}{%
+         family={{O'Grady}},
+         familyi={O\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Christensen},
+         familyi={C\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dorigo},
+         familyi={D\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=DR}{%
+         family={Doursat},
+         familyi={D\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{ORCADM1}
+    \strng{fullhash}{ORCADM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{booktitle}{Morphogenetic Engineering, Understanding Complex Systems}
+    \field{pages}{27\bibrangedash 60}
+    \field{title}{SWARMORPH: Morphogenesis with Self-Assembling Robots}
+    \list{location}{1}{%
+      {Berlin, Germany}%
+    }
+    \field{year}{2012}
+  \endentry
+
+  \entry{RubensteinCornejoNagpal2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RM}{%
+         family={Rubenstein},
+         familyi={R\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Cornejo},
+         familyi={C\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={Nagpal},
+         familyi={N\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RMCANR1}
+    \strng{fullhash}{RMCANR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{pages}{795\bibrangedash 799}
+    \field{title}{Programmable Self-Assembly in a Thousand-Robot Swarm}
+    \field{volume}{345(6198)}
+    \field{journaltitle}{Science}
+    \field{year}{2014}
+  \endentry
+
+  \entry{russell2016artificial}{book}{}
+    \name{author}{2}{}{%
+      {{hash=RSJ}{%
+         family={Russell},
+         familyi={R\bibinitperiod},
+         given={Stuart\bibnamedelima J},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Norvig},
+         familyi={N\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Malaysia; Pearson Education Limited,}%
+    }
+    \strng{namehash}{RSJNP1}
+    \strng{fullhash}{RSJNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Artificial intelligence: a modern approach}
+    \field{year}{2016}
+  \endentry
+
+  \entry{StanleyDAmbrosioGauci2009}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SK}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=D}{%
+         family={D'Ambrosio},
+         familyi={D\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Gauci},
+         familyi={G\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKDGJ1}
+    \strng{fullhash}{SKDGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{1}
+    \field{pages}{185\bibrangedash 212}
+    \field{title}{Hypercube-based indirect encoding for evolving large-scale
+  neural networks}
+    \field{volume}{15}
+    \field{journaltitle}{Artificial Life}
+    \field{year}{2009}
+  \endentry
+
+  \entry{stanley2009hypercube}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SKO}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={Kenneth\bibnamedelima O},
+         giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=DDB}{%
+         family={D'Ambrosio},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima B},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Gauci},
+         familyi={G\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{SKODDBGJ1}
+    \strng{fullhash}{SKODDBGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{2}
+    \field{pages}{185\bibrangedash 212}
+    \field{title}{{A hypercube-based encoding for evolving large-scale neural
+  networks}}
+    \field{volume}{15}
+    \field{journaltitle}{Artificial life}
+    \field{year}{2009}
+  \endentry
+
+  \entry{VerbancsicsStanley2011}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=VP}{%
+         family={Verbancsics},
+         familyi={V\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{VPSK1}
+    \strng{fullhash}{VPSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{booktitle}{Proceedings of the Genetic and Evolutionary Computation
+  Conference}
+    \field{pages}{1483\bibrangedash 1490}
+    \field{title}{Constraining connectivity to encourage modularity in
+  HyperNEAT}
+    \field{year}{2011}
+  \endentry
+
+  \entry{WatsonNitschke2015CEC}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=WJ}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Nitschke},
+         familyi={N\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WJNG1}
+    \strng{fullhash}{WJNG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{Proceedings of the IEEE Congress on Evolutionary
+  Computation}
+    \field{pages}{3065\bibrangedash 3071}
+    \field{title}{Deriving Minimal Sensory Configurations for Evolved
+  Cooperative Robot Teams}
+    \list{location}{1}{%
+      {Sendai, Japan}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{WatsonNitschke2015SSCI}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=WJ}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Nitschke},
+         familyi={N\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WJNG1}
+    \strng{fullhash}{WJNG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{Proceedings of the IEEE Symposium Series on Computational
+  Intelligence}
+    \field{pages}{1039\bibrangedash 1046}
+    \field{title}{Evolving Robust Robot Team Morphologies for Collective
+  Construction}
+    \list{location}{1}{%
+      {Cape Town, South Africa}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{WerfelNagpal2008}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WJ}{%
+         family={Werfel},
+         familyi={W\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={Nagpal},
+         familyi={N\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJNR1}
+    \strng{fullhash}{WJNR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{pages}{463\bibrangedash 479}
+    \field{title}{Three-Dimensional Construction with Mobile Robots and Modular
+  Blocks}
+    \field{volume}{27(3-4)}
+    \field{journaltitle}{The International Journal of Robotics Research}
+    \field{year}{2008}
+  \endentry
+
+  \entry{WerfelPetersenNagpal2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WJ}{%
+         family={Werfel},
+         familyi={W\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Petersen},
+         familyi={P\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={Nagpal},
+         familyi={N\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJPKNR1}
+    \strng{fullhash}{WJPKNR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{pages}{754\bibrangedash 758}
+    \field{title}{Designing Collective Behavior in a Termite-Inspired Robot
+  Construction Team}
+    \field{volume}{343(6172)}
+    \field{journaltitle}{Science}
+    \field{year}{2014}
+  \endentry
+
+  \entry{RefWorks:30}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WJ}{%
+         family={Werfel},
+         familyi={W\bibinitperiod},
+         given={Justin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BYY}{%
+         family={Bar-Yam},
+         familyi={B\bibinitperiod-Y\bibinitperiod},
+         given={Yaneer},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Rus},
+         familyi={R\bibinitperiod},
+         given={Daniela},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={Nagpal},
+         familyi={N\bibinitperiod},
+         given={Radhika},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WJ+1}
+    \strng{fullhash}{WJBYYRDNR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{Robotics and Automation, 2006. ICRA 2006. Proceedings
+  2006 IEEE International Conference on}
+    \field{pages}{2787\bibrangedash 2794}
+    \field{title}{{Distributed construction by mobile robots with enhanced
+  building blocks}}
+    \field{year}{2006}
+  \endentry
+
+  \entry{XinYao1999}{article}{}
+    \name{author}{1}{}{%
+      {{hash=YX}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YX1}
+    \strng{fullhash}{YX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{number}{9}
+    \field{pages}{1423\bibrangedash 1447}
+    \field{title}{Evolving artificial neural networks}
+    \field{volume}{87}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{1999}
+  \endentry
+
+  \entry{RefWorks:1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=YX}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Xin},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YX2}
+    \strng{fullhash}{YX2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{number}{9}
+    \field{pages}{1423\bibrangedash 1447}
+    \field{title}{{Evolving artificial neural networks}}
+    \field{volume}{87}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{1999}
+  \endentry
+
+  \entry{yegnanarayana2009artificial}{book}{}
+    \name{author}{1}{}{%
+      {{hash=YB}{%
+         family={Yegnanarayana},
+         familyi={Y\bibinitperiod},
+         given={B},
+         giveni={B},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {PHI Learning Pvt. Ltd.}%
+    }
+    \strng{namehash}{YB1}
+    \strng{fullhash}{YB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{title}{{Artificial neural networks}}
+    \field{year}{2009}
+  \endentry
+
+  \entry{zhang1998forecasting}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZG}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Guoqiang},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PBE}{%
+         family={Patuwo},
+         familyi={P\bibinitperiod},
+         given={B\bibnamedelima Eddy},
+         giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HMY}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Michael\bibnamedelima Y},
+         giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{ZGPBEHMY1}
+    \strng{fullhash}{ZGPBEHMY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{number}{1}
+    \field{pages}{35\bibrangedash 62}
+    \field{title}{{Forecasting with artificial neural networks:: The state of
+  the art}}
+    \field{volume}{14}
+    \field{journaltitle}{International journal of forecasting}
+    \field{year}{1998}
+  \endentry
+\endsortlist
+\endinput

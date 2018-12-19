@@ -1,0 +1,67 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: SSCI2017-RPGN-FINAL.aux
+The style file: IEEEtran.bst
+Database file #1: EvoComp.bib
+I was expecting a `,' or a `}'---line 150 of file EvoComp.bib
+ :   address = ""
+ :               University of Pittsburgh, USA",
+I'm skipping whatever remains of this entry
+You're missing a field name---line 238 of file EvoComp.bib
+ : 
+ : %  address = "Cambridge",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 755 of file EvoComp.bib
+ : @inproceedings{WatsonNitschke2015CEC
+ :                                     ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1131 of file EvoComp.bib
+ : 
+ : % pages = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1252 of file EvoComp.bib
+ : 
+ : %  editor =       "Laurence T. Yang and Hai Jin and Jianhua Ma and Theo Ungerer",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1269 of file EvoComp.bib
+ : 
+ : %  editor =       "Robert Meersman and Zahir Tari",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2003 of file EvoComp.bib
+ :     
+ :     year = "2004",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 3080 of file EvoComp.bib
+ : @book{EibenSmith2003
+ :                     ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4121 of file EvoComp.bib
+ : 
+ : %  address = "Berlin, Germany",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 4141 of file EvoComp.bib
+ : 
+ : %  address = "Tokyo, Japan",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 4870 of file EvoComp.bib
+ : @article{StanleyMiikkulainen2002
+ :                                 ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Castillo2007"
+Warning--I didn't find a database entry for "Khoshnevis2003"
+Warning--I didn't find a database entry for "Stanley2003"
+Warning--I didn't find a database entry for "RefWorks15"
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in RefWorks:32
+Warning--empty journal in RefWorks:33
+Warning--empty journal in RefWorks:31
+
+Done.
+(There were 11 error messages)

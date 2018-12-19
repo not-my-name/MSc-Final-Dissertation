@@ -1,35 +1,486 @@
 % Chapter Template
 
-\chapter{Chapter Title Here} % Main chapter title
+\chapter{Background Research} % Main chapter title
 
-\label{ChapterX} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Main Section 1}
+\section{Artifical Neural Networks}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
+'Artificial neural networks are computational methodologies that perform multifactorial analyses. Inspired by networks of biological neurons, artificial neural network models contain layers of simple computing nodes that operate as nonlinear summing devices. These nodes are richly interconnected by weighted connection lines, and the weights are adjusted when data are presented to the network during a "training" process. Successful training can result in artificial neural networks that perform tasks such as predicting an output value, classifying an object, approximating a function, recognizing a pattern in multifactorial data, and completing a known pattern ' \cite{dayhoff2001artificial}.
 
-%-----------------------------------
-%	SUBSECTION 1
-%-----------------------------------
-\subsection{Subsection 1}
+'Artificial neural netowrks have been the subject of an active field of research that has matured greatly over the past 40 years. The first computational trainable neural networks were developed in 1959 by Rosenblatt as well as by Widrow and Hoff and Widrow and Stearns [refs 1-3]. Rosenblatt perceptron was a neural network with 2 layers of computational nodes and a single layer of interconnections. It was limited to the solution of linear problems. For example, in a two-dimensional grid on which two different types of points are plotted, a perceptron could divide those points only with a straight line; a curve was not possible. Whereas using a line is a linear discrimination, using a curve is a non-linear task. Many problems in discrimination and analysis cannot be solved by a linear capability alone.' \cite{dayhoff2001artificial}.
 
-Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
+\subsection{Architectures}
 
-%-----------------------------------
-%	SUBSECTION 2
-%-----------------------------------
+An Aritificial Neural Network (ANN) is an abstracted and simplified model that represents the functioning of a biological brain \cite{mcculloch1943logical}. A single ANN consists of numerous interconnected simple computational units, called neurons, that are ordered into layers so as to create a neural net \cite{RefWorks:31}.
 
-\subsection{Subsection 2}
-Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque. Cras in elit neque, quis varius elit. Phasellus fringilla, nibh eu tempus venenatis, dolor elit posuere quam, quis adipiscing urna leo nec orci. Sed nec nulla auctor odio aliquet consequat. Ut nec nulla in ante ullamcorper aliquam at sed dolor. Phasellus fermentum magna in augue gravida cursus. Cras sed pretium lorem. Pellentesque eget ornare odio. Proin accumsan, massa viverra cursus pharetra, ipsum nisi lobortis velit, a malesuada dolor lorem eu neque.
+An ANN consists of a set of processing elements, also known as neurons or nodes, which are interconnected \cite{XinYao1999}.
 
-%----------------------------------------------------------------------------------------
-%	SECTION 2
-%----------------------------------------------------------------------------------------
+An ANN can be described as a directed graph in which each node, $i$, performs a transfer function $f_i$ of the form \cite{XinYao1999} (this is the sentence that originally introduced the function outlined here \ref{eq:ann-transfer-function})
 
-\section{Main Section 2}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
+Each neuron consists of several inputs, some specific activation function and some output. An ANN receives input from the environment at its input layer \cite{RefWorks:32}.
+
+Each neuron in a non-input layer then calculates the weight-ed sum of its inputs, referred to as the activation value \cite{yegnanarayana2009artificial,RefWorks:31}, and evaluates it according to some activation function. If this result exceeds a predetermined threshold value, the neuron will "fire" an output signal, transmitting it as an input to the subsequent neuron across a weighted connection \cite{yegnanarayana2009artificial}.
+
+
+The operational/functioning of a single neuron can be explained using the following equation:
+
+\begin{equation} \label{eq:ann-transfer-function}
+	y_i = f_i(\sum_{j=1}^{n} w_{ij} x_j - \theta_i)
+\end{equation}
+
+\hl{can maybe combine the above equation with a simple diagram of an ANN so that it would be easier to understand what is going on in the equation, can provide a better explanation of the different components in the equation and the relationships between them}
+
+consisting of the following components:
+\begin{itemize}
+	\item $y_i$ is the output that is produced by the $i^{th}$ neuron in the network.
+	\item $w_{ij}$ is the weighted value of the connection between the $i^{th}$ and $j^{th}$ nodes in the network.
+	\item $x_j$ is the $j^{th}$ input received by the neuron.
+	\item $\theta_i$ is the threshold value (or bias) of the node. \hl{can maybe find a more detailed description of how this bias works or how it is used and in what use case examples}
+	\item $f_i$ is the transfer function/activation function performed by the node when it receives the input from the input-noes. This function is usually nonlinear, such as one of the following: \hl{remember to try and get some examples of the following function types}
+		\begin{itemize}
+			\item Heavyside
+			\item Sigmoid
+			\item Gaussian
+		\end{itemize}
+\end{itemize}
+
+In \ref{eq:ann-transfer-function}, each term in the summation only involves one input $x_j$. Higher-order ANN's are those that contain high-order nodes, i.e., nodes in which more than one input are involved in some of the terms of the summation. For example, a second-order node can be described as:
+
+\begin{equation} \label{eq:higher-order-node}
+	y_i = f_i (\sum_{{j,k}=1} w_{ijk}x_jx_k - \theta_i)
+\end{equation}
+
+where all the components have similar definitions to those outlined in \ref{eq:ann-transfer-function}.
+
+\hl{above is the equation for a function that receives input from more than one preceding nodes}
+
+
+ANNs are universal function approximators [find a reference for this statement]. It has been shown that a network can approximate any continuous function to any desired accuracy \cite{zhang1998forecasting}. This makes ANNs a favourable choice for agent controllers in accomplishing various tasks \cite{yegnanarayana2009artificial}.
+
+In cases where training examples are available, the connection weights in ANNs are adapted using various supervised learning techniques, and in cases without such examples the weights are evolved using EAs \cite{dayhoff2001artificial,RefWorks:1}.
+
+
+"The architecture of an ANN is determined by its topological structure, i.e., the overall connectivity and transfer function of each node in the network" \cite{XinYao1999}
+
+\hl{there should be another subsection on the structure of ANN's?}
+
+\subsection{Transfer Functions}
+Can maybe have a section dedicated to the different types of functions that are used in the Neurons.
+Sigmoid, Gaussian
+
+
+\section{Learning in ANN's}
+
+"The variety and complexity of learning systems makes it difficult to formulate a universally accepted definition of learning. However, a common denominator of most learning systems is their capability for making structural changes to themselves over time with the intent of improving performance on tasks defined by their environment, discovering and subsequently exploiting interesting concepts, or improving the consistency and generality of internal knowledge structures " \cite{de1988learning}.
+
+"Given this perspective, one of the most important means for understanding the strengths and limitations of a particular learning system is a precise characterization of the structural changes that are permitted and how such changes are made " \cite{de1988learning} \hl{THIS IS A GOOD EXPLANATION OF HOW THE DIFFERENT LEARNING APPROACHES ARE CHARACTERIZED. THIS WILL BE A GOOD INTRODUCTION IN TO THE LATER SECTIONS ON THE ALGORITHMS AND WHAT MAKES THEM DIFFERENT TO EACH OTHER}
+"In classical terms, this corresponds to a clear understanding of the space of possible structural changes and the legal operators for selecting and making changes. This perspective also lets one more precisely state the goal of the research in applying genetic algorithms to machine learning, namely, to understand when and how genetic algorithms can be used to explore spaces of legal structural changes in a goal-oriented manner. " \cite{de1988learning}.
+\hl{BE SURE TO STRUCTURE THE CONTENT SUCH THAT IT ALIGNS WITH THE WAY IN WHICH RESEARCH DEVELOPED. FIRST ANNS THEN LEARNING THEN GA THEN EC etc.}
+
+
+
+
+what is learning
+"An agent is learning if it improves its performance on future tasks after making observations about the world." \cite{russell2016artificial}
+
+"Why would we want an agent to learn? If the design of the agent can be improved, why wouldn't the designers just program in that improvement to begin with? There are three main reasons. First, the designers cannot anticipate all possible situations that the agent might find itself in. For example, a robot designed to navigate mazes must learn the layout of ecah new maze it encounters." \cite{russell2016artificial}
+"Second, the designers cannot anticipate all changes over time; a program designed to predict tomorrow's stock market prices must learn to adapt when conditions change from boom to bust" \cite{russell2016artificial}.
+"Third, somethimes human programmers have no idea how to program the solution themselves. For example, most people are good ate recognizing the faces of family members, but even the best programmers are unable to program a computer to accomplish that task, except by using learning algorithms" \cite{russell2016artificial}.
+
+'Any component of an agent can be improved by learning from data. The improvements, and the techniques used to make them, depend on four major factors:'
+-> 'Which \textit{component} is to be improved.'
+-> 'What \textit{prior knowledge} the agent already has'
+-> 'What \textit{representation} is used for the data and the component.'
+-> 'What \textit{feedback} is available to learn from.'
+
+
+'Components to be learned: ' \cite{russell2016artificial} \hl{remember to rephrase everything listed below}
+The components of these agents include:
+1. A direct mapping from conditions on the current state to actions.
+2. A means to infer relevant properties of the world from the percept sequence (can maybe check the reference to see how to describe this)
+3. Information about the way the world evolves and about the results of possible actions the agent can take.
+4. Utility information indicating the desirability of world states.
+5. Action-value information indicating the desirability of actions.
+6. Goals that describe classes of states whose achievement maximizes the agent's utility.
+
+'Each of these components can be learned. Consider, for example, and agent training to become a taxi driver. Every time the instructor shouts "BRAKE!" the agent might learn a condition-action rule for when to brake (component 1); the agent also learns every time the instructor does not shout.' \cite{russell2016artificial}.
+
+'By seeing many camera images that it is told contain buses, it cn learn to recognize them (2)' \cite{russell2016artificial}.
+
+'By trying actions and observing the results - for example, braking hard on a wet road - it can learn the effects of its actions (3)' \cite{russell2016artificial}.
+
+'Then, when it receives no tip from passengers who have been thoroughly shaken up during the trip, it can learn a useful component of its overall utility function (5)' \cite{russell2016artificial}
+
+\hl{there are no examples for the last 2 components...?}
+
+
+
+
+'There are 3 types of feedback that determine the three main types of learning: ' \cite{russell2016artificial}
+-> 'Unsupervised Learning: the agent learns patterns in the input even though no explicit feedback is supplied. The most common unsupervised learning task is clustering, detecting potentiall useful clusters of input examples. For example, a taxi agent gradually develop a concept of "good traffic days" and "bad traffic days" without ever being given labelled examples of each by a teacher'
+-> 'In Reinforcement Learning the agent learns from a series of reinforcements - rewards or punishments, For example, the lack of a tip at the end of a journey gives the taxi agent an indication that it did something wrong. The to points for a win at the end of a chess game tells the agent it did something right. It is up to the agent to decide which of the actions prior to the reinforcement were most responsible for it'
+-> 'In supervised learning the agent observes some example input-output pairs and learns a function that maps from input to output. In component 1 above, the inputs are percepts and the output are provided by a teacher who says "Brake" or "Turn Left". In component 2, the inputs are camera images and the outputs again come from a teacher who says "that is a bus". In component 3, the theory of braking is a function from states and braking actions to stopping distance in feet. In this case, the output value is available directly from the agents percepts (after the fact); the environment is the teacher'
+
+
+\hl{"Never tell people how to do things. Tell them what to do and they will surprise you with their ingenuity" - George S. Patton}
+
+
+Learning in ANN's, also referred to as 'training', is typically achieved using examples. During this process, the connection weights between neurons in the network are iteratively adjusted until such a point that the network can perform the desired task \cite{XinYao1999}.
+
+Learning in ANN's can roughly be divided into supervised, unsupervised, and Reinforcement Learning.
+\begin{itemize}
+	\item 'Supervised Learning is based on direct comparison between the actual output of an ANN and the desired correct output, also known as the target output. It is often formulated as the minimization of an error function, such as the total mean square error between the actual output and the desired output, summed over all available data. A gradient descent-based optimization algorithm can then be used to adjust connection weights in the ANN iteratively in order to minimize the error'
+	\item Reinforcement Learning is a special case of Supervised Learning where the exact desired output is unkinown. It is based only on the information of whether or not the actual output is correct.
+	\item Unsupervised Learning is solely based on the correlations among input data. No information on "correct output" is available for learning.
+\end{itemize}
+
+At the core of the learning algorithm is the 'learning rule', which is what determines the manner in which the connection weights are adapted during the iterative learning process \cite{XinYao1999}.
+
+Some examples of popular learning rules include:
+\begin{itemize}
+	\item Delta Rule
+	\item Hebbian Rule
+	\item Anti-Hebbian Rule
+	\item Competitive Learning Rule
+\end{itemize}
+
+
+A typical cycle of the evolution of connection weights \cite{XinYao1999}:
+\begin{enumerate}
+	\item Decode each individual (genotype) in the current generation into a set of connection weights and construct a corresponding ANN with the weights.
+	\item Evaluate each ANN by computing its total mean square error between actual and target outputs (Other error functions ma yalso be used). The fitness of an individual is determined by the error. The higher the error, the lower the fitness (because you are essentially measuring how close the actual behaviour is to the desired behaviour.). The optimal mapping from the error to the fitness is problem dependent. A regularization term may be included in the fitness function to penalize large weights
+	\item Select parents for reproduction based on their fitness.
+	\item Apply search operators, such as crossover and/or mutation, to parents in order to generate offspring, which will form the next generation.
+\end{enumerate}
+
+
+
+\subsection{Learning Rules}
+In this section, we will investigate and elaborate on the details and various implementations of the learning rules that were outlined above.
+
+https://en.wikipedia.org/wiki/Learning_rule
+'An artificial neural networks learning rule or learning process is a method, mathematical logic or algorithm which improves the networks performance and/or training time. Usually, this rule is applied repeatedly over the network. It is done by updating the weights and bias levels of a network when a network is simulated in a specific data environment. A learning rule may accept existing conditions (weights and biases) of the network and will compare the expected result and actualresult of the network to give new and improved values for weights and bias. Depending on the complexity of actual model being simulated, the learning rule of the network can be as simple as an XOR logic gate or mean squared error, or as complex as the result of a system of differential equations.'
+'The learning rule is one of the factors which decides how fast or how accurately the artificial network can be developed. Depending on the process to develop the network there are three main models of machine learning: (1) Unsupervised, (2) Supervised, (3) Reinforcement'
+
+\hl{when re-writing the content and structuring the info, try and 'peel' apart the different layers of EC. ANN's, learniong in ANN's, the learning rule describing the calculations used to adjust the weights (hebbian, delta, etc), the different types of learning based on the feedback mechanisms (supervised, unsupervised etc), then moving on to the different algorithms and what makes them different (like the different representations of information)}
+
+\subsubsection{Delta Rule}
+
+
+
+\subsection{Supervised Learning}
+
+page 694-695 of the cited text
+
+'The task of supervised learning is this: ' \cite{russell2016artificial} (everything below here is copied from the cited source, remember to reword)
+(This is the training set)
+Given a training set of N example input-output pairs
+($x_1$, $y_1$), ($x_2$, $y_2$), ($x_3$, $y_3$),...,($x_N$, $y_N$)
+where each $y_i$ was generated by an unknown function $y=f(x)$, discover a function $h$ that approximates the true function $f$.
+(This is the Hypothesis)
+Here $x$ and $y$ can be any value; they need not be numbers. The function $h$ is a hypothesis. Learning is a search through the space of possible hypotheses for one that will perform well, even on new examples beyond the training set. To measure the accuracy of a hypothesis we give it a \textbf{test set} of examples that are distinct from the training set. We say a hypothesis \textbf{generalizes} well if it correctly predicts the value of $y$ for novel examples. Sometimes the function $f$ is stochastic - it is not strictly a function of $x$, and what we have to learn is a conditional probability distribution, $P(Y|x)$.
+(Classification)
+When the output $y$ is one of a finite set of values (such as \textit{sunny}, \textit{cloudy}, or \textit{rainy}), the learning problem is called \textbf{classification}, and is called Boolean or binary classification if there are only 2 values.
+(Regression)
+Wehn $y$ is a number (such as tomorrow's temperature), the learning problem is called \textbf{regression}. (Technically, solving a regression problem is finding a conditional expectation or average value of $y$, because the probability that we have found \textit{exactly} the right real-valued number for $y$ is 0.)
+
+
+\subsubsection{Backpropagation}
+%https://en.wikipedia.org/wiki/Backpropagation be sure to check for the original references
+
+"Backpropagation is a method used in ANNs to calculate a gradient that is needed in the calculation of the weights to be used in the network. Backpropagation is shorthand for 'backward propagation of errors', since an error is computed at the output and distributed backwards throughout the network's layers."
+
+"Backpropagation is a generalization of the Delta Rule to multi-layered feed-forward networks, made possible by using the chain rule to iteratively compute gradients for each layer."
+
+"Backpropagation is a special case of a more general technique called automatic differentiation. In the context of learning, backpropagation is commonly used by the gradient descent optimization algorithm to adjust the weights of neurons by calculating the gradient of the loss function"
+
+\subsubsection{Gradient Descent}
+
+%https://en.wikipedia.org/wiki/Gradient_descent
+
+"Gradient descent is a first order iterative optimization algorithm for finding the minimum of a function. To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point. If, instead, one takes steps proportional to the positive of the gradient, one approaches a local maximum of that function; the procedure is known as gradient ascent"
+
+
+
+
+\subsubsection{Classification}
+'Predict a discrete target variable'
+
+\subsubsection{Regression}
+'Predict a continuous target variable'
+
+\subsection{Unsupervised Learning}
+
+\subsubsection{Clustering}
+
+\subsubsection{Dimensionality Reduction}
+
+\subsection{Reinforcement Learning}
+
+can maybe have a subsection for the different types of RL techniques such as:
+-> Value and Policy Iteration
+-> Q-learning
+
+
+'Reinforcement Learning dates all the way back to the early days of cybernetics and work in statistics, psychology, neuroscience and computer science.'\cite{KaelblingLittmanMoore1996}
+'In the last 5 - 10 years it has attracted rapidly increasing interest in the machine learning and atificial intelligence communities. Its promise is beguiling - a way of programming agents by reward and punishment without needing to specify how the task is to be achieved' \cite{KaelblingLittmanMoore1996}
+-> This could be a good line to have in the introduction section, how scientists are turning to automated methods of designing controllers.
+'Reinforcement Learning is the problem faced by an agent that must learn behaviour through trial-and-error interactions with a dynamic environment' \cite{KaelblingLittmanMoore1996}.
+'The work described here has a strong family resemblance to eponymous work in psychology, but differs considerably in the details ad in the use of the word "reinforcement". It is appropriately thought of as  class of problems, rather than as a set of techniques' \cite{KaelblingLittmanMoore1996}.
+While the approach take in Reinforcement Learning bears a strong resemblance to eponymous work in psychology, it is different in its use of the word 'reinforcement' and can be thought of as a class of problems instead of a set of techniques \cite{KaelblingLittmanMoore1996}.
+
+'There are two main strategies for solving reinforcement learning problems:''
+-> 'The first is to search in the space of behaviours in order to find one that performs well in the environment. This approach has been taken by work in genetic algorithms and genetic programming'  \hl{what is the difference between genetic algorithms and genetic programming?}
+-> 'The second is to use statistical techniques and dynamic programming methods to estimate the utility of taking actions in states of the world. This paper is devoted almost entirely to the second set of techniques because they take advantage of the special structure of reinforcement learning problems that is not available in optimization problems in general' \cite{KaelblingLittmanMoore1996}
+
+'In the standard Reinforcement Learning model, an agent is connected to its environment via perception and action (there is a figure in the source paper). On each step of interaction the agent receives as input, i, some indication of the current state, s, of the environment; the agent then chooses an action, a, to generate as output. The action changes the state ofthe environment, and the value of this state transition is communicated to the agent through a scalar reinforcment signal, r. The agents behaviour, B, should choose actions that tend to increase the long-run sum of values of the reinforcement signal. It can learn to do this over time by a systematic trial-and-error, guided by a wide variety of algorithms that are the subject of later sections in this paper'
+\hl{This variety of algorithms, are they referring to the learning rules?}
+
+A Reinforcement Learning model formally consists of \cite{KaelblingLittmanMoore1996}:
+\begin{itemize}
+	\item A discrete set of environment states, $S$.
+	\item A discrete set of agent actions, $A$.
+	\item A set of scalar reinforcement signals; typically {0,1}, or the real numbers.
+\end{itemize}
+
+'The figure also includes an input function $I$, which determines how the agent views the environment state; we will assume that it is the identity function (that is, the agent perceives the exact state of the environment) until we consider partial observability in Section 7' \cite{KaelblingLittmanMoore1996}
+
+An intuitive way to understand the relation between the agent and its environment is with the following example dialogue:
+Environment: "You are in state 65. You have 4 possible actions"
+Agent: "I'll perform action 2"
+Environment: "You received a reinforcement of 7 units. You are now in state 15. You have 2 possible actions"
+Agent: "I'll perform action 1"
+Environment: "You received a reinforcement of -4 units. You are now in state 65. You have 4 possible actions"
+Agent: "I'll perform action 2"
+Environment: "You received a reinforcement of 5 units. You are now in state 44. You have 5 possible actions"
+etc.
+
+The agent 'remembers' the results of the actions that it performs. It knows which action in which state produced the highest reinforcement value.
+
+'The agents job is to find a policy $\pi$, mapping states to actions, that maximizes some long-run measure of reinforcement. We expect, in general, that the environment will be non-deterministic; that is, that taking the same action in the same state on two different occasions may result in different next states and/or different reinforcement values. This happens in the example above: from state 65, applying action 2 produces differing reinforcements and differing states on two occasions. However, we assume the environment is stationary; that is, that the probabilities of making state transitions or receiving specific reinforcement signals do not change over time ' \cite{KaelblingLittmanMoore1996}
+
+'Reinforcement Learning differes from the more widely studied problem of supervised learning in several ways. The most important difference is that there is no presentation of input/output pairs. Instead, after choosing an action the agent is told the immediate reward and the subsequent state, but it is NOT told which action would have been in its best long-term interests. It is necessary for the agent to gather useful experience about the possible system states, actions, transitions and rewards actively to act optimally. Another difference from supervised learning is that on-line performance is important: the evaluation of the system is often concurrent with learning' \cite{KaelblingLittmanMoore1996}
+
+'Some aspects of reinforcement learning are closely related to search and planning issues in artificial intelligence. AI search algorithms generate a satisfactory trajectory through a graph of states. Planning operates in a similar manner, but typicall within a construct with more complexity than a graph, in which states are represented by compositions of logical expressions instead of atomic symbols. These AI algorithms are less general than the reinforcement learning methods, in that they require a predefined model of state transitions, and with a few exceptions assume determinism. On the other hand, RL, at least in the kind of discrete cases for which theory has been developed, assumes that the entire state space can be enumerated and stored in memory - an assumption to which conventional search algorithms are not tied.' \cite{KaelblingLittmanMoore1996}
+
+Models of Optimal Behaviour
+'Before we can start thinking about algorithms for learning to behave optimally, we have to decide what our model of optimality will be. In particular, we have to specify how the agent should take the future into account in the decisions it makes about how to behave now. There are three models that have been the subject of the majority of work in this area' \cite{KaelblingLittmanMoore1996}.
+
+\subsubsection{The Finite Horizon Model} \cite{KaelblingLittmanMoore1996}
+'this is the easiest one to think about' (conceptualize?)
+'at a given moment in time, the agent should optimize its expected reward for the next $h$ steps:'
+
+\begin{equation}
+E(\sum_{t=0}^{h} r_t)
+\end{equation}
+
+
+
+\section{Genetic Algorithms}
+
+\hl{need to find an appropriate place for this section w.r.t the rest of the research. GA are the basis of NE algorithms. Since learning methods are classified based on their representations, NE makes use of genetic encodings right?}
+
+WHAT IS THE DIFFERENCE BETWEEN A GENETIC ALGORITHM AND EVOLUTIONARY ALGORITHM?
+\hl{A genetic algorithm is a class evolutionary algorithm. Although genetic algorithms are the most frequently encountered type of EA, there are other types such as Evolution Strategy}
+https://stackoverflow.com/questions/2890061/what-is-the-difference-between-genetic-and-evolutionary-algorithms
+These algorithms are defined by the way in which the agents are represented. Genetic Algorithms make use of binary strings (I think???)
+
+
+
+'Simply stated, genetic algorithms are probabilistic search procedures designed to work on large spaces involving states that can be represented by strings. These methods are inherently parallel, using a distributed set of examples from the space (population of strings) to generate a new set of samples. They also exhibit a more subtle implicit parallelism. Roughly, in processing a population of $m$ strings, a genetic algorithm implicitly evaluates substantially more than $m^3$ component substrings. It the automatically biases future populations to exploit the above average components as building blocks from which to construct structures that will exploit regularities in the environment (problem space)'' \cite{goldberg1988genetic}
+
+'The theorem that establishes this speedup and its precursors - the schema theorems - illustrate the central role of theory in the development of Genetic Algorithms. Learning programs designed to exploit this building block property gain a substantial advantage in complex spaces where they must discover both the "rules of the game" and the strategies for playing the "game"' \cite{goldberg1988genetic}.
+
+should probably just make sure of the content that I am using from \cite{goldberg1988genetic} since the paper was published 30 years ago
+
+"Although there are a number of different types of genetics-based machine learning systems, in this issue we concentrate on classifier systems and their derivatives. Classifier systems are parallel production systems that have been designed to exploit the implicit parallelism of genetic algorithms. All interactions are via standardized messages, so that conditions are simply defined in terms of the messages they send. The resulting systems are computationally complete, and the simple syntax makes it easy for a GA to discover building blocks appropriate for the construction of new candidate rules. Because classifier systems rely on competition to resolve conflicts, the need no algorithms for determining the global consistency of a set of rules. As a consequence, new rules can be inserted into an existing system, as trials or hypotheses, without disturbing established capacities. This gracefulness makes it possible for the system to operate incrementally, testing new structures and hypotheses while steadily improving its performance"
+
+
+"Genetic Algorithms are a family of adaptive search procedures that have been described and extensively analyzed in the literature" \cite{de1988learning} (just use the family of procedures part)
+
+"GA's derive their nam from the fact that they are loosely based on models of genetic change in a population of individuals" \cite{de1988learning}.
+
+"These models consist of three basic elements: " \cite{de1988learning}
+(1) 'a Darwinian notion of "fitness", which governs the extent to which an individual can influence future generations'
+(2) 'a "mating operator", which produces offspring for the next generation'
+(3) '"genetic operators," which determine the genetic makeup of offspring from the genetic makeup of the parents'
+
+\hl{what is the difference between GA and EA??}
+
+"A key point of these models is that adaptation proceeds, not by making incremental changes to a single structure, but by maintaining a population (or database) of structures from which new structures are created using genetic operators such as crossover and mutation. Each structure in the population has an associated fitness (goal-oriented evaluation), and these scores are used in a competition to determine which structures are used to form new ones" \cite{de1988learning}.
+
+"The key feature of a GA's is their ability to exploit accumulating information about an initially unknown search space in order to bias subsequent search into useful subspaces. Clearly, if one has a strong domain theory to guide the process of structural change, one would be foolish not to use it. However, for many practical domains of application, it is very difficult to construct such theories. If the space of legal structual changes is not too large, one can usuall develop an enumerative search strategy with appropriate heuristic cutoffs to keep the computation time under control. If the search space is large, however, a good deal of time and effort can be spent in developing domain-specific heuristics with sufficient cutoff power. It is precisely in these circumstances (large, complex, poorly understood search spaces) that one should consider exploiting the power of genetic algorithms" \cite{de1988learning}.
+
+"At the same time, one must understand the price to be paid for searching poorly understood spaces. It typically requires 500-1000 samples before genetic algorithms have sufficient information to strongly bias subsequent samples into useful subspaces. This means that GA's will not be appropriate searcch procedures for learning domains in which the evaluation of 500-1000 alternative structural changes is infeasible. The variety of current activity in using GAs for machine learning suggests that many interesting learning problems fall into this category" \cite{de1988learning}.
+
+"A simple and intuitive approach for effecting behavioural changes in a performance system is to identify a key set of parameters that control the system's behaviour, and to develop a strategy for changing those parameters values to improve performance. The primary advantage of this approach is that it immediately places us on the familiar terrain of parameter optimization problems, for which there is considerable understanding and guidance, and for which the simplest forms of GAs can be used. It is easy at first glance to discard this approach as trivial and not at all representative of what is meant by 'learning'. But note that significant behavioural changes can be achieved within this simple framework."
+
+\section{Evolutionary Computing / Evolutionary Algorithms}
+
+for the basic outline below, this was taken directly from the outline in \cite{XinYao1999}, but I have added an additional first step that mentnions letting the individuals in the population first attempt the task in the simulated environment. This is so that there are actually some results to analyse as part of the first step. The original one does not mention what the individuals do to 'prove' their fitness or how the fitness would be evaluated.
+
+try to find another reference where they have a general outline of an Evolutionary Algorithm. You can then reference both of these for the outline that you have created below.
+
+\hl{Basic outline of evolutionary algorithm}
+\begin{enumerate} \label{EA-Overview}
+	\item Generate the initial population $G(0)$ at random, and set $i = 0$, where $i$ refers to the initial timestamp/first generation \hl{check this understanding is correct}
+	\item REPEAT:
+		\begin{enumerate}
+			\item Let each individual run in the simulation so as to be able to view their performance.
+			\item Evaluate the performance of each of the individuals using the predetermined fitness function.
+			\item Select the parents from $G_i$ based on their fitness value (calculated using the fitness function).
+			\item Apply search operators \hl{be sure to include some more information on these search operators and the different ones that exist} to the parent generation in order to produce the offspring which form $G(i+1)$
+			\item Advance the timestep \hl{maybe rephrase this} $i=i+1$
+		\end{enumerate}
+	\item UNTIL $termination criterion$ is satisfied.
+		%\caption{fig: A General Outline of an Evolutionary Algorithm}
+\end{enumerate}
+
+\hl{in our case, the termination criterion is a set number of generations for the Evolutionary Algorithm to be performed}
+
+
+\hl{the background sound in the Eminem's song W.T.P is the same soundtrack clip that they used in the first Hulk movie with Eric Bana}
+
+
+
+\section{Difficulties to overcome}
+Not sure about the label of this section
+Basically have an entire research section elaborating on the trade-offs that need to be made in order to implement the various algorithms
+
+\subsection{Exploitation vs Exploration} REINFORCEMENT LEARNING PAPER \cite{KaelblingLittmanMoore1996}
+'One major difference between reinforcement learning and supervised learning is that a reinforcement learner must explicitly explore its environment.' \cite{KaelblingLittmanMoore1996}
+This more refers to the fact that the agent learns through trial-and-error and that they will need to explore the possible steps/actions/solutions and 'remember' the result of that action. (Does it also somehow refer to the mappings between actions and consequences?)
+
+'In order to highlight the problems of exploration, we treat a very simple case in this section. The fundamental issues and approaches described here will, in many cases, transfer to the more complex instances of reinforcement learning discussed later in the paper' \cite{KaelblingLittmanMoore1996}
+
+'The simplest possible Reinforcement Learning problem is known as the $k-armed$ bandit problem' \cite{KaelblingLittmanMoore1996}
+'The agent is in a room with a collection of $k$ gambling machines. The agent is permitted a fixed number of pulls, $h$. Any arm may be pulled on each turn. The machines do not require a deposit to play; the only cost is wasting a pull playing a suboptimal machine. When arm $i$ is pulled, machine $i$ pays off 1 or 0, according to some underlying probability parameter $p_i$, where payoffs are independent events and the $p_i$s are unknown. What should the agents strategy be?'\cite{KaelblingLittmanMoore1996}.
+'This problem illustrates the fundamental tradeoff between exploitation and exploration. The agent might believe that a particular arm has a fairly high payoff probability; should it choose that arm all the time, or should it choose another one that it has less information about, but seems to be worse? Answeres to these questions depend on how long the agent is expected to play the game; the longer the game lasts, the worse the consequences or prematurely converging on a sub-optimal arm, and the more the agent should explore'
+
+
+
+\section{Neuroevolution}
+
+\hl{find some more information regarding the natural processes: like the phenotype and genotype and why the encoding is so useful for representing regularities}
+
+'The primary motivation for neuroevolution is to be able to train neural networks in sequentual decision tasks with sparse reinforcement information. Most neural network learning is concerned with supervised tasks, where the desired behaviour is described in a corpus of input-output examples.' \cite{Miikkulainen2010}
+
+The main benefit of neuroevolution compared to other reinforcement learning methods in such tasks is that it allows representing continuous state and action spaces and disambiguating hidden states naturally.
+Network activations are continuous, and the network generalizes well between continuous values, largely avoiding the state explosion problem that plagues many reinforcement-learning approaches. Recurrent networks can encode memories of past states and actions, making it possible to learn in partially observable Markov Decision Process (POMDP) environments that are difficult for many RL approaches \cite{Miikkulainen2010}.
+
+Compared to other neural network learning methods, neuroevolution is highly general. As long as the performance of the networks can be evaluated over time, and the behaviour of the network can be modified through evolution, it can be applied to a wide range of network architectures, including those with non-differentiable activation functions and recurrent  higher-order connections. While most neural learning algorithms focus on modifying the weights only, neuroevolution can be used to optimize other aspects of the networks as well, including activation functions and network topologies.
+
+Third, neuroevolution allows combining evolution over a population of solutions with lifetime learning in individual solutions: the evolved networks can each learn further through eg. backpropagation or Hebbian learning. The approach is therefore well suited for understanding biological adaptation, and for building artificial life systems.
+
+\subsection{Basic Methods}
+(Remember to reword this section below)
+'In neuroevolution, a population of genetic encodings of neural networks is evolved in order to find a network that solves the given task. Most neuroevolution methods follow the usual generate-and-test loop of evolutionary algorithms' \cite{Miikkulainen2010}
+
+'Each encoding in the population (a genotype) is chosen in turn and decoded into the corresponding neural network (a phenotype). This network is then employed in the task, and its performance over time measured, obtaining a fitness value for the corresponding genotype. After all members of the population have been evaluated in this manner, genetic operators are used to create the next generation of the population. Those encodings with the highest fitness are mutated and crossed over with each other, and the resulting offspring replaces the genotypes with the lowest fitness in the population. The process therefore constitutes an intelligent parallel search towards better genotypes, and continues until a network with a sufficiently high fitness is found' \cite{Miikkulainen2010}.
+
+\hl{this information leads on nicely from how learning is described as being a search through a space of possible solutions. In this case, each ANN is a possible solution function in the defined problem space. There is some way of explaining this in your own words}
+
+
+'Several methods exist for evolving neural networks depending on how the networks are encoded. The most straightforward encoding, sometimes called Conventional Neuroevolution (CNE), is formed by concatenating the numerical values for the network weights (either binary or floating point) [refs 5,16,21 from the original paper introduction]. This encoding allows evolution to optimize the weights of a fixed neural network architecture, an approach that is easy to implement and practical in many domains.' \cite{Miikkulainen2010}.
+
+'In more challenging domains, the CNE approach suffers from three problems: (1) The method may cause the population to converge before a solution is found, making further progress difficult (i.e premature convergence); (2) similar networks, such as those where the order of nodes is different, may have different encodings, and much effort is wasted in trying to optimize them in parallel (i.e. competing conventions); (3) a large number of parameters need to be optimized at once, which is difficult through evolution' \cite{Miikkulainen2010}.
+
+\hl{check if any of the below texts are better suited to be placed in the section for Learning in ANNs (this is based on the section heading from the original text)}
+
+'More sophisticated encodings have been devised to alleviate these problems. One approach is to run the evolution at the level off solution components instead of full solutions. That is, instead of a population of complete neural networks, a population of network fragments, neurons, or connection weights is evolved [refs 7, 13, 15 of original paper]. Each individual is evaluated as part of a full network, and its fitness reflects how well it cooperates with other individuals in forming a ful network. Specifications for how to combine the components into a full network can be evolved separately, or the combinarion can be based on designated roles for subpopulations. In this manner, the complex problem of finding a solution network is broken into several smaller subproblems; evolution is forced to maintain diverse solutions, and competing conventions and the number of parameters is drastically reduced' \cite{Miikkulainen2010}.
+
+
+'Another approach is to evolve the network topology, in addition to the weights. The idea is that topology can have a large effect on function, and evolving appropriate topologies can achieve good performance faster than evolving weights only [refs 2, 5, 18, 21 from original paper]. Since topologies are explicitly specified, competing conventions are largely avoided. It is also possible to start evolution with simple solutions and gradually make them more complex, a process that takes place in biology and is a powerful approach in machine learning in general. Speciation according to the topology can be used to avoid premature convergence, and to protect novel topological solutions until their weights have been sufficiently optimized.' \cite{Miikkulainen2010}.
+
+'All of the above methods map the genetic encoding directly to the corresponding neural network, i.e. each part of the encoding corresponds to a part of the network, and vice versa. Indirect encoding, in contrast, specifies a process through which the network is constructed, such as cell division or generation through a grammar [refs 5, 8, 17, 21 of original paper]. Such an encoding can be highly compact, and also take advantage of modular solutions. The same structures can be repeated with minor modifications, as they often are in biology. It is, however, difficult to optimize solutions produced by indirect encoding, and realizing its full potential is still future work.' \cite{Miikkulainen2010}.
+
+'The fifth approach is to evolve an ensemble of neural networks to solve the task together, instead of a single network [ref 11]. This approach takes advantage of the diversity in the population: different networks learn different parts or aspects of the training data, and together the whole ensemble can perform better than a single network. Diversity can be created through speciation and negative correlation, encouraging useful specializations to emerge. The approach can be used to design ensembles for classification problems, but it can also be extended to control tasks ' \cite{Miikkulainen2010}.
+
+\hl{what is the difference between classification, regression, and control tasks? are these the only different options? Check if there are any different approaches that you may have missed out on}
+
+
+\subsection{Applications}
+
+\hl{this is super useful information because it says that if the network can solve a problem, that it can then solve the more complex version of the same problem, which directly relates to the investigation being conducted in this paper}
+
+'Neuroevolution methods are powerful especially in continuous domains of reinforcement learning, and those that have partially observable states. For instance in the benchmark task of balancing the inverted pendulum without velocity information (making the problem partially observable), the advanced methods have been shown to find solutions two orders of magnitude faster than value-function based reinforcement learning methods (measured by number of evaluations [ref 7]. They can also solve harder versions of the problem, such as balancing two poles simultaneously'
+
+'The method is powerful enough to make any real-world applications of reinforcement learning possible. The most obvious area is adaptive, nonlinear control of physical devices. For instance, neural network controllers have been evolved to drive mobile robots, automobiles, and even rockets [refs 6, 14, 19]. The control approach have been extended to optimize systems such as chemical processes, manufacturing systems, and computer systems. A crucial limitation with current approaches is that the controllers usually need to be developed in simulation and transferred to the real system. Evolution is strongest as an off-line learning method where it is free to explore potential solutions in parallel ' \cite{Miikkulainen2010}.
+
+'Evolution of neural networks is a natural tool for problems in artificial life. Because networks implement behaviours, it is possible to design neuroevolution experiments on how behaviours such as foraging, pursuit and evasion, hunting and herding, and even communication may emerge in response to environmental pressure [ref 20] ' \cite{Miikkulainen2010}.
+
+'It is possible to analyze the evolved circuits and understand how they map to function, leading to insights into biological networks [ref 10]. The evolutionary behaviour approach is also useful for constructing characters in artificial environments, such as games and simulators. Non-player characters in current video games are usuall scripted and limited; neuroevolution can be used to evolve complex behaviours for them, and even adapt them in real time [ref 12] ' \cite{Miikkulainen2010}.
+
+
+
+
+
+
+\subsubsection{Definition}
+'Neuroevolution is a method for modifying neural network weights, topologies, or ensembles in order to learn a specific task. Evolutionary computation is used to search for network parameters that maximize a fitness function that measures performance in the task. Compared to other neural network learning methods, neuroevolution is highly general, allowing learning withou explicit targets, with nondifferentiable activation functions, and with recurrent networks. It can also be combined with a standard neural network learning (eg. model biological adaptation.). Neuroevolution can also be seen as a policy search method for reinforcement learning problems, where it is well suited to continuous domains and to domains where the state is only partially observable' \cite{Miikkulainen2010}.
+
+
+
+
+
+
+
+FROM THE LITERATURE REVIEW VERBATIM
+
+
+Neuroevolution (NE) provides a way of combining EAs and ANNs \cite{RefWorks:31}. It uses EAs to evolve the connection weights, topologies and activation functions of ANNs in order to learn a specific task or behaviour \cite{gomez1999solving}. NE searches for an ANN with optimal performance based on a fitness function that determines an ANN's suitability to performing a task \cite{RefWorks:31}.
+
+Using NE to evolve ANNs addresses several weaknesses that occur in reinforcement or supervised learning techniques. Reinforcement learning (RL) requires a value function which is costly to compute whereas NE removes the need of such a function by directly searching the policy space using a EA \cite{RefWorks:32}.
+
+By searching through a population of solutions and evaluating several candidate solutions at a time, EAs are much less likely to get stuck in local minima than gradient-descent algorithms and therefore makes NE suitable for dealing with complex problems that generate numerous local optima \cite{gomez2001neuro,RefWorks:1}.
+
+In a standard RL scenario an ANN interacts with its environment in discrete time steps \cite{igel2003neuroevolution}. NE can be used in any type of environment, whether it is continuous or partially observable, making it possible to find an optimal ANN using only information about how well the network is performing rather than what it is supposed to be doing \cite{Miikkulainen:2010:ENN:1830761.1830902}.
+
+Another challenge in using traditional learning methods or fixed-topology NE approaches, is that it requires a human to design the topology for the neural net. This presents a problem since these networks can get complex and would have to be altered according to the specific task being learned. This relation between topology and suitability is very unintuitive and difficult to get right without trial-and-error. By using a NE approach that evolves the topology and the weights of a neural network (TWEANNs), these networks are able to discover the most efficient topology \cite{RefWorks:31}.
+
+Since the chromosomes in NE can be used to encode any aspect of ANNs and the choice of encoding affects the search space, deciding on an encoding method is fundamental aspect in the design of the system \cite{RefWorks:31}. This literature review compares direct and indirect encoding, which will be discussed in depth at a later stage in the Encoding Schemes.
+
+
+\section{NEAT}
+
+\section{HyperNEAT}
+
+
+
+
+\section{Fitness Functions}
+
+\subsection{Objective Fitness}
+\subsection{Novelty Fitness}
+\subsection{Hybrid Fitness}
+
+
+
+\section{Collective Construction Task}
+
+As has been outlined, the collective construction task requires that a team of agents cooperate by coordinating their behaviour in order to assemble various structures within their environment \cite{NitschkeSaEC2012}.
+
+The general implementation of the collective construction task can be further separated into 3 distinct sub-tasks (for this outline, we consider the most basic task where a single robot in a team will be able to move and connect a building block to the structure):
+\begin{enumerate}
+	\item First, the team of robots need to coordinate their efforts in order to be able to search through their immediate environment to find any resources that they could possibly use in the construction process. In our experiments, these resources were implemented as various types of 'building-blocks' that can only be connected to certain other types of blocks according to a predefined construction schema.
+	\item Second, once a robot has found a resource, it needs to take the resource to the designated 'construction site' so as to be able to connect it to the structure that is currently being built. We decided to use a designated construction site so as to prevent the robots from just starting new structures all over the place. These first 2 steps can be seen as an implementation of the standard aforementioned collective gathering task (can maybe add this as a footnote instead?) \cite{NitschkeSaEC2012}.
+	\item Third and finally, once the robot/s have brought the resources to the designated construction site/zone, it needs to be able to determine how and where to connect the resource to the structure. It will need to find an open side on the structure to which the block can be connected.
+\end{enumerate}
+
+In order to perform this task successfully, the robot team will need to explore their environment and search for various resources that have been randomly scattered throughout the space in the most efficient and effective way possible.
+
+'This project chose to investigate the collective construction task because it is sufficiently complex and it requires cooperative behaviour. It is also easy to manipulate this complexity as well as the levels of cooperation required as outlined in the previous section (in this case, this is outlined in Chapter1'
+
+
+
+\subsection{Collective Gathering Task}
+
+\subsection{Existing Collective Construction Tasks}
+In this section, go on to provide some examples and research related to existing investigations of the collective construction tasks
+Can find some examples such as the ones with the templates that need to be filled and try to find any other examples

@@ -1,12 +1,12 @@
 % Chapter 1
 
-\chapter{Chapter 1} % Main chapter title
+\chapter{Introduction} % Main chapter title
 
-\label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+\label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1}
 
 %----------------------------------------------------------------------------------------
 
-% Define some commands to keep the formatting separated from the content 
+% Define some commands to keep the formatting separated from the content
 \newcommand{\keyword}[1]{\textbf{#1}}
 \newcommand{\tabhead}[1]{\textbf{#1}}
 \newcommand{\code}[1]{\texttt{#1}}
@@ -17,8 +17,145 @@
 
 \section{Introduction}
 
+The current trend in increasing levels of computerisation coupled with the increasing complexity of tasks that need to be performed has led to a growing demand for the automated production of these problem solvers \cite{RefWorks:33}.
 
-Evolutionary computing (EC) is a branch of computer science research inspired by the Darwinian process of evolution through natural selection\cite{RefWorks:33}. Given the complexity and non-linearity of real world problems, traditional controller design is impractical since they rely on linear mathematical models \cite{RefWorks:32}, making it unsurprising that computer scientists have turned to natural processes for inspiration. The problem solving power of evolution is abundantly clear in nature with the diverse range of organisms on Earth, each specially designed for optimal survival in its own niche environment \cite{RefWorks:33}.
+Given the levels of complexity and non-linearity of real-world problems, traditional methods of controller design have become impractical since they mostly rely on linear mathematical models \cite{RefWorks:32}.
+
+One of the central themes of research in mathematics and computer science is the design and development of automated problem solvers \cite{RefWorks:33}.
+
+The problem solving power of evolution is abundantly clear in nature with the diverse range of organisms that exist (or ever have existed) on Earth, each specially designed for optimal survival in its own niche environment \cite{RefWorks:33}, making it unsurprising that computer scientists have resorted to researching natural processes for inspiration.
+
+"While it may be possible to solve many complex tasks using a single sophisticated robot, there are several advantages to using a multi-robot team instead. Some of these advantages include being able to use much simpler designed robots in the team instead of one very expensive robot as well as having increased fault tolerance since there is no longer just a single point of failure (each robot in the team is a point of failure" (cite the introduction of your honours final paper)
+
+From the humble origins of the single-celled organism, to the great blue whale and the naked mole rat. The evidence as to the problem solving power of mother nature is boundless. In every nook and cranny on the planet we can find some specialised organism that has adapted in such a way as to be the most successful creature to survive in that habitat. Over hundreds and thousands of generations, these creatures have undergone changes on the genetic level, discovering which characteristics are useful for survival and which ones are suboptimal, resulting in the organisms themselves failing to pass on their genes.
+
+Have a section that abstracts the complexity of collective behaviour
+Team behaviour vs single complex agent
+Exploration vs Exploitation
+
+The ability to automate construction tasks through evolving ANN controllers for multi-robot teams using EAs presents several considerable benefits. Automation such as this could be used to assist in projects such as producing low-cost housing and reduce high accident rates due to human error that accompany traditional construction methods \cite{Khoshnevis2003}. It would be useful to send multi-robot construction teams to extraterrestrial planets in order to build habitable structures in anticipation of humans arriving. These robot teams would also be useful in underwater construction which is difficult and often extremely dangerous \cite{RefWorks:30}.
+
+\hl{now just write as if you dont need references and then go back and check which lines you can add references}
+
+
+
+'There is no a priori reason why machine learning must borrow from nature. A field could exist, complete with well-defined algorithms, data structures, and theories of learning, without once referring to organisms, cognitive or genetic structures, and psychological or evolutionary theories. Yet at the end of the day, with the position papers written, the computers plugged in, and the programs debugged, a learning edifice devoid of natural metaphor would lack something. It would ignore the fact that all these creations have become possible only after three billion years of evolution on this planet. It would miss the point that the very ideas of adaptation and learning are concepts invented by the most recent representatives of the species Homo sapens from the careful observation of themselves and life around them. It would miss the point that natural examples of learning and adaptation are treasure troves of robust procedures and structures. Fortunately, the field of machine learning does rely on natures bounty for both inspiration and mechanism. Many machine learning systems now borrow heavily from current thinking in cognitive science, and rekindled interest in neural networks and connectionism is evidence of serious mechanistic and philosophical currents running through the field. Another are where natural example has been trapped is in work on genetic algorithms and genetics-based machine learning. Rooted in the early cybernetics movement, progress has been made in both theory and application to the point where genetics-based systems are finding their way into everyday commercial use' \cite{goldberg1988genetic}.
+
+\hl{outline the 2 most powerful problem solving tools found in nature: brain and evolution}
+Assuming that the human brain is the greatest problem solving tool in nature, then by extension we can argue that the process of evolution is the greatest problem solver since it is the process that discovered the brain.
+Which is the best problem solver, the brain which discovered the wheel and all of the technological advances we can see today, or the process that produced the brain.
+
+'Of the two natural archetypes of learning available to us - the brain and evolution - why have genetic algorithm researchers knowingly adopted the "wrong" metaphor?' \cite{goldberg1988genetic} \hl{find some more information on why this is the 'wrong' metaphor? also, find some more information explaining that these are the 2 archetypes for learning}
+'One reason is expedience. The processes of natural evolution and natural genetics have been illuminated by a century of enormous progress in biology and molecular biology. in contrast, the brain, though yielding some of its secrets, remains largely and opaque gray box; we can only guess at many of the fundamental mechanisms contained therein.' \cite{goldberg1988genetic}.
+
+
+
+
+\hl{additional complexity inherent in producing organised collective behaviour}
+
+An open problem in \textit{collective} \cite{KubeZhang1994B} and \textit{swarm robotics} \cite{Beni2004}
+is ascertaining appropriate sensory-motor configurations (morphologies) for robots comprising teams that must work collectively given automatically generated controllers \cite{FloreanoDurrMattiussi2008}.
+
+The complex nature of the intricate dynamics inherent in producing self-organised behaviour makes it practically impossible to design these multi-robot team controllers by hand \cite{RefWorks:11}. \hl{can maybe reword this somehow? seems a bit lengthy and out of place}
+
+"Evolutionary Computing is a branch of computer science research  that draws its inspiration from the Darwinian process of evolution through natural selection \cite{EibenSmith2003}."
+
+\hl{mention here the different biological inspirations that were considered. The brain and the process that found the brain. Present some information on how the both of them work}
+
+In this particular case, researchers have looked into using the most powerful problem solving tool that has ever existed, evolution through the process of natural selection. Starting from single-celled organisms, the process of evolution has produced the incredibly diverse range of organisms that we can see on Earth today.
+
+\hl{information on finding the best way to find the best body brain coupling}
+In \textit{evolutionary robotics} \cite{DoncieuxBredecheMouretEiben2015},
+a popular method is to co-evolve robot behaviors and morphologies
+\cite{LipsonPollack2000}, \cite{Lund2003}, \cite{BuasonBergfeldtZiemke2005}, \cite{AuerbachBongard2014}.
+
+
+\hl{motivations for different encodings}
+
+Within the purview of such \textit{body-brain} co-evolution, indirect encoding (developmental) methods
+have been effectively demonstrated for various single-robot tasks \cite{MautnerBelew2000},
+\cite{HornbyPollack2002}, \cite{CheneyLipson2013}.
+
+In cases such as the above, the behaviour and the physical structure of the agent are both evolved at the same time. During the evolution processes (parent selection, mutations/cross-overs, reproduction) affect both of these criteria. In this case, both the behaviour (structure of the ANN, where behaviour is the action produced based on a certain input) and the physical structure/morphology (the actual configuration of the agent's sensory input) are both encoded in the genotype and these properties are affected by the evolutionary operators.
+\hl{above explanation is in my own words, but should maybe find some references in order to back this up}
+
+
+
+
+
+'Of course, simple expedience is not the best reason for adopting a particular course of action, and at first glance, it is not at all obvious why learning in natural or artificial minds should be anything like the adaptation that has occurred in evolution. Yet there is an appealing symmetry in the notion that the mechanisms of natural learning may resemble the processes that created the species possessing those learning processes. Furthermore, the idea that the mind is subject to the same competitive-cooperative pressures as evolutionary systems has achieved some currency outside of GA circles ' \cite{goldberg1988genetic}.
+
+'Despite these suggestions, genetic algorithms and genetics-based machine learning have often been attacked on the grounds that natural evolution is simply too slow to accomplish anything useful in an artificial learning system; three billion years is longer than most people care to wait for a solution to a problem. However, this slowness argument ignores the obvious differences in timescale between natural systems and artificial systems.' \cite{goldberg1988genetic}.
+
+ARGUMENT FOR COMPLEXITY ACHIEVED USING EVOLUTIONARY PROCESSES
+' A more fundamental fault is that this argument ignores the robust complexity that evolution has achieved in its three billion years of operation. The "genetic programs" of even the simplest living organisms are more complex than the most intricate human designs' \cite{goldberg1988genetic}
+
+\hl{should maybe find the original references mentioned below}
+'Waddington (1967) presents more sophisticated probabilistic arguments that actual evolutionary processes have achieved complexity in existing species that is incommensurate with an evolutionary process using only selection and mutation. Although such argmuments were originally meant to challenge evolutionary theory, genetic agorithmists see no such challenge. Insted, the high speed-to-complexity level observed in nature lends support to the notion that reproduction, recombination, and the processing of building blocks result in the rapd development of appropriate complexity. Moreover, this speed is not purchased at the cost of generality. The mechanisms of genetics and genetic algorithms permit relative efficiency across a broad range of problems' \cite{goldberg1988genetic}.
+Although the process of evolution may take hundreds and/or thousands of generations to find an appropriate solution, it is able to produce a level complexification that exceeds that of the solutions found by neurocomputation (the brain process).
+
+
+
+
+
+
+
+
+given the added complexity inherent in this body-brain coonfiguration, we chose to focus this research solely on evolving the brain and instead using a preconfigured set of input sensors and then comparing the resultant task performance. In this study, we implement increasing complexity in the task that needs to be solved in order to test the robustness of the brains that have been evolved with respect to unexpected changes in their input. We are not investigating the algorithms ability to find the best input configuration body-brain coupling, instead we are trying to determine how robust the evolved controller/brain is with respect to unexpected and undesirable changes in its sensory input configuration. We would like to see how the solution of the problem has been 'embedded' in the network/controller itself. If the solution to the task contained in the network is dependent on the type of input that it can receive.
+
+By transferring a controller across several input configuration (morphologies), we can determine if the controller even needs to know what type of input it is receiving. When being transferred to another input, the controller does not know whether it is receiving input from the same type of sensor as they were evolved with. For example, the controller was evolved with an Infra-red sensor at input node 1, but during one of the evaluation trials where it is transferred to another input config, the input at node 1 might be coming from a Camera or an Ultrasonic sensor.
+
+This might be going into too much detail considering how basic the simulator was and how little detail we could really control.
+
+\subsection{Collective Construction Task}
+
+
+--the below can be part of research contributions?? explaining some related research--
+However, with few exceptions \cite{AsaiArita2003}, \cite{WatsonNitschke2015SSCI}, \cite{HewlandNitschke2015}
+there has been relatively little work that evaluates developmental methods to evolve behavior and morphology
+for collective robotics tasks, excluding related research in self-assembling and
+reconfigurable collective robotics \cite{OGradyDorigo2012}, \cite{RubensteinCornejoNagpal2014}.
+
+Specifically, this study focuses on developmental methods to evolve controllers that exhibit consistently
+robust behaviors such that robot teams effectively adapt to the loss of sensors or new sensory configurations
+without significant degradation of collective task performance, that is, \textit{morphologically robust behavior}.
+
+
+
+
+
+HyperNEAT was selected as it is a developmental encoding NE method with demonstrated benefits
+that include exploiting task geometry to evolve modular and regular ANN controllers with
+increased problem-solving capacity \cite{VerbancsicsStanley2011}, \cite{DAmbrosio2013}.
+
+
+
+
+
+The \textit{Collective construction} task \cite{WerfelPetersenNagpal2014} was selected since it benefits
+from fully automated robot teams that must exhibit robust behavior to handle changing task constraints,
+potential robot damage and sensor noise.
+For example, collective construction of functional structures and habitats in remote or hazardous
+environments \cite{WerfelNagpal2008}.
+
+As in related work \cite{WerfelPetersenNagpal2014}, the task was for robots to search the environment
+for \textit{building-block} resources, then move them such that are connected to other blocks.
+The task is solved if the team connects all blocks forming a structure during its \textit{lifetime}, and this is equated
+with optimal task performance.
+However, the task is considered partially solved if only a sub-set of the blocks are connected by the team,
+though in such instances, team task performance is proportional to the number of blocks connected.
+In this study, task complexity was equated with the number of robots needed
+to collectively push blocks together (cooperation) to be connected as a structure and whether the blocks
+must be connected in a specific sequence, that is, according to a \textit{construction schema},
+table \ref{tab:taskComplexity}.
+%Task complexity was regulated via the environment containing three block types, where
+%one, two and three robots were required to move each of the block types, respectively.
+
+Hence, we report a preliminary investigation into developmental methods (HyperNEAT is tested in this case
+study) for evolving ANN controllers that are robust to morphological change in robotic teams or swarms that
+must operate in dynamic, noisy and hazardous environments.
+
+
 
 [There is probably something that can also be said about how this applies to finding solution controllers that are highly effective in extremely specific tasks, but barely effective at all when it comes to attempting any other task]
 
@@ -26,9 +163,9 @@ Although Reinforcement Learning (RL) techniques can theoretically solve a number
 
 [can probably elaborate a bit more on the different types of tasks that can be accomplished here]
 
-Neuroevolution (NE) is a method of artificially evolving Artificial Neural Networks (ANNs) by implementing Evolutionary Algorithms (EAs) to perform tasks such as training the connection weights and designing the network topology\cite{RefWorks:31,RefWorks:1}. 
+Neuroevolution (NE) is a method of artificially evolving Artificial Neural Networks (ANNs) by implementing Evolutionary Algorithms (EAs) to perform tasks such as training the connection weights and designing the network topology\cite{RefWorks:31,RefWorks:1}.
 
-By evolving a population of ANNs, NE searches through the space of possible controllers by evaluating each candidate solution using a fitness function and selecting the most successful individuals for reproduction, a process analogous to natural selection \cite{RefWorks:32,gomez2001neuro}. 
+By evolving a population of ANNs, NE searches through the space of possible controllers by evaluating each candidate solution using a fitness function and selecting the most successful individuals for reproduction, a process analogous to natural selection \cite{RefWorks:32,gomez2001neuro}.
 
 This predetermined fitness function must be designed so that its implementation will guide the NE's search through the problem space, such that it indicates the desired behaviour from the ANN.
 
@@ -45,314 +182,245 @@ The collective gathering task requires a team of agents to coordinate sub-tasks 
 
 It has been shown that NE can successfully be applied to complex control tasks that require collective behaviour. These control tasks have no obvious mapping between the input from sensory configurations and motor outputs \cite{RefWorks:15}
 
-The ability to automate construction tasks through evolving ANN controllers for multi-robot teams using EAs presents several considerable benefits. Automation such as this could be used to assist in projects such as producing low-cost housing and reduce high accident rates due to human error that accompany traditional construction methods \cite{Khoshnevis2003}. It would be useful to send multi-robot construction teams to extraterrestrial planets in order to build habitable structures in anticipation of humans arriving. These robot teams would also be useful in underwater construction which is difficult and often extremely dangerous \cite{RefWorks:30}.
+
 
 This thesis is therefore focussed on investigating the effectiveness of various NE methods in solving collective behaviour tasks, with specific emphasis on the indirect encoding method called HyperNEAT \cite{stanley2009hypercube}, as well as the aforementioned search functions.
 
 
 Another reason for using HyperNEAT is its success in evolving team (collective) behaviours for various multi-agent tasks including RoboCup soccer and pursuit evasion \cite{hausknecht2012hyperneat}.
-%----------------------------------------------------------------------------------------
+
+
+\subsection{Areas of Research in Computer Science}
+
+\subsubsection{Pattern Classification}
+'The task of pattern classification is to assign an input pattern (like speech waveform or handwritten symbol) represented by a feature vector to on of many prespecified classes. Well-known applications include character recognition, speech recognition, EEG waveform classification, blood cell classification, and printed circuit board inspection' \cite{jain1996artificial}.
+
+\subsubsection{Clustering/Categorization}
+'In clustering, also known as unsupervised pattern classification, there are no training data with known class labels. A clustering algorithm explores the similarity between the patterns and places similar patterns in a cluster. Well-known clustering applications include data mining, data compression, and exploratory data anyalysis ' \cite{jain1996artificial}.
+
+\subsubsection{Function Approximation}
+'Suppose a set of $n$ labeled training patterns (input-output pairs), {($x_1$, $y_1$), ($x_2$, $y_2$),..., ($x_n$, $y_n$)} have been generated from an unknown function $f(x)$ (subject to noise). The task of function approximation is to find an estimate, say $f^1$, of the unknown function $f$. Various engineering and scientific modeling problems require function approximation' \cite{jain1996artificial}.
+
+\subsubsection(Prediction/Forecasting)
+'Given a set of $n$ samples {$y(t_1)$, $y(t_2)$,..., $y(t_n)$} in a time sequence, $t_1$, $t_2$,..., $t_n$' the task is to predict the sample $y(t_(n+1))$''
+
 
 \subsection{Possible Applications}
 Just a list of all the possible future applications for the research that is being performed in this investigation.
 
+In this section, we go on to explain some possible applications of multi-robot teams that are able to solve the collective construction task, specificall:
+
+\subsubsection{Underwater Construction}
+-> Underwater construction: This is one of the most dangerous occupations in the entire world. Be sure to give some research related to studying the risks and the need for being able to perform underwater construction. Find some examples like the underwater roads and internet cables
+There could be a broader section title like "Construction in Dangerous Areas". This basically applies to
+
+\subsubsection{Space Exploration/Terraforming}
+
 -> Terraforming remote planets: Can mention something to do with all of the Mars missions being performed at the moment and how that could be the next frontier considering we are fucking up the Earth so much. This could allow us to jumpstart the terraforming process without needing to figure out how to get humans+resources+equipment on the planet. We can send a team of robots ahead while we figure things out here. We can send them up to a planet several years ahead of us. These robots will arrive and begin to explore the planet, figuring out which resources are available and how they can be used to build any sort of structural habitat that would be safe for humans to arrive at in the future.
 
--> Underwater construction: This is one of the most dangerous occupations in the entire world. Be sure to give some research and 
+\subsubsection{Production of Low Cost Housing}
+
+especially for remote rural areas where it is difficult for traditional construction equipment to gain access or to get construction materials transported there.
+
+-> Production of low cost housing in remote and rural areas: This is an important aspect. Try find some examples of people needing to build some sort of housing in dangerous areas where you can't get normal construction equipment in to the area
+
+-> Reduce human error: Prevent all damage that can be caused by human error. Loss of human life would also be minimised
+
+-> Can maybe expand and take a look at using these types of ANN controllers for robots that can be used in mines for long periods of time. Reduce the loss of human life again
+
+\subsubsection{Example Search and Rescue Teams}
+This section could perhaps be moved to the Introduction part of the paper? It is an existing application but it is more an example reference for cooperative collective robotics like the robocup soccer.
+
+These subsections are explaining other possible applications of the collective construction task specifically.
+
+\section{Problem Statement}
+
+Considering the dangers inherent in the environments in which these robots are meant to be implemented, these robot teams need to be able to handle/accommodate for any damage that it is likely to sustain.
 
 
-\section{Learning \LaTeX{}}
+The whole point of using these robots is because it is either too dangerous for humans or the location is too remote for conventional means of access. As such, these robots will have to be able to complete their assigned task and be able to either accommodate sustaining damage or be able to work around it since it will not be possible/feasible for humans to be able to perform any repairs.
 
-\LaTeX{} is not a \textsc{wysiwyg} (What You See is What You Get) program, unlike word processors such as Microsoft Word or Apple's Pages. Instead, a document written for \LaTeX{} is actually a simple, plain text file that contains \emph{no formatting}. You tell \LaTeX{} how you want the formatting in the finished document by writing in simple commands amongst the text, for example, if I want to use \emph{italic text for emphasis}, I write the \verb|\emph{text}| command and put the text I want in italics in between the curly braces. This means that \LaTeX{} is a \enquote{mark-up} language, very much like HTML.
+Additionally, it would be most effective to have these robots continue working despite any damage they have sustained as it would not be too expensive to continue deploying new replacement robots.
 
-\subsection{A (not so short) Introduction to \LaTeX{}}
+--can maybe rephrase the bottom to make it more relevant to the context of the 'Research Aims' section
+In this study, the specific focus is on the evolution of morphologically robust behavior
+for robotic teams that must accomplish collective behavior tasks.
 
-If you are new to \LaTeX{}, there is a very good eBook -- freely available online as a PDF file -- called, \enquote{The Not So Short Introduction to \LaTeX{}}. The book's title is typically shortened to just \emph{lshort}. You can download the latest version (as it is occasionally updated) from here:
-\url{http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf}
+Given the added computational complexity of co-evolving body-brain couplings (maybe add a reference to the original mention of this back in the Introduction)
+for behaviorally and morphologically heterogenous robots,
+this study focuses on evolving collective behaviors for \textit{homogenous} teams with a range of fixed morphologies.
 
-It is also available in several other languages. Find yours from the list on this page: \url{http://www.ctan.org/tex-archive/info/lshort/}
 
-It is recommended to take a little time out to learn how to use \LaTeX{} by creating several, small `test' documents, or having a close look at several templates on:\\ 
-\url{http://www.LaTeXTemplates.com}\\ 
-Making the effort now means you're not stuck learning the system when what you \emph{really} need to be doing is writing your thesis.
 
-\subsection{A Short Math Guide for \LaTeX{}}
+--Spitballing ideas
+'There are also other ways of compentaring for the loss of a sensor, particularly because the robot team is homogeneous. It could be possible that some of the other agents are able to accommodate for an agent losing some of its input sensors and its abilities becoming restricted. Lets say that one of the agents loses its construction sensor, it should still be able to assist other robots in carrying a resource around (it can follow another robot that has a construction sensor). Although this may require that the individual robots are able to communicate with each other and indicate when they need assistance and in what capacity.'
 
-If you are writing a technical or mathematical thesis, then you may want to read the document by the AMS (American Mathematical Society) called, \enquote{A Short Math Guide for \LaTeX{}}. It can be found online here:
-\url{http://www.ams.org/tex/amslatex.html}
-under the \enquote{Additional Documentation} section towards the bottom of the page.
+Another alternative could be to have a separate robot team that is dedicated solely to performing repairs on the robots that are performing the collective construction task. But then you would also need to have a robot that is capable of performing repairs on the 'repair-robot' since it can also sustain damage, and this would go on recursively forever, needing a construction robot for a repair robot for a construction robot for a repair robot etc.
 
-\subsection{Common \LaTeX{} Math Symbols}
-There are a multitude of mathematical symbols available for \LaTeX{} and it would take a great effort to learn the commands for them all. The most common ones you are likely to use are shown on this page:
-\url{http://www.sunilpatel.co.uk/latex-type/latex-math-symbols/}
+Since the controllers can't be trained from scratch to use the new sensor morphology and the structure of the ANN can not be altered on-the-fly, the existing controller must be robust in such a way as to be able to use its remaining sensors in order to complete the task at hand.
 
-You can use this page as a reference or crib sheet, the symbols are rendered as large, high quality images so you can quickly find the \LaTeX{} command for the symbol you need.
+\hl{some possible future work: Can suggest looking into researching the possiblity of having a heterogeneous robot team in which some of the members are designated 'builders' and some are designated 'repairers'. The repairing robots can be very simple and basic and inexpensive and practically disposable. Their only purpose is to repair components on the 'builders' and would not need to be too complex at all (especially compared to the builder robots). Another approach would be to have a garage of sorts, which would be an extremely robust box with robot arms inside. The damaged builders can then enter the repair place which will then perform the necessary replacements etc. This garage will have to be very robust so as to be able to withstand the harsh conditions}
 
-\subsection{\LaTeX{} on a Mac}
- 
-The \LaTeX{} distribution is available for many systems including Windows, Linux and Mac OS X. The package for OS X is called MacTeX and it contains all the applications you need -- bundled together and pre-customized -- for a fully working \LaTeX{} environment and work flow.
- 
-MacTeX includes a custom dedicated \LaTeX{} editor called TeXShop for writing your `\file{.tex}' files and BibDesk: a program to manage your references and create your bibliography section just as easily as managing songs and creating playlists in iTunes.
+\section{Research Question}
 
-%----------------------------------------------------------------------------------------
+The research contribution is to demonstrate the efficacy of developmental neuro-evolution (HyperNEAT) for
+addressing the evolution of morphologically robust controllers in the context of collective robotics.
+To address this objective, this study tested and evaluated five different robot team sensory configurations
+(morphologies) in company with three collective construction tasks of increasing complexity.  The fittest
+\textit{Artificial Neural Network} (ANN) controller evolved for a given morphology was then transferred and
+evaluated in each of the other team morphologies. Such transferred controllers were also evaluated in
+each of the three tasks.  In all cases, evolved controller efficacy was evaluated in terms of
+collective construction task performance yielded by a robot team.
 
-\section{Getting Started with this Template}
+"Which implementation of the HyperNEAT algorithm is able to produce the most robust controllers in such a way that they are able to consistently solve a collective behaviour task of increasing complexity?"
 
-If you are familiar with \LaTeX{}, then you should explore the directory structure of the template and then proceed to place your own information into the \emph{THESIS INFORMATION} block of the \file{main.tex} file. You can then modify the rest of this file to your unique specifications based on your degree/university. Section \ref{FillingFile} on page \pageref{FillingFile} will help you do this. Make sure you also read section \ref{ThesisConventions} about thesis conventions to get the most out of this template.
+\subsection{Research Aims}
 
-If you are new to \LaTeX{} it is recommended that you carry on reading through the rest of the information in this document.
-
-Before you begin using this template you should ensure that its style complies with the thesis style guidelines imposed by your institution. In most cases this template style and layout will be suitable. If it is not, it may only require a small change to bring the template in line with your institution's recommendations. These modifications will need to be done on the \file{MastersDoctoralThesis.cls} file.
-
-\subsection{About this Template}
-
-This \LaTeX{} Thesis Template is originally based and created around a \LaTeX{} style file created by Steve R.\ Gunn from the University of Southampton (UK), department of Electronics and Computer Science. You can find his original thesis style file at his site, here:
-\url{http://www.ecs.soton.ac.uk/~srg/softwaretools/document/templates/}
-
-Steve's \file{ecsthesis.cls} was then taken by Sunil Patel who modified it by creating a skeleton framework and folder structure to place the thesis files in. The resulting template can be found on Sunil's site here:
-\url{http://www.sunilpatel.co.uk/thesis-template}
-
-Sunil's template was made available through \url{http://www.LaTeXTemplates.com} where it was modified many times based on user requests and questions. Version 2.0 and onwards of this template represents a major modification to Sunil's template and is, in fact, hardly recognisable. The work to make version 2.0 possible was carried out by \href{mailto:vel@latextemplates.com}{Vel} and Johannes Böttcher.
-
-%----------------------------------------------------------------------------------------
-
-\section{What this Template Includes}
-
-\subsection{Folders}
-
-This template comes as a single zip file that expands out to several files and folders. The folder names are mostly self-explanatory:
-
-\keyword{Appendices} -- this is the folder where you put the appendices. Each appendix should go into its own separate \file{.tex} file. An example and template are included in the directory.
-
-\keyword{Chapters} -- this is the folder where you put the thesis chapters. A thesis usually has about six chapters, though there is no hard rule on this. Each chapter should go in its own separate \file{.tex} file and they can be split as:
+'The aims of this research project can be summarised as follows:'
 \begin{itemize}
-\item Chapter 1: Introduction to the thesis topic
-\item Chapter 2: Background information and theory
-\item Chapter 3: (Laboratory) experimental setup
-\item Chapter 4: Details of experiment 1
-\item Chapter 5: Details of experiment 2
-\item Chapter 6: Discussion of the experimental results
-\item Chapter 7: Conclusion and future directions
+	\item 'To investigate the behavioural robustness of multi-robot team controllers evolved using the HyperNEAT algorithm with respect sensory configurations when implemented in solvein increasingly complex tasks requiring collective behaviour'
+	\item 'building on the first, the second aim is to investigate the three different variations of the HyperNEAT algorithm by implementing various fitness functions'
 \end{itemize}
-This chapter layout is specialised for the experimental sciences, your discipline may be different.
 
-\keyword{Figures} -- this folder contains all figures for the thesis. These are the final images that will go into the thesis document.
+"The complexity of the collective construction task is controlled by using a construction schema, which is implemented as a set of underlying connection rules. The level of cooperation is controlled by using the different types of resource blocks in the simulation.
+The various levels are outlined as follows:"
+\begin{enumerate}
+	\item Level 1: no complexity or cooperation.
+	\item Level 2: some complexity and no cooperation.
+	\item Level 3: some complexity and some cooperation.
+\end{enumerate}
 
-\subsection{Files}
 
-Included are also several files, most of them are plain text and you can see their contents in a text editor. After initial compilation, you will see that more auxiliary files are created by \LaTeX{} or BibTeX and which you don't need to delete or worry about:
 
-\keyword{example.bib} -- this is an important file that contains all the bibliographic information and references that you will be citing in the thesis for use with BibTeX. You can write it manually, but there are reference manager programs available that will create and manage it for you. Bibliographies in \LaTeX{} are a large subject and you may need to read about BibTeX before starting with this. Many modern reference managers will allow you to export your references in BibTeX format which greatly eases the amount of work you have to do.
 
-\keyword{MastersDoctoralThesis.cls} -- this is an important file. It is the class file that tells \LaTeX{} how to format the thesis. 
+We apply the HyperNEAT \cite{StanleyDAmbrosioGauci2009} neuro-evolution method to evolve
+behavior for a range of morphologically homogenous teams that must solve various collective construction tasks.
 
-\keyword{main.pdf} -- this is your beautifully typeset thesis (in the PDF file format) created by \LaTeX{}. It is supplied in the PDF with the template and after you compile the template you should get an identical version.
+\subsection{Research Contributions}
 
-\keyword{main.tex} -- this is an important file. This is the file that you tell \LaTeX{} to compile to produce your thesis as a PDF file. It contains the framework and constructs that tell \LaTeX{} how to layout the thesis. It is heavily commented so you can read exactly what each line of code does and why it is there. After you put your own information into the \emph{THESIS INFORMATION} block -- you have now started your thesis!
+The research contribution is to demonstrate the effectiveness of developmental neuro-evolution (HyperNEAT) for addressing the evolution morphologically robust controllers in the context of collective robotics.
 
-Files that are \emph{not} included, but are created by \LaTeX{} as auxiliary files include:
+In order to address this objective, this study tested and evaluated five different robot team sensory configurations (referred to as morphologies) in company (in conjunction?) with three collective construction tasks presenting increasing levels of task complexity. The fittest \textit{Artificial Neural Network} (ANN) controller evolved for a given morphology was then transferred to each of the other morphologies and its task performance re-evaluated and compared repectively. Such transferred controllers were also evaluated in each of the three collective construction tasks (each one of increasing complexity). Each controller is only implemented in the task level for which it was evolved \hl{make sure that this is true. Was each controller evolved across all of the complexities or was each controller evolved on a per task basis?}
+In all cases, evolved controller efficacy was evaluated in terms of the collective construction task performance yielded by a robot team
 
-\keyword{main.aux} -- this is an auxiliary file generated by \LaTeX{}, if it is deleted \LaTeX{} simply regenerates it when you run the main \file{.tex} file.
 
-\keyword{main.bbl} -- this is an auxiliary file generated by BibTeX, if it is deleted, BibTeX simply regenerates it when you run the \file{main.aux} file. Whereas the \file{.bib} file contains all the references you have, this \file{.bbl} file contains the references you have actually cited in the thesis and is used to build the bibliography section of the thesis.
+\section{Existing Applications And Problem Spaces}
 
-\keyword{main.blg} -- this is an auxiliary file generated by BibTeX, if it is deleted BibTeX simply regenerates it when you run the main \file{.aux} file.
+In this section, we go on to outline and examine some of the existing applications that implement a similar solution approach along with the problem spaces that are being addressed by the different investigations.
 
-\keyword{main.lof} -- this is an auxiliary file generated by \LaTeX{}, if it is deleted \LaTeX{} simply regenerates it when you run the main \file{.tex} file. It tells \LaTeX{} how to build the \emph{List of Figures} section.
+[Be sure to provide a subsection for each approach that would demonstrate an important aspect of EC]
+RoboCup Soccer: cooperation and teamwork
+Collective Gathering: So similar to the collective construction task, indicating the efficacy
 
-\keyword{main.log} -- this is an auxiliary file generated by \LaTeX{}, if it is deleted \LaTeX{} simply regenerates it when you run the main \file{.tex} file. It contains messages from \LaTeX{}, if you receive errors and warnings from \LaTeX{}, they will be in this \file{.log} file.
+Make sure to try and find existing work where they use NE to co-evolve the different sensory configurations
 
-\keyword{main.lot} -- this is an auxiliary file generated by \LaTeX{}, if it is deleted \LaTeX{} simply regenerates it when you run the main \file{.tex} file. It tells \LaTeX{} how to build the \emph{List of Tables} section.
 
-\keyword{main.out} -- this is an auxiliary file generated by \LaTeX{}, if it is deleted \LaTeX{} simply regenerates it when you run the main \file{.tex} file.
+In this section, we go on to outline the various implementations of Evolutionary Computing approaches in real-world examples. Some of these examples include the following
 
-So from this long list, only the files with the \file{.bib}, \file{.cls} and \file{.tex} extensions are the most important ones. The other auxiliary files can be ignored or deleted as \LaTeX{} and BibTeX will regenerate them.
+Be sure to outline the different algorithms and learning rules that were implemented in each of the approaches
 
-%----------------------------------------------------------------------------------------
 
-\section{Filling in Your Information in the \file{main.tex} File}\label{FillingFile}
+Similar research includes investigating the ability of NE methods to find a minimal sensory configuration such that a team of homogenous robots are still able to complete a task requiring collective behaviour \cite{WatsonNitschke2015CEC}, as well as an investigation into evolving specialised sensor resolutions in a multi-agent task \cite{NitschkeSchutEiben2010}.
 
-You will need to personalise the thesis template and make it your own by filling in your own information. This is done by editing the \file{main.tex} file in a text editor or your favourite LaTeX environment.
 
-Open the file and scroll down to the third large block titled \emph{THESIS INFORMATION} where you can see the entries for \emph{University Name}, \emph{Department Name}, etc \ldots
+What makes this project different from existing research, is that it is specifically investigating the ability of HyperNEAT evolved controllers to deal with the loss of input sensors and still be able to solve cooperative tasks of increasing levels of complexity.
+The behavioural robustness of a controller will be tested by transferring an evolved controller from its original sensory configuration and implement it with each of the other sensory configurations in the simulation. Once this has been done, the controller is deployed into the simulated environment and its task performance is measured relative to its performance when using the morphology that it had been evolved with.
 
-Fill out the information about yourself, your group and institution. You can also insert web links, if you do, make sure you use the full URL, including the \code{http://} for this. If you don't want these to be linked, simply remove the \verb|\href{url}{name}| and only leave the name.
+\hl{for each of the sections below outlining existing research, for each example:
+-> have a use case description, illustrating the scenarios that they are evaluating
+-> What contributions these researchers are making}
 
-When you have done this, save the file and recompile \code{main.tex}. All the information you filled in should now be in the PDF, complete with web links. You can now begin your thesis proper!
 
-%----------------------------------------------------------------------------------------
+\subsection{Emergency Search-and-Rescue}
 
-\section{The \code{main.tex} File Explained}
+\cite{KitanoTadokoro1999} for the entire section below
+RoboCup Search and Rescue as a secondary domain for RoboCup activities
+'some good examples of how these learned behaviours can be transferrable to other problem domains that require similar approaches'
+Disaster rescue is one of the most serious social issues which involves very large numbers of heterogenous agents in the hostile environment
 
-The \file{main.tex} file contains the structure of the thesis. There are plenty of written comments that explain what pages, sections and formatting the \LaTeX{} code is creating. Each major document element is divided into commented blocks with titles in all capitals to make it obvious what the following bit of code is doing. Initially there seems to be a lot of \LaTeX{} code, but this is all formatting, and it has all been taken care of so you don't have to do it.
+Problem domains/use case scenario
+At 5:46AM, 17 January 1995, a large earthquake of a moment magnitude 6.9 hit Kobe city, Japan, killing over 6000 people and crushed almost 1/5th of all the housing structures \cite{KitanoTadokoro1999}.
+Immediately after the earthquake, over 300 fires were reported and they started to quickly spread over wider areas. Fire fighting attempts were unsuccessful due to disruptions in the water supply. The earthquake had caused significant structural damage to local reservoirs, resulting in the water having leaked out within a few hours.
+To make situations even worse, debris from collapsed wooden houses and surrounding trees cluttered roads and other various, turning these would-be firebreaks into veritable combustion pathways. This debris caught fire while it was on the roads and the open space resulted in winds being channelled right over the fire, causing it to spread even faster along these open spaces and have easy access to the rest of the connected infrastructure.
+Additionally, this resulted in paramedics and emergency response teams not being able to reach disaster sites along conventional routes. Which also means that even if they were able to get human teams in there, it would be near impossible to transport the heavy equipment that would be needed (firetrucks, jacks and lifts, whatever tools they need to remove debris).
+Aerial surveillance was able to provide an overall view, but with very little details as to the situation on the ground level.
+The problem with using helicopters an planes is the noise that they create. This makes it very hard for emergency response teams to hear the faint sounds of people trapped underground and calling for help. These faint sounds that the victims make is the only source of information for these teams (at the time anyways, there may be some more advanced technology by now)
 
-Begin by checking that your information on the title page is correct. For the thesis declaration, your institution may insist on something different than the text given. If this is the case, just replace what you see with what is required in the \emph{DECLARATION PAGE} block.
 
-Then comes a page which contains a funny quote. You can put your own, or quote your favourite scientist, author, person, and so on. Make sure to put the name of the person who you took the quote from.
+\subsection{RoboCup Soccer}
+-cooperation between individuals
 
-Following this is the abstract page which summarises your work in a condensed way and can almost be used as a standalone document to describe what you have done. The text you write will cause the heading to move up so don't worry about running out of space.
 
-Next come the acknowledgements. On this page, write about all the people who you wish to thank (not forgetting parents, partners and your advisor/supervisor).
 
-The contents pages, list of figures and tables are all taken care of for you and do not need to be manually created or edited. The next set of pages are more likely to be optional and can be deleted since they are for a more technical thesis: insert a list of abbreviations you have used in the thesis, then a list of the physical constants and numbers you refer to and finally, a list of mathematical symbols used in any formulae. Making the effort to fill these tables means the reader has a one-stop place to refer to instead of searching the internet and references to try and find out what you meant by certain abbreviations or symbols.
 
-The list of symbols is split into the Roman and Greek alphabets. Whereas the abbreviations and symbols ought to be listed in alphabetical order (and this is \emph{not} done automatically for you) the list of physical constants should be grouped into similar themes.
 
-The next page contains a one line dedication. Who will you dedicate your thesis to?
+\subsection{Collective Gathering}
 
-Finally, there is the block where the chapters are included. Uncomment the lines (delete the \code{\%} character) as you write the chapters. Each chapter should be written in its own file and put into the \emph{Chapters} folder and named \file{Chapter1}, \file{Chapter2}, etc\ldots Similarly for the appendices, uncomment the lines as you need them. Each appendix should go into its own file and placed in the \emph{Appendices} folder.
+We chose to elaborate on this approach specifically because it is so similar to the construction task in question that we are investigating in this paper.
 
-After the preamble, chapters and appendices finally comes the bibliography. The bibliography style (called \option{authoryear}) is used for the bibliography and is a fully featured style that will even include links to where the referenced paper can be found online. Do not underestimate how grateful your reader will be to find that a reference to a paper is just a click away. Of course, this relies on you putting the URL information into the BibTeX file in the first place.
+\subsection{Balancing Pendulum}
 
-%----------------------------------------------------------------------------------------
+This is the classic problem space for controllers produced using Machine Learning approaches. (Not sure if this is necessarily Evolutionary Algorithms)
 
-\section{Thesis Features and Conventions}\label{ThesisConventions}
+This is a good example to have because it is easily applied to increasing degrees of complexity
+The balancing pendulum problem has been implemented for both a single, double, and even a triple jointed pendulum
+[Can maybe find some pictures or GIFs of the controllers in action]
 
-To get the best out of this template, there are a few conventions that you may want to follow.
+\subsection{Space Antenna}
 
-One of the most important (and most difficult) things to keep track of in such a long document as a thesis is consistency. Using certain conventions and ways of doing things (such as using a Todo list) makes the job easier. Of course, all of these are optional and you can adopt your own method.
+This is some good research because it shows that what we think to be optimal design might not necessarily be that at all. It is a good example of how evolutionary computing approaches are able to find solutions that we as humans would never even have considered as being options.
 
-\subsection{Printing Format}
+Be sure to find the comparison examples: pictures of the antenna that the controller was able to create
 
-This thesis template is designed for double sided printing (i.e. content on the front and back of pages) as most theses are printed and bound this way. Switching to one sided printing is as simple as uncommenting the \option{oneside} option of the \code{documentclass} command at the top of the \file{main.tex} file. You may then wish to adjust the margins to suit specifications from your institution.
 
-The headers for the pages contain the page number on the outer side (so it is easy to flick through to the page you want) and the chapter name on the inner side.
+Not too sure where to place this section/
+Mention the previous research that has been conducted in this field
+-> RoboCup Soccer examples: find some research papers
+-> double and triple pendulum example: where the robot can balance the pole upright
+-> Collective gathering task
+-> Find that paper where they created the space antenna in the super weird shape
 
-The text is set to 11 point by default with single line spacing, again, you can tune the text size and spacing should you want or need to using the options at the very start of \file{main.tex}. The spacing can be changed similarly by replacing the \option{singlespacing} with \option{onehalfspacing} or \option{doublespacing}.
 
-\subsection{Using US Letter Paper}
 
-The paper size used in the template is A4, which is the standard size in Europe. If you are using this thesis template elsewhere and particularly in the United States, then you may have to change the A4 paper size to the US Letter size. This can be done in the margins settings section in \file{main.tex}.
 
-Due to the differences in the paper size, the resulting margins may be different to what you like or require (as it is common for institutions to dictate certain margin sizes). If this is the case, then the margin sizes can be tweaked by modifying the values in the same block as where you set the paper size. Now your document should be set up for US Letter paper size with suitable margins.
 
-\subsection{References}
 
-The \code{biblatex} package is used to format the bibliography and inserts references such as this one \parencite{Reference1}. The options used in the \file{main.tex} file mean that the in-text citations of references are formatted with the author(s) listed with the date of the publication. Multiple references are separated by semicolons (e.g. \parencite{Reference2, Reference1}) and references with more than three authors only show the first author with \emph{et al.} indicating there are more authors (e.g. \parencite{Reference3}). This is done automatically for you. To see how you use references, have a look at the \file{Chapter1.tex} source file. Many reference managers allow you to simply drag the reference into the document as you type.
 
-Scientific references should come \emph{before} the punctuation mark if there is one (such as a comma or period). The same goes for footnotes\footnote{Such as this footnote, here down at the bottom of the page.}. You can change this but the most important thing is to keep the convention consistent throughout the thesis. Footnotes themselves should be full, descriptive sentences (beginning with a capital letter and ending with a full stop). The APA6 states: \enquote{Footnote numbers should be superscripted, [...], following any punctuation mark except a dash.} The Chicago manual of style states: \enquote{A note number should be placed at the end of a sentence or clause. The number follows any punctuation mark except the dash, which it precedes. It follows a closing parenthesis.}
 
-The bibliography is typeset with references listed in alphabetical order by the first author's last name. This is similar to the APA referencing style. To see how \LaTeX{} typesets the bibliography, have a look at the very end of this document (or just click on the reference number links in in-text citations).
 
-\subsubsection{A Note on bibtex}
-
-The bibtex backend used in the template by default does not correctly handle unicode character encoding (i.e. "international" characters). You may see a warning about this in the compilation log and, if your references contain unicode characters, they may not show up correctly or at all. The solution to this is to use the biber backend instead of the outdated bibtex backend. This is done by finding this in \file{main.tex}: \option{backend=bibtex} and changing it to \option{backend=biber}. You will then need to delete all auxiliary BibTeX files and navigate to the template directory in your terminal (command prompt). Once there, simply type \code{biber main} and biber will compile your bibliography. You can then compile \file{main.tex} as normal and your bibliography will be updated. An alternative is to set up your LaTeX editor to compile with biber instead of bibtex, see \href{http://tex.stackexchange.com/questions/154751/biblatex-with-biber-configuring-my-editor-to-avoid-undefined-citations/}{here} for how to do this for various editors.
-
-\subsection{Tables}
-
-Tables are an important way of displaying your results, below is an example table which was generated with this code:
-
-{\small
-\begin{verbatim}
-\begin{table}
-\caption{The effects of treatments X and Y on the four groups studied.}
-\label{tab:treatments}
-\centering
-\begin{tabular}{l l l}
-\toprule
-\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
-\midrule
-1 & 0.2 & 0.8\\
-2 & 0.17 & 0.7\\
-3 & 0.24 & 0.75\\
-4 & 0.68 & 0.3\\
-\bottomrule\\
-\end{tabular}
-\end{table}
-\end{verbatim}
-}
-
-\begin{table}
-\caption{The effects of treatments X and Y on the four groups studied.}
-\label{tab:treatments}
-\centering
-\begin{tabular}{l l l}
-\toprule
-\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
-\midrule
-1 & 0.2 & 0.8\\
-2 & 0.17 & 0.7\\
-3 & 0.24 & 0.75\\
-4 & 0.68 & 0.3\\
-\bottomrule\\
-\end{tabular}
-\end{table}
-
-You can reference tables with \verb|\ref{<label>}| where the label is defined within the table environment. See \file{Chapter1.tex} for an example of the label and citation (e.g. Table~\ref{tab:treatments}).
-
-\subsection{Figures}
-
-There will hopefully be many figures in your thesis (that should be placed in the \emph{Figures} folder). The way to insert figures into your thesis is to use a code template like this:
-\begin{verbatim}
-\begin{figure}
-\centering
-\includegraphics{Figures/Electron}
-\decoRule
-\caption[An Electron]{An electron (artist's impression).}
-\label{fig:Electron}
-\end{figure}
-\end{verbatim}
-Also look in the source file. Putting this code into the source file produces the picture of the electron that you can see in the figure below.
-
-\begin{figure}[th]
-\centering
-\includegraphics{Figures/Electron}
-\decoRule
-\caption[An Electron]{An electron (artist's impression).}
-\label{fig:Electron}
-\end{figure}
-
-Sometimes figures don't always appear where you write them in the source. The placement depends on how much space there is on the page for the figure. Sometimes there is not enough room to fit a figure directly where it should go (in relation to the text) and so \LaTeX{} puts it at the top of the next page. Positioning figures is the job of \LaTeX{} and so you should only worry about making them look good!
-
-Figures usually should have captions just in case you need to refer to them (such as in Figure~\ref{fig:Electron}). The \verb|\caption| command contains two parts, the first part, inside the square brackets is the title that will appear in the \emph{List of Figures}, and so should be short. The second part in the curly brackets should contain the longer and more descriptive caption text.
-
-The \verb|\decoRule| command is optional and simply puts an aesthetic horizontal line below the image. If you do this for one image, do it for all of them.
-
-\LaTeX{} is capable of using images in pdf, jpg and png format.
-
-\subsection{Typesetting mathematics}
-
-If your thesis is going to contain heavy mathematical content, be sure that \LaTeX{} will make it look beautiful, even though it won't be able to solve the equations for you.
-
-The \enquote{Not So Short Introduction to \LaTeX} (available on \href{http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf}{CTAN}) should tell you everything you need to know for most cases of typesetting mathematics. If you need more information, a much more thorough mathematical guide is available from the AMS called, \enquote{A Short Math Guide to \LaTeX} and can be downloaded from:
-\url{ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf}
-
-There are many different \LaTeX{} symbols to remember, luckily you can find the most common symbols in \href{http://ctan.org/pkg/comprehensive}{The Comprehensive \LaTeX~Symbol List}.
-
-You can write an equation, which is automatically given an equation number by \LaTeX{} like this:
-\begin{verbatim}
-\begin{equation}
-E = mc^{2}
-\label{eqn:Einstein}
-\end{equation}
-\end{verbatim}
-
-This will produce Einstein's famous energy-matter equivalence equation:
-\begin{equation}
-E = mc^{2}
-\label{eqn:Einstein}
-\end{equation}
-
-All equations you write (which are not in the middle of paragraph text) are automatically given equation numbers by \LaTeX{}. If you don't want a particular equation numbered, use the unnumbered form:
-\begin{verbatim}
-\[ a^{2}=4 \]
-\end{verbatim}
-
-%----------------------------------------------------------------------------------------
-
-\section{Sectioning and Subsectioning}
-
-You should break your thesis up into nice, bite-sized sections and subsections. \LaTeX{} automatically builds a table of Contents by looking at all the \verb|\chapter{}|, \verb|\section{}|  and \verb|\subsection{}| commands you write in the source.
-
-The Table of Contents should only list the sections to three (3) levels. A \verb|chapter{}| is level zero (0). A \verb|\section{}| is level one (1) and so a \verb|\subsection{}| is level two (2). In your thesis it is likely that you will even use a \verb|subsubsection{}|, which is level three (3). The depth to which the Table of Contents is formatted is set within \file{MastersDoctoralThesis.cls}. If you need this changed, you can do it in \file{main.tex}.
-
-%----------------------------------------------------------------------------------------
-
-\section{In Closing}
-
-You have reached the end of this mini-guide. You can now rename or overwrite this pdf file and begin writing your own \file{Chapter1.tex} and the rest of your thesis. The easy work of setting up the structure and framework has been taken care of for you. It's now your job to fill it out!
-
-Good luck and have lots of fun!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{flushright}
 Guide written by ---\\
