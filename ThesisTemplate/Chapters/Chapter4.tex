@@ -1,0 +1,195 @@
+\chapter{Experiments}
+\label{Chapter4}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% From the SSCI Paper -> HyperNEAT Objective (Fixed morph, sets of morphs, random morphs) %%
+%% This works out to the same as the 4 sets of morphologies and the fifth variable one	   %%
+%% HyperNEAT Objective
+%% 4 Morphs and 1 variable
+
+SSCI -> HyperNEAT objective across 5 morphologies and 3 complexity levels
+
+\section{Experiment Outline} \label{sec:experiment_outline}
+
+Experiments were used to evaluate the \textit{morphological robustness} of ANN controllers evolved using the HyperNEAT algorithm for
+robot teams that must accomplish a collective construction task of increasing
+complexity (section \ref{subsec:constructionTask}).
+
+We measured the average comparative task performance of controllers evolved
+for a given team morphology and task complexity (this is calculated during the 'Baseline' step) where such controllers were
+then transferred to
+and re-evaluated across other team morphologies.
+
+Thus, teams that achieved an average task performance that was not significantly lower
+across all \textit{re-evaluated} morphologies were considered to be \textit{morphologically robust}.
+
+This study comprised five experiment sets, where the first four experiment sets evolved
+controllers given team morphologies $1-4$ (table \ref{tab:morphConfigs})
+for three levels of increasing task complexity (table \ref{tab:taskComplexity}).
+
+The fifth experiment set investigated the \textit{co-adaptation} of team morphology
+and behavior, where morphology $5$ (table \ref{tab:morphConfigs}) was used
+as the initial sensory configuration for all robots in the team.
+
+This fifth experiment set was included in order to gauge if co-adapting behavior
+and morphology yielded any benefits in this collective construction task as it did in related
+collective behavior tasks \cite{HewlandNitschke2015}.
+
+Each experiment set \footnote{Source code for all experiments is online at: \url{https://github.com/not-my-name/ExperimentsRerun}} tested a team of $15$ robots in a bounded ($20$ x $20$ units), two-dimensional, and continuous simulated environment along with a collection of randomly distributed resource blocks of type \textit{A}, \textit{B}, and \textit{C} (table \ref{}tab:simParameters).
+
+During initialization of an experiment run, the robots and the resource blocks were placed at random locations and with random orientations.
+
+A construction schema (table \ref{tab:taskComplexity}) dictated the sequence of block
+types that must be connected together in order that a specific structure be built \cite{NitschkeSaEC2012}.
+
+Figure \ref{fig:taskEnv} presents an example of the team of $15$ robots working to solve the
+collective construction task in the simulation environment containing a distribution of five of each
+block type (\textit{A}, \textit{B} and \textit{C}), colored blue, green and red, respectively.
+Other colored blocks in the environment indicate those already connected in construction zones
+(three illustrated).  
+
+The purple, blue and green semi-circles emanating from each robot
+represent the FOV of active sensors, where the different colors correspond to different
+sensor types (table \ref{tab:simParameters}).
+
+As the purpose this study was to demonstrate the morphological robustness of
+HyperNEAT evolved controllers for a collective behavior task of increasing complexity,
+the first two versions of the collective construction task required no cooperation and some degree of
+cooperation, respectively, though any block could be connected to any other block.
+Where as, the most complex version of the task required cooperation and block types
+to be connected according to a construction schema (table \ref{tab:taskComplexity})
+
+The fittest controller evolved for each experiment set (yielding the highest absolute task performance)
+was then \textit{evaluated} for morphological robustness across all other morphologies.
+
+For example, the fittest controller evolved for morphology $1$ was evaluated across morphologies
+$2-4$ and the average task performance calculated across all evaluation runs.
+%($1$ to $7$ in table \ref{tab:morphConfigs}) for the given task.
+
+Each set of experiments (testing conditions?) can be broken into the following distinct stages:
+1] Evolution 
+2] Baseline Calculation
+3] Evaluation
+
+
+\subsection{Evolution Phase}
+
+For controller evolution, each experiment applied HyperNEAT to evolve team behavior for
+$15$ robots over $100$ generations,
+where a generation is comprised of $5$ \textit{team lifetimes} (with $1000$ simulation iterations per lifetime).
+
+A single evolution phase can broken down into the following distinct steps:
+1] Simulation - The team of agents are deployed into the simulated environment along with the necessary resource blocks. The agents must then operate within this environment for a 'lifetime', attempting to solve the task at hand.  A single 'Simulation' step consists of $5$ lifetimes,
+2] Fitness Calculation - At the end of each lifetime, the environment is analysed and compared with the desired output. At the end of a 'Simulation' step, the fitness of the controller is calculated using an average of these values and the provided fitness function. This value indicates a controller's suitability to solving the collective construction task.
+3] HyperNEAT Evolution - The fitness scores obtained in the previous steps are passed to the Evolutionary Algorithm (along with their respective controllers) at which point the subsequent generation of controllers are created
+
+Each team lifetime tested different robot starting positions, orientations, and block locations
+in the simulation environment.
+
+
+\subsection{Baseline}
+
+The purpose of this stage is to simply calculate an accurate average fitness score for each optimal controller. This average fitness provides a more accurate indication of a controller's suitability to solving the task.
+
+During this simulation stage, the parameters are the same as for the evolution phase in which the controller was evolved (ie. the same length of lifetime (simulation steps), same block configuration, same construction schema).
+
+In order to obtain this 'baseline' average score, the absolute fittest controller for each experimental condition is redeployed in the simulator and allowed to try and solve the task. 
+
+A single 'baseline' attempt in the simulator is equivalent to $1$ team lifetime and this is repeated for $20$ lifetimes and an average fitness score is calculated.
+
+During this stage, no Machine Learning processes or evolutionary steps are performed.
+
+\subsection{Evaluation}
+
+Each evaluation run was \textit{non-evolutionary}, where controllers were not further evolved,
+and each evaluation run in the simulator was equivalent to one team lifetime.
+
+Evaluation runs were repeated $20$ times for a given morphology, in order to account for random variations in robot and block
+starting positions and orientations.
+
+For each fittest controller, evaluated in a given morphology, an average baseline task performance was
+calculated over these $20$ runs, and then an overall average task performance was computed across all evaluated morphologies, producing an average fitness score that indicated a particular controller's ability to adapt to changes in its sensory configuration (morphology).
+
+As per this study's objectives, these morphological re-evaluation
+runs tested how robust the fittest evolved controllers (for a given morphology) were to variations
+in that morphology.
+Thus, re-evaluating the fittest controllers on other morphologies emulated sensor loss due
+to damage or new robot morphologies introduced due to changing task constraints.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is the table from the SSCI paper.								   %%	
+%% Just be sure to double check that the values are correct for all of     %%
+%% the experiments that are included in this paper (across AAMAS and SSCI) %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}
+	\renewcommand{\arraystretch}{1.30}
+	\caption{Experiment, Neuro-evolution and Sensor Parameters}\label{tab:simParameters}
+	\centering
+	\begin{tabular}{llc}
+		\hline
+		Generations	                                           & 100	\\
+		Sensors per robot                                      & 11, 8, 4, 6, random \\	
+		Evaluations per genotype                               & 5  \\
+		Experiment runs                                        & 20 \\
+		Environment length, width                              & 20 \\
+        Max Distance (Robot movement per iteration)            & 1.0 \\
+        Team size                                              & 15 \\
+        Team Lifetime (Simulation iterations)                  & 1000 \\	
+        Lifetimes per generation                               & 5 \\
+        Type A blocks (1 robot to push)                        & 15 \\
+        Type B blocks (2 robots to push)                       & 15 \\
+        Type C blocks (3 robots to push)                       & 15 \\
+		\hline
+		\multirow{4}{*}{Mutation rate} & Add neuron            & 0.25 \\
+		& Add connection                                       & 0.008  \\
+		& Remove connection                                    & 0.002 \\
+		& Weight                                               & 0.1  \\
+		Population size                                        & 150 \\
+		Survival rate                                          & 0.3 \\
+		Crossover proportion                                   & 0.5 \\
+		Elitism proportion                                     & 0.1 \\
+		CPPN topology                                          & Feed-forward           \\
+		CPPN inputs                                            & Position, delta, angle \\
+		\hline
+		Sensor                                                 & Range     & FOV \\
+		\hline
+		Proximity Sensor		                               & 	1.0	   &  0.2  \\
+		Ultrasonic Sensor		                               &	4.0    &  1.2  \\
+		Ranged Colour Sensor	                               &	3.0	   &  1.5 \\
+		Low-Res Camera			                               & 	3.0	   &  1.5 \\
+		Colour Proximity Sensor                                & 	3.0	   &  3.0 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Below table is from the SSCI experiments %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[t]
+	\renewcommand{\arraystretch}{1.30}
+	\caption{Task Complexity. Note: Task level 3 includes a construction schema (figure \ref{fig:constructionSchema}).}\label{tab:taskComplexity}
+	\centering
+	\begin{tabular}{lccc}
+		\hline
+		Construction Task Complexity                               & Level 1     & Level 2    & Level 3   \\
+		\hline
+		Type A blocks (1 robot to push)	                           & 	15	     & 5          & 5  \\
+		Type B blocks (2 robots to push)		                   &	0 	     & 5          & 5  \\
+		Type C blocks (3 robots to push)	                       &  	0	     & 5          & 5  \\
+		Construction schema                                        &   No        & No         &	Yes \\
+\hline
+	\end{tabular}
+\end{table}
+
+The above table shows the overall outline for the resources used across the various experiments.
+For the experiments that did not make use of all of the resources listed above, they simply used a subset 
+of the above resources.
+
+
+
+

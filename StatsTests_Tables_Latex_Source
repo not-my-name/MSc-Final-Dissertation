@@ -1,0 +1,55 @@
+\begin{table} 
+	\centering
+	\caption{HyperNEAT Novelty Level 1 T-Tests} 
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+					    &	  Morphology 1	  &	  Morphology 2	  &   Morphology 3	\\ 
+		\hline
+		Morphology 1    &         ?           &      0.119        &   \textbf{0.037}  \\
+		Morphology 2	&	      0.5         &        ?          &        0.5        \\
+		Morphology 3	&	     0.176        &      0.166        &         ?         \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table} 
+	\centering
+	\caption{HyperNEAT Novelty Level 3 T-Tests} 
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+					    &	  Morphology 1	  &	  Morphology 2	  &   Morphology 3	\\ 
+		\hline
+		Morphology 1    &         ?           &      0.305        &        0.5        \\
+		Morphology 2	&	      0.5         &        ?          &        0.5        \\
+		Morphology 3	&	     0.173        &      0.402        &         ?         \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table} 
+	\centering
+	\caption{HyperNEAT Objective Level 1 T-Tests} 
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+					    &	  Morphology 1	  &	  Morphology 2	  &   Morphology 3		\\ 
+		\hline
+		Morphology 1    &         ?           &      0.462        &       0.216        \\
+		Morphology 2	&	      0.5         &        ?          &        0.5        \\
+		Morphology 3	&	     0.421        &      0.286        &         ?         \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table} 
+	\centering
+	\caption{HyperNEAT Objective Level 3 T-Tests} 
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+					    &	  Morphology 1	  &	  Morphology 2	  &   Morphology 3        \\ 
+		\hline
+		Morphology 1    &         ?           &      0.347        &  \textbf{0.00000516}   \\ 
+		Morphology 2	&	      0.343       &        ?          &        0.375        \\
+		Morphology 3	&	     0.315        &      0.429        &         ?         \\
+		\hline
+	\end{tabular}
+\end{table}

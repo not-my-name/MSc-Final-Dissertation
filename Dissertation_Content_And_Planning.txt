@@ -1,0 +1,27 @@
+My Dissertation Content Planning Page
+
+Can use this page to annotate any rough details that you want to add or change in the dissertation itself
+
+A rough outline of the sections:
+Section 1:
+  Introduction:
+    - Abstract philosophical information regarding this research and the basis of research in nature
+    - Brief history of evolutionary computing
+       - Machine Learning and Darwinian Evolution
+       - Motivations and examples 
+    - Brief outline of collective robotics
+         - Pros and cons
+         - Example situations for use
+    - Brief outline of the collective construction task
+         - similar problem spaces (collective gathering task)
+         - motivations for use
+         - applicability in this research
+    - Application of this research in the real world:
+        - Underwater construction
+        - Terraforming, production of low cost housing, etc.
+    - Problem Statement
+       - The difficulty of re-evolving new controllers
+       - The high probability of agents sustaining damage when operating in inherently dangerous environments
+      - The benefits of using robust multi-agent teams
+  - Examples of similar research that has already been conducted
+  - Brief outline of how this research investigation will be conducted

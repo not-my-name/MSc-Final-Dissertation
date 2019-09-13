@@ -8,6 +8,11 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
+\section{Robustness}
+
+Currently, robotic systems recover from damage via self diagnosis and selection from pre-designed contingency plans in order to be able to continue functioning (check the references for this from the GECCO Penultimate paper). However, robots using such self-diagnosis and recovery systems are problematic as such systems are expensive, require sophisticated monitoring sensors and are difficult to design since system designers must have a priori konwledge of all necessary contingency plans (also get a reference).
+
+
 \section{Artifical Neural Networks}
 
 'Artificial neural networks are computational methodologies that perform multifactorial analyses. Inspired by networks of biological neurons, artificial neural network models contain layers of simple computing nodes that operate as nonlinear summing devices. These nodes are richly interconnected by weighted connection lines, and the weights are adjusted when data are presented to the network during a "training" process. Successful training can result in artificial neural networks that perform tasks such as predicting an output value, classifying an object, approximating a function, recognizing a pattern in multifactorial data, and completing a known pattern ' \cite{dayhoff2001artificial}.
@@ -117,7 +122,7 @@ The components of these agents include:
 
 'Then, when it receives no tip from passengers who have been thoroughly shaken up during the trip, it can learn a useful component of its overall utility function (5)' \cite{russell2016artificial}
 
-\hl{there are no examples for the last 2 components...?}
+\hl{there are no examples for the last 2 components...? check similar resources to find this}
 
 
 
@@ -159,19 +164,14 @@ A typical cycle of the evolution of connection weights \cite{XinYao1999}:
 	\item Apply search operators, such as crossover and/or mutation, to parents in order to generate offspring, which will form the next generation.
 \end{enumerate}
 
-
-
 \subsection{Learning Rules}
 In this section, we will investigate and elaborate on the details and various implementations of the learning rules that were outlined above.
 
-https://en.wikipedia.org/wiki/Learning_rule
+%https://en.wikipedia.org/wiki/Learning_rule
 'An artificial neural networks learning rule or learning process is a method, mathematical logic or algorithm which improves the networks performance and/or training time. Usually, this rule is applied repeatedly over the network. It is done by updating the weights and bias levels of a network when a network is simulated in a specific data environment. A learning rule may accept existing conditions (weights and biases) of the network and will compare the expected result and actualresult of the network to give new and improved values for weights and bias. Depending on the complexity of actual model being simulated, the learning rule of the network can be as simple as an XOR logic gate or mean squared error, or as complex as the result of a system of differential equations.'
 'The learning rule is one of the factors which decides how fast or how accurately the artificial network can be developed. Depending on the process to develop the network there are three main models of machine learning: (1) Unsupervised, (2) Supervised, (3) Reinforcement'
 
-\hl{when re-writing the content and structuring the info, try and 'peel' apart the different layers of EC. ANN's, learniong in ANN's, the learning rule describing the calculations used to adjust the weights (hebbian, delta, etc), the different types of learning based on the feedback mechanisms (supervised, unsupervised etc), then moving on to the different algorithms and what makes them different (like the different representations of information)}
-
-\subsubsection{Delta Rule}
-
+%\hl{when re-writing the content and structuring the info, try and 'peel' apart the different layers of EC. ANN's, learniong in ANN's, the learning rule describing the calculations used to adjust the weights (hebbian, delta, etc), the different types of learning based on the feedback mechanisms (supervised, unsupervised etc), then moving on to the different algorithms and what makes them different (like the different representations of information)}
 
 
 \subsection{Supervised Learning}
@@ -206,22 +206,12 @@ Wehn $y$ is a number (such as tomorrow's temperature), the learning problem is c
 
 "Gradient descent is a first order iterative optimization algorithm for finding the minimum of a function. To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point. If, instead, one takes steps proportional to the positive of the gradient, one approaches a local maximum of that function; the procedure is known as gradient ascent"
 
-
-
-
-\subsubsection{Classification}
-'Predict a discrete target variable'
-
-\subsubsection{Regression}
 'Predict a continuous target variable'
 
-\subsection{Unsupervised Learning}
+\section{Unsupervised Learning}
 
-\subsubsection{Clustering}
 
-\subsubsection{Dimensionality Reduction}
-
-\subsection{Reinforcement Learning}
+\section{Reinforcement Learning}
 
 can maybe have a subsection for the different types of RL techniques such as:
 -> Value and Policy Iteration
@@ -343,9 +333,6 @@ try to find another reference where they have a general outline of an Evolutiona
 \end{enumerate}
 
 \hl{in our case, the termination criterion is a set number of generations for the Evolutionary Algorithm to be performed}
-
-
-\hl{the background sound in the Eminem's song W.T.P is the same soundtrack clip that they used in the first Hulk movie with Eric Bana}
 
 
 

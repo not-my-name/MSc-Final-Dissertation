@@ -1,62 +1,10 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\contentsline {chapter}{Declaration of Authorship}{iii}{chapter*.1}
-\contentsline {chapter}{Abstract}{v}{chapter*.2}
-\contentsline {chapter}{Acknowledgements}{vii}{chapter*.3}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.14}
-\contentsline {section}{\numberline {1.1}Introduction}{1}{section.15}
-\contentsline {subsection}{\numberline {1.1.1}Collective Construction Task}{4}{subsection.16}
-\contentsline {subsection}{\numberline {1.1.2}Areas of Research in Computer Science}{6}{subsection.17}
-\contentsline {subsubsection}{Pattern Classification}{6}{section*.18}
-\contentsline {subsubsection}{Clustering/Categorization}{6}{section*.19}
-\contentsline {subsubsection}{Function Approximation}{6}{section*.20}
-\contentsline {subsubsection}{(}{6}{section*.21}
-\contentsline {subsection}{\numberline {1.1.3}Possible Applications}{6}{subsection.22}
-\contentsline {subsubsection}{Underwater Construction}{6}{section*.23}
-\contentsline {subsubsection}{Space Exploration/Terraforming}{6}{section*.24}
-\contentsline {subsubsection}{Production of Low Cost Housing}{7}{section*.25}
-\contentsline {subsubsection}{Example Search and Rescue Teams}{7}{section*.26}
-\contentsline {section}{\numberline {1.2}Problem Statement}{7}{section.27}
-\contentsline {section}{\numberline {1.3}Research Question}{8}{section.28}
-\contentsline {subsection}{\numberline {1.3.1}Research Aims}{8}{subsection.29}
-\contentsline {subsection}{\numberline {1.3.2}Research Contributions}{9}{subsection.33}
-\contentsline {section}{\numberline {1.4}Existing Applications And Problem Spaces}{9}{section.34}
-\contentsline {subsection}{\numberline {1.4.1}Emergency Search-and-Rescue}{10}{subsection.35}
-\contentsline {subsection}{\numberline {1.4.2}RoboCup Soccer}{10}{subsection.36}
-\contentsline {subsection}{\numberline {1.4.3}Collective Gathering}{10}{subsection.37}
-\contentsline {subsection}{\numberline {1.4.4}Balancing Pendulum}{11}{subsection.38}
-\contentsline {subsection}{\numberline {1.4.5}Space Antenna}{11}{subsection.39}
-\contentsline {chapter}{\numberline {2}Background Research}{13}{chapter.40}
-\contentsline {section}{\numberline {2.1}Artifical Neural Networks}{13}{section.41}
-\contentsline {subsection}{\numberline {2.1.1}Architectures}{13}{subsection.42}
-\contentsline {section}{\numberline {2.2}Learning in ANN's}{15}{section.45}
-\contentsline {subsection}{\numberline {2.2.1}Supervised Learning}{17}{subsection.50}
-\contentsline {subsubsection}{Backpropagation}{17}{section*.51}
-\contentsline {subsubsection}{Gradient Descent}{17}{section*.52}
-\contentsline {subsubsection}{Classification}{17}{section*.53}
-\contentsline {subsubsection}{Regression}{18}{section*.54}
-\contentsline {subsection}{\numberline {2.2.2}Unsupervised Learning}{18}{subsection.55}
-\contentsline {subsubsection}{Clustering}{18}{section*.56}
-\contentsline {subsubsection}{Dimensionality Reduction}{18}{section*.57}
-\contentsline {subsection}{\numberline {2.2.3}Reinforcement Learning}{18}{subsection.58}
-\contentsline {subsubsection}{The Finite Horizon Model}{20}{section*.59}
-\contentsline {section}{\numberline {2.3}Genetic Algorithms}{20}{section.61}
-\contentsline {section}{\numberline {2.4}Evolutionary Computing / Evolutionary Algorithms}{21}{section.62}
-\contentsline {section}{\numberline {2.5}Difficulties to overcome}{21}{section.71}
-\contentsline {subsection}{\numberline {2.5.1}Exploitation vs Exploration}{21}{subsection.72}
-\contentsline {section}{\numberline {2.6}Neuroevolution}{22}{section.73}
-\contentsline {subsection}{\numberline {2.6.1}Basic Methods}{22}{subsection.74}
-\contentsline {subsection}{\numberline {2.6.2}Applications}{24}{subsection.75}
-\contentsline {subsubsection}{Definition}{25}{section*.76}
-\contentsline {section}{\numberline {2.7}NEAT}{26}{section.77}
-\contentsline {section}{\numberline {2.8}HyperNEAT}{26}{section.78}
-\contentsline {section}{\numberline {2.9}Fitness Functions}{26}{section.79}
-\contentsline {subsection}{\numberline {2.9.1}Objective Fitness}{26}{subsection.80}
-\contentsline {subsection}{\numberline {2.9.2}Novelty Fitness}{26}{subsection.81}
-\contentsline {subsection}{\numberline {2.9.3}Hybrid Fitness}{26}{subsection.82}
-\contentsline {section}{\numberline {2.10}Collective Construction Task}{26}{section.83}
-\contentsline {subsection}{\numberline {2.10.1}Collective Gathering Task}{27}{subsection.87}
-\contentsline {subsection}{\numberline {2.10.2}Existing Collective Construction Tasks}{27}{subsection.88}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{29}{appendix.89}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{29}{section.90}
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.2}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.3}
+\contentsline {subsection}{\numberline {1.1.1}Research Goals}{2}{subsection.4}
+\contentsline {subsection}{\numberline {1.1.2}Contributions}{3}{subsection.8}
+\contentsline {subsection}{\numberline {1.1.3}Scope}{3}{subsection.9}
+\contentsline {subsection}{\numberline {1.1.4}Structure}{4}{subsection.10}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{5}{appendix.11}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{5}{section.12}
