@@ -1,115 +1,47 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: biblatex.bst
 A level-1 auxiliary file: Chapters/Chapter1.aux
-A level-1 auxiliary file: Chapters/Chapter2.aux
 A level-1 auxiliary file: Appendices/AppendixA.aux
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10004 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: Bibliography/EvoComp.bib
-I was expecting a `,' or a `}'---line 417 of file Bibliography/EvoComp.bib
+I was expecting a `,' or a `}'---line 209 of file Bibliography/EvoComp.bib
  :   address = ""
  :               University of Pittsburgh, USA",
 I'm skipping whatever remains of this entry
-You're missing a field name---line 593 of file Bibliography/EvoComp.bib
+You're missing a field name---line 297 of file Bibliography/EvoComp.bib
  : 
  : %  address = "Cambridge",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 2379 of file Bibliography/EvoComp.bib
+You're missing a field name---line 1190 of file Bibliography/EvoComp.bib
  : 
  : % pages = "",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 2621 of file Bibliography/EvoComp.bib
+You're missing a field name---line 1311 of file Bibliography/EvoComp.bib
  : 
  : %  editor =       "Laurence T. Yang and Hai Jin and Jianhua Ma and Theo Ungerer",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 2655 of file Bibliography/EvoComp.bib
+You're missing a field name---line 1328 of file Bibliography/EvoComp.bib
  : 
  : %  editor =       "Robert Meersman and Zahir Tari",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 4123 of file Bibliography/EvoComp.bib
+I was expecting a `,' or a `}'---line 2062 of file Bibliography/EvoComp.bib
  :     
  :     year = "2004",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 6299 of file Bibliography/EvoComp.bib
- : @book{EibenSmith2003
- :                     ,
-I'm skipping whatever remains of this entry
-You're missing a field name---line 8381 of file Bibliography/EvoComp.bib
+You're missing a field name---line 4191 of file Bibliography/EvoComp.bib
  : 
  : %  address = "Berlin, Germany",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 8421 of file Bibliography/EvoComp.bib
+You're missing a field name---line 4211 of file Bibliography/EvoComp.bib
  : 
  : %  address = "Tokyo, Japan",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Khoshnevis2003"
-Biblatex version: 3.8
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Name 1 in "Malaysia; Pearson Education Limited," has a comma at the end for entry russell2016artificial
-while executing---line 2749 of file biblatex.bst
-You've used 35 entries,
-            6268 wiz_defined-function locations,
-            1407 strings with 14676 characters,
-and the built_in function-call counts, 192116 in all, are:
-= -- 12692
-> -- 4151
-< -- 1242
-+ -- 4591
-- -- 1527
-* -- 14370
-:= -- 18473
-add.period$ -- 0
-call.type$ -- 35
-change.case$ -- 647
-chr.to.int$ -- 30
-cite$ -- 68
-duplicate$ -- 20782
-empty$ -- 17755
-format.name$ -- 2430
-if$ -- 40094
-int.to.chr$ -- 0
-int.to.str$ -- 101
-missing$ -- 0
-newline$ -- 1129
-num.names$ -- 1785
-pop$ -- 11596
-preamble$ -- 1
-purify$ -- 837
-quote$ -- 0
-skip$ -- 6655
-stack$ -- 0
-substring$ -- 20120
-swap$ -- 5417
-text.length$ -- 1009
-text.prefix$ -- 35
-top$ -- 1
-type$ -- 1178
-warning$ -- 0
-while$ -- 2270
-width$ -- 0
-write$ -- 1095
-(There were 10 error messages)
+Biblatex version: 3.13
+(There were 8 error messages)

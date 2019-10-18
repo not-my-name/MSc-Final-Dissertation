@@ -36,70 +36,100 @@
 % "This study further contributes to this research area, focussing on evolutionary controller design [11] within the broader context of collective [15] and swarm [1] robotics. That is, evolutionary controller design for robot groups that must continue to accomplish tasks given that damage is sustained to the morphologies of some or all of the robots in the group. ""
 
 % ====================================================
-The design and development of automated problem solvers and autonomous robots has long been a central theme of research in the fields of mathematics and computer science \cite{RefWorks:33}.
+The design and development of automated problem solvers and autonomous robots has long been a central theme of research in the crossover between artificial intelligence and robotics \cite{RefWorks:33}. However, given the levels of complexity and non-linearity of real-world problems, traditional methods of controller design have become impractical since they rely mostly on linear mathematical models \cite{RefWorks:32}. An additional consideration is that at a certain point, designing the problem solver becomes more difficult than solving the problem, especially when there is not a distinct and well-defined set of steps to follow in order to obtain the solution.
 
-But given the levels of complexity and non-linearity of real-world problems, traditional methods of controller design have become impractical since they rely mostly on linear mathematical models \cite{RefWorks:32}. An additional consideration is that at a certain point, designing the problem solver becomes more difficult that solving the problem, especially when there is not a distinct and well-defined set of steps to follow in order to obtain the solution.
+One such complex task, and the one being focussed on as the subject of this thesis, is that of achieving automated collective behaviour in which a team of autonomous agents must cooperate amongst themselves in order to accomplish a task. More specifically, this thesis will focus on collective robotics with a case study on the collective construction task
 
-One such complex task, and the one being focussed on in this investigation, is that of achieving automated collective behaviour in which a team of autonomous agents must cooperate amongst themselves in order to accomplish a task. More specifically, we will be focussing on the subject of collective construction.
+While it may be possible to to solve many complex tasks using a single sophisticated robot, there are several advantages to using collective robotics instead. Some of these advantages include being able to use much simpler designed robots in the team instead of one very expensive robot as well as having increased fault tolerance since there is no longer a single point of failure \cite{chaimowicz2001architecture}. The downside to a multi-agent team, however, is the infeasibility of designing the intricate dynamics inherent in producing self-organised behaviour between individuals by hand \cite{RefWorks:11}.
 
-While it may be possible to to solve many complex tasks using a single sophisticated robot, there are several advantages to using a multi-robot team instead. Some of these advantages include being able to use much simpler designed robots in the team instead of one very expensive robot as well as having increased fault tolerance since there is no longer a single point of failure \cite{chaimowicz2001architecture}. The downside to a multi-agent team, however, is the infeasibility of designing the intricate dynamics inherent in producing self-organised behaviour between individuals by hand \cite{RefWorks:11}.
+The collective construction task requires that a team of agents cooperate by coordinating their behaviours in order to assemble various structures within their environment \cite{NitschkeSaEC2012}. A group of autonomous agents (robots) are deployed into an unknown environment which they must explore in order to find resources and figure out how to assemble these resources in such a way as to create some structure, which can be completely predefined, or just according to some predefined structural criteria \cite{NitschkeSaEC2012}.
 
-The collective construction task requires that a team of agents cooperate by coordinating their behaviours in order to assemble various structures within their environment \cite{NitschkeSaEC2012}. A group of autonomous agents are deployed into an unknown environment which they must explore in order to find resources and figure out how to assemble/construct these resources in such a way as to create some structure, which can be completely predefined, or just according to some predefined structural criteria.
-
-The ability to automate construction tasks through creating controllers for multi-robot teams presents several considerable benefits. Automation like this could be used to assist in projects such as producing low-cost housing in locations where resources are scarce, reducing high accident rates due to human error which is unfortunately unavoidable in traditional construction methods \cite{Khoshnevis2003}. An additional possible application in the near future is to send multi-robot construction teams to extraterrestrial planets in order to build habitable structures in anticipation of humans arriving. These robot teams would also be useful in underwater construction which is extremely difficult and is one of the most dangerous jobs \cite{RefWorks:30}.
+The ability to automate construction tasks through creating controllers for collective robotics presents several considerable benefits. Automation like this could be used to assist in projects such as producing low-cost housing in locations where resources are scarce, reducing high accident rates due to human error which is unfortunately unavoidable in traditional construction methods \cite{ShenKhoshnevis2003}. An additional possible application in the near future is to send multi-robot construction teams to extraterrestrial planets in order to build habitable structures in anticipation of humans arriving. These robot teams would also be useful in underwater construction which is extremely difficult and is one of the most dangerous jobs \cite{RefWorks:30}.
 
 In an attempt to try and find a solution around the complexity of automating the design of these controllers, researchers turned to biological and natural processes for inspiration.
 
 The problem solving power of evolution is abundantly clear in nature with the diverse range of organisms that exist (or ever have existed) on Earth, each specially designed for optimal survival in its own niche environment \cite{RefWorks:33}, making it unsurprising that computer scientists have resorted to researching natural processes for inspiration. 
 
-Let's consider the process of natural evolution as follows \cite{RefWorks:33}: An environment is populated with a group of individuals that are driven by the biological imperative to survive and reproduce so as to pass on their genes to the subsequent generation. The fitness of an individual is a means of quantifying how successful it is in achieving these goals and thus, how likely it is that the individual will be able to survive long enough to reproduce.
+One such approach that draws inspiration from Darwinian evolution is Evolutionary Algorithms which relates the fundamental metaphor of the evolutionary process to a simple style of problem solving, which is that of trial-and-error (also referred to as generate-and-test) \cite{RefWorks:33}.
 
-Neuroevolution (NE) is a method of artificially evolving Artificial Neural Networks (ANN's) by implementing Evolutionary Algorithms to perform tasks such as evolving the network connection weights as well as the network topology \cite{Stanley2004, XinYao1999}
+Neuroevolution (NE) is a method of artificially evolving Artificial Neural Networks (ANN's) by implementing Evolutionary Algorithms to perform tasks such as evolving the network connection weights as well as the network topology \cite{Stanley2004, XinYao1999}.
 
-It makes of Evolutionary Algorithms in order to abstract the key aspects of the evolutionary process into a generational loop that will search for an optimal solution out of a population of candidates by evaluating each one in order to determine which is the fittest and thus the characteristics that persist to the next generation. Resulting in a stochastic search for the most optimal solution of the problem space.
+It makes use of Evolutionary Algorithms in order to abstract the key aspects of the evolutionary process into a generational loop that will search for an optimal solution out of a population of candidates by evaluating each one in order to determine which is the fittest and thus the characteristics that persist to the next generation. Resulting in a stochastic search for the most optimal solution of the problem space.
 
-One such approach that draws inspiration from Darwinian evolution is Evolutionary Computing which relates the fundamental metaphor of the evolutionary process to a simple style of problem solving, which is that of trial-and-error (also referred to as generate-and-test) \cite{RefWorks:33}. 
+It has been shown that NE cansuccessfully be applied to complex control tasks that require collective behaviour. These control tasks have no obvious mappings between the input from sensory configurations and motor outputs \cite{NitschkeSaEC2012}.
 
-In our Evolutionary Computing analogy, the researcher defines an environment with some constraints. In the biological world, these would be things like the amount of resources available in the environment for which the individuals would need to compete in order to survive, but in this case the requirements can be any quantifiable criteria that is used to implicitly outline the desired problem space (this quantity should be what is going to be optimized).
 
-One of the biggest issues to overcome in order to make these agents as robust as possible (and more suited to their dangerous environments) is determining some way for the robots to be able to repair damage that they may sustain to their physical morphology. In fact, an open problem in \textit{collective} \cite{KubeZhang1994B} and \textit{swarm robotics} \cite{Beni2004}
-is ascertaining appropriate sensory-motor configurations (morphologies) for robots comprising teams that must work collectively given automatically generated controllers \cite{FloreanoDurrMattiussi2008}.
+
+
+===============================================================
+EDIT 1:
+-----------------------
+ADD SOME REAL WORLD EXAMPLES AND DESCRIPTIONS OF NE 
+"NE is the main method for controller adaptation in evolutionary robotics (the overall topic that this thesis fits into) - and within this field - NE applied to collective robotics has achieved success (evolved effective group behaviours) to solve various collective behaviour tasks - then give several example tasks that evolutionary collective robotics systems have solved - with references"
+==================================================================
+
+
+One of the biggest issues to overcome in order to make these agents as robust as possible (and more suited to their inherently dangerous environments) is determining some way for the robots to be able to continue performing their required tasks despite any physical damage to their physical morphology that they may sustain. More specifically, with regards to their sensory input devices, which are integral to the functioning of any agent.
+
+
+In fact, an open problem in \textit{collective} \cite{KubeZhang1994B} and \textit{swarm robotics} \cite{Beni2004}
+is ascertaining appropriate sensory-motor configurations (morphologies) for robot teams that must work collectively given automatically generated controllers \cite{FloreanoDurrMattiussi2008}.
+
+
+=====================================================================
+EDIT 2:
+----------------------------
+'There should also be some mention of indirect vs direct encodings in NE - and mention examples of each (with references) - e.g. NEAT and HyperNEAT - pointing out the benefits of the latter (this is especially important since HyperNEAT is mentioned in your objectives and there needs to be some justification for using it)'
+
+All of the information needed for the above edits (EDIT 1 and 2) is in the previous papers, especially the Honours literature reviews
+
+=========================================================================
+
+
 
 Current robotic systems make use self-diagnosis and selection from pre-designed contingency plans in order to be able to recover from damage and continue its normal functioning \cite{fenton2001fault, verma2004real, BongardZykovLipson2006}. However, robots that implemented this approach of self-diagnosis and recovery proved to be somewhat problematic in that these systems are relatively expensive and are difficult to design since it requires full \textit{a priori} knowledge of the system in order to design the contingency plans \cite{CullyCluneTaraporeMouret2015}.
 
-Another approach to this challenge draws inspiration from self-adaptation and injury recovery that has been observed by animals in the wild
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 					From the AAMAS Extended Abstract 		       %%
+%%		Move this part below to the Research Objectives section    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% "Also mention the co-evolution of body brain like James Watsons paper"
+Addressing this, recent work in \textit{Evolutionary Robotics} elucidated the efficacy of population based stochastic trial-and-error methods for online damage recovery in autonomous robots operating in physical environments \cite{CullyCluneTaraporeMouret2015}.
+This was demonstrated as being akin to self-adaptation and injury recovery of animals observed in nature.
 
-% Move on to talk about the specif
+This study further contributes to this research area, focussing on \textit{evolutionary controller design} \cite{FloreanoDurrMattiussi2008} within the broader context of \textit{collective} \cite{KubeZhang1994B} and \textit{swarm} \cite{Beni2004} robotics.
+That is, evolutionary controller design for robot groups that must continue to accomplish tasks given that damage is sustained to the morphologies of some or all of the robots in the group.
 
-% This is why we chose the collective construction problem
-% This is why we chose to investigate hyperNEAT
-
-
-
-%Researchers have been designing controllers that are able to perform some relatively complex tasks but given the current trend in increasing levels of computerisation coupled with the increasing complexity of tasks that need to be performed has resulted in a growing demand for the automated production of these problem solvers \cite{RefWorks:33}.
-
-
-%One such automated problem solver is an Artificial Neural Network (ANN) which can be though of as a group of computational units that take in some input, performs some calculations and produces a corresponding result \cite{RefWorks:31}. These will be discussed in more depth later on in the paper.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+Given previous non-objective controller evolution work in collective robotics
+\cite{gomes2013generic}
+\cite{RefWorks:5}
+\cite{RefWorks:11},
+and previous research demonstrating the efficacy of \textit{novelty search} \cite{lehman2011abandoning} for evolving behaviours that operate across various robotic morphologies, the following research objectives formed the focus of this study;
 
+\begin{enumerate}
+	\item Novelty search behaviours out-perform those of objective serach in terms of average team task performance in increasingly complexy collective construction tasks.
+	\item Novelty search is suitable for evolving morphologically robust controllers in collective construction tasks.
+\end{enumerate}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Another approach to this challenge draws inspiration from self-adaptation and injury recovery that has been observed in animals in nature.
 
-% Evolutionary Computing is analogous to this process in that the researcher defines the environment and its "biological/physical" restrictions so as to inherently define the desired problem space. A population of candidate solutions is implemented in the environment and each one is assigned a fitness value based on
-
-% 'A given environment is filled with a population of individuals that strive for survival and reproduction. The fitness of these individuals - determined by the environment - relates to how well they succeed in achieving their goals, i.e., it represents their chances of survival and multiplying. In the context of a stochastic trial-and-error (also known as a generate-and-test) style problem solving process, we have a collection of candidate solutions. Their quality (that is, how well they can solve the problem) determines the chance that they will be kept and used as seeds for constructing further candidate solutions' \cite{RefWorks:33}
-
-%"Darwin's theory of evolution offers an explanation of the biological diversity and its underlying mechanisms. In what is sometimes called the macroscopic view of evolution, natural selection plays a central role. Given an environment that can host only a limited number of individuals, and the basic instinct of individuals is to reproduce, selection becomes inevitable if the population size is not to grow exponentially. Natural selection favours those individuals that compete for the given resources most effectively, in other words, those that are adapted or fit to the environmental conditions best. This phenomenon is also known as Survival Of The Fittest. Competition based on selection is one of the cornerstones of the evolutionary process. The other primary force identified by Darwin results from phenotypic variations among members of the population. Phenotypic traits are those behavioural and physical features of an individual that directly affect its response to the environment (including other individuals), thus determining its fitness. Each individual represents a unique combination of phenotypic traits that is evaluated by the environment. If it evaluates favourably, then it is propagated via the individual's offspring, otherwise it is discarded by dying without offspring" \cite{RefWorks:33}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%			The above should be followed up with a few sentences that lead 		%%
+%%			naturally into the research goals - You should mention work by 		%%
+%%			Mouret et al. (Nature article) as an example of automated biologically inspired
+%%			self-repair in robotics - and find some other examples - even if its only adaptation
+%% 			and not necessarily repair (eg. see Bongard et al. 2007 Science paper on robotic gait 
+%%			adaptation) - and then finally mention that this thesis extends this previous work 
+%% 			into the domain of collective robotics (where autonomous robot groups, operating in remote locations must still accomplish collective behaviour tasks even if damaged)
 
 
 
 %"The fundamental metaphor of evolutionary computing relates this powerful natural evolution to a particular style of problem solving - that of trial-and-error" \cite{RefWorks:33}
-
-
-"Evolutionary Computing is a branch of computer science research  that draws its inspiration from the Darwinian process of evolution through natural selection \cite{EibenSmith2003}."
 
 
 
@@ -107,7 +137,7 @@ Another approach to this challenge draws inspiration from self-adaptation and in
 
 'The aims of this research project can be summarised as follows:'
 \begin{itemize}
-	\item 'To investigate the behavioural robustness of multi-robot team controllers evolved using the HyperNEAT algorithm with respect sensory configurations when implemented in solving increasingly complex tasks requiring collective behaviour'
+	\item 'To investigate the morphological robustness of multi-robot team controllers evolved using the HyperNEAT algorithm with respect sensory configurations when implemented in solving increasingly complex tasks requiring collective behaviour'
 	\item 'building on the first, the second aim is to investigate the three different variations of the HyperNEAT algorithm by implementing various fitness functions'
 \end{itemize}
 
@@ -115,7 +145,7 @@ Another approach to this challenge draws inspiration from self-adaptation and in
 The various levels are outlined as follows:"
 \begin{enumerate}
 	\item Level 1: no complexity or cooperation.
-	\item Level 2: some complexity and no cooperation.
+	\item Level 2: no complexity and some cooperation.
 	\item Level 3: some complexity and some cooperation.
 \end{enumerate}
 
@@ -124,6 +154,26 @@ behavior for a range of morphologically homogenous teams that must solve various
 
 This study's research objectives were formulated given results of the following previous related work. First, that non-objective based controller evolution has been effectively demonstrated in collective robotics \cite{RefWorks:11, gomes2013generic, RefWorks:5}.
 Second, that Novelty Search has been demonstrated as suitable for evolving controllers (behaviours) that effectively operate across a range of robot morphologies
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Some additional input from the GECCO abstract %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\item To demonstrate the efficacy of Novelty Search (as compared to objective-based search) for evolving morphologically robust conrtollers over increasingly complex tasks.
+	\item To demonstrate the efficacy of Novelty Search evolved behaviours versus those evolved by objective-based search in terms of average task performance (behaviour quality) over increasing task complexity
+\end{enumerate}
+
+To test these objectives, experiments evaluated various robot morphologies in an increasing complex collective construction task. 
+That is, morphological robustness of evolved controllers was evaluated in terms of a controller's task performance coupled with alternate robot morphologies.
+
+This study's contribution was thus to elucidate the impact of specific objective versus non-objective search methods on the evolution of \textit{morphologically robust} controllers in collective robotic systems. 
+To date, the morphological robustness of such controller evolution approaches has not been comparatively evaluated, especially in the context of collective robotics. 
+Specifically, collective robotic systems that must adapt to unforeseen morphological change, such as the loss or damage of sensors on one of more robots without significant task performance degradation \cite{BongardZykovLipson2006} \cite{CullyCluneTaraporeMouret2015}
 
 
 \subsection{Contributions}

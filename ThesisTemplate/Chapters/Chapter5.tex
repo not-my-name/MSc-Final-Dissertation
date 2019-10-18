@@ -1,6 +1,64 @@
 \chapter{Results \& Discussion}
 \label{Chapter5}
 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%				Results and Discussion From AAMAS Abstract					%%
+		%%			Experiments Compared With Objective and Novelty Search			%%
+		%%	Will need to make sure to include the correct results graphs and plots	%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Results indicate that, for both novelty and objective search, given increasing task complexity, there was no significant difference in average task performance between the controllers evolved in any morphology and then evaluated in other morphologies.
+
+However, there were two exceptions to this result. 
+First, novelty search applied in task complexity level 1 to evolve controllers evaluated in morphology 3 yielded significantly lower average task performance.
+
+Second, objective search applied in task complexity level 2 to evolve controllers in morphology 1, where similarly, the fittest controller evaluated in morphology 3 yielded a significantly lower task performance.
+
+In these cases, one may observe that there is a large difference in the number of sensors used by morphology 1 versus morphology 3 (table from AAMAS Abstract), indicating that controllers evolved for the high sensory complement (and thus functionality) of morphology 1 are not readily transferable to a simpler sensory configuration (with much less functionality). 
+
+However, this was not the case for novelty search applied in task level 2 or objective-search  applied in task level 1.
+
+The key results were thus two-fold. 
+First (supporting the first hypothesis), team behaviours evolved by novelty search, for ALL morphologies and task complexity levels, significantly out-performed team behaviours evolved with objective search for corresponding morphologies and task complexity levels. 
+	This result is supported by the following previous work 
+		\cite{DidiNitschke2016SSCI}, 
+		\cite{DidiNitschke2016},
+		\cite{gomes2013generic},
+		\cite{RefWorks:5},
+		\cite{RefWorks:11}
+
+Second (refuting the second hypothesis), results indicated that, for all team morphologies and levels of task complexity evaluated, both novelty and objective search were effective in evolving morphologically robust controllers.
+
+That is, for any given morphology, there was no significant difference in average task performance between the fittest novelty search evolved controllers and "re-evaluation" of these controllers in the other morphologies. 
+
+The same result was observed for objective search.
+This second result indicates that while novelty search yields advantages over objective search in terms of evolving high task performance team behaviours, it yields no benefits over objective search for evolving morphologically robust controllers in the collective construction task for the given team morphologies.
+However, the suitability of novelty search for evolving morphologically robust controllers in complex collective behaviour tasks is the topic of ongoing research.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%				From the GECCO Draft			  %%
+%% 			   Results and Discussion			  %%
+%%			Objective VS Novelty Search			  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To address the research objectives, we compared the average task performance results of team behaviour evolution directed by objective versus novelty search. 
+For each experiment, task performance was the number of blocks connected in construction zones over a team's lifetime, where the maximum task performance was taken at each run's end and an average task performance calculated over 20 runs (the "Evaluation Phase").
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
 \begin{figure*}[t]
 	\begin{minipage}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{Baseline_Level_1.png}

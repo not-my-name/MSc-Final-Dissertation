@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -164,105 +164,6 @@
     \field{year}{2015}
   \endentry
 
-  \entry{dayhoff2001artificial}{article}{}
-    \name{author}{2}{}{%
-      {{hash=DJE}{%
-         family={Dayhoff},
-         familyi={D\bibinitperiod},
-         given={Judith\bibnamedelima E},
-         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=DJM}{%
-         family={DeLeo},
-         familyi={D\bibinitperiod},
-         given={James\bibnamedelima M},
-         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wiley Online Library}%
-    }
-    \keyw{computational methodology, medicine, paradigm,artificial neural
-  networks}
-    \strng{namehash}{DJEDJM1}
-    \strng{fullhash}{DJEDJM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \verb{doi}
-    \verb 10.1002/1097-0142(20010415)91:8+<1615::AID-CNCR1175>3.0.CO;2-L
-    \endverb
-    \field{issn}{1097-0142}
-    \field{number}{S8}
-    \field{pages}{1615\bibrangedash 1635}
-    \field{title}{Artificial neural networks}
-    \verb{url}
-    \verb http://dx.doi.org/10.1002/1097-0142(20010415)91:8+{\textless}1615::AI
-    \verb D-CNCR1175{\textgreater}3.0.CO;2-L
-    \endverb
-    \field{volume}{91}
-    \field{journaltitle}{Cancer}
-    \field{year}{2001}
-  \endentry
-
-  \entry{de1988learning}{article}{}
-    \name{author}{1}{}{%
-      {{hash=DJK}{%
-         family={De\bibnamedelima Jong},
-         familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
-         given={Kenneth},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{DJK1}
-    \strng{fullhash}{DJK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{number}{2-3}
-    \field{pages}{121\bibrangedash 138}
-    \field{title}{Learning with genetic algorithms: An overview}
-    \field{volume}{3}
-    \field{journaltitle}{Machine learning}
-    \field{year}{1988}
-  \endentry
-
-  \entry{EibenSmith2003}{book}{}
-    \name{author}{2}{}{%
-      {{hash=EA}{%
-         family={Eiben},
-         familyi={E\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=SJ}{%
-         family={Smith},
-         familyi={S\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{EASJ1}
-    \strng{fullhash}{EASJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{E}
-    \field{sortinithash}{E}
-    \field{title}{Introduction to Evolutionary Computing}
-    \list{location}{1}{%
-      {Berlin, Germany}%
-    }
-    \field{year}{2003}
-  \endentry
-
   \entry{RefWorks:33}{article}{}
     \name{author}{2}{}{%
       {{hash=EAE}{%
@@ -365,70 +266,6 @@
     \field{volume}{1}
     \field{journaltitle}{Evolutionary Intelligence}
     \field{year}{2008}
-  \endentry
-
-  \entry{RefWorks:31}{article}{}
-    \name{author}{3}{}{%
-      {{hash=GJ}{%
-         family={Ghosh},
-         familyi={G\bibinitperiod},
-         given={Joydeep},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=KBJ}{%
-         family={Kuipers},
-         familyi={K\bibinitperiod},
-         given={Benjamin\bibnamedelima J},
-         giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MRJ}{%
-         family={Mooney},
-         familyi={M\bibinitperiod},
-         given={Raymond\bibnamedelima J},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GJKBJMRJ1}
-    \strng{fullhash}{GJKBJMRJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{title}{{Efficient evolution of neural networks through
-  complexification}}
-    \field{year}{2004}
-  \endentry
-
-  \entry{goldberg1988genetic}{article}{}
-    \name{author}{2}{}{%
-      {{hash=GDE}{%
-         family={Goldberg},
-         familyi={G\bibinitperiod},
-         given={David\bibnamedelima E},
-         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=HJH}{%
-         family={Holland},
-         familyi={H\bibinitperiod},
-         given={John\bibnamedelima H},
-         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{GDEHJH1}
-    \strng{fullhash}{GDEHJH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{number}{2}
-    \field{pages}{95\bibrangedash 99}
-    \field{title}{{Genetic algorithms and machine learning}}
-    \field{volume}{3}
-    \field{journaltitle}{Machine learning}
-    \field{year}{1988}
   \endentry
 
   \entry{gomes2013generic}{inproceedings}{}
@@ -536,73 +373,6 @@
     \field{year}{2013}
   \endentry
 
-  \entry{gomez2001neuro}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=GFJ}{%
-         family={Gomez},
-         familyi={G\bibinitperiod},
-         given={Faustino\bibnamedelima J},
-         giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Burger},
-         familyi={B\bibinitperiod},
-         given={Doug},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=MR}{%
-         family={Miikkulainen},
-         familyi={M\bibinitperiod},
-         given={Risto},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{GFJBDMR1}
-    \strng{fullhash}{GFJBDMR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{booktitle}{Neural Networks, 2001. Proceedings. IJCNN'01.
-  International Joint Conference on}
-    \field{pages}{2355\bibrangedash 2360}
-    \field{title}{{A neuro-evolution method for dynamic resource allocation on
-  a chip multiprocessor}}
-    \field{volume}{4}
-    \field{year}{2001}
-  \endentry
-
-  \entry{gomez1999solving}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=GFJ}{%
-         family={Gomez},
-         familyi={G\bibinitperiod},
-         given={Faustino\bibnamedelima J},
-         giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MR}{%
-         family={Miikkulainen},
-         familyi={M\bibinitperiod},
-         given={Risto},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GFJMR1}
-    \strng{fullhash}{GFJMR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{booktitle}{IJCAI}
-    \field{pages}{1356\bibrangedash 1361}
-    \field{title}{{Solving non-Markovian control tasks with neuroevolution}}
-    \field{volume}{99}
-    \field{year}{1999}
-  \endentry
-
   \entry{RefWorks:32}{article}{}
     \name{author}{2}{}{%
       {{hash=GFJ}{%
@@ -618,76 +388,14 @@
          giveni={R\bibinitperiod},
       }}%
     }
-    \strng{namehash}{GFJMR2}
-    \strng{fullhash}{GFJMR2}
+    \strng{namehash}{GFJMR1}
+    \strng{fullhash}{GFJMR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{title}{{Robust non-linear control through neuroevolution}}
     \field{year}{2003}
-  \endentry
-
-  \entry{igel2003neuroevolution}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=IC}{%
-         family={Igel},
-         familyi={I\bibinitperiod},
-         given={Christian},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{IC1}
-    \strng{fullhash}{IC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{I}
-    \field{sortinithash}{I}
-    \field{booktitle}{Evolutionary Computation, 2003. CEC'03. The 2003 Congress
-  on}
-    \field{pages}{2588\bibrangedash 2595}
-    \field{title}{{Neuroevolution for reinforcement learning using evolution
-  strategies}}
-    \field{volume}{4}
-    \field{year}{2003}
-  \endentry
-
-  \entry{KaelblingLittmanMoore1996}{article}{}
-    \name{author}{3}{}{%
-      {{hash=KL}{%
-         family={Kaelbling},
-         familyi={K\bibinitperiod},
-         given={L.},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=LM}{%
-         family={Littman},
-         familyi={L\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=MA}{%
-         family={Moore},
-         familyi={M\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KLLMMA1}
-    \strng{fullhash}{KLLMMA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{number}{1}
-    \field{pages}{237–\bibrangedash 285}
-    \field{title}{Reinforcement learning: A survey.}
-    \field{volume}{4}
-    \field{journaltitle}{Journal of Artificial Intelligence}
-    \field{year}{1996}
   \endentry
 
   \entry{KubeZhang1994B}{article}{}
@@ -719,115 +427,37 @@
     \field{year}{1994}
   \endentry
 
-  \entry{mcculloch1943logical}{article}{}
+  \entry{lehman2011abandoning}{article}{}
     \name{author}{2}{}{%
-      {{hash=MWS}{%
-         family={McCulloch},
-         familyi={M\bibinitperiod},
-         given={Warren\bibnamedelima S},
-         giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+      {{hash=LJ}{%
+         family={Lehman},
+         familyi={L\bibinitperiod},
+         given={Joel},
+         giveni={J\bibinitperiod},
       }}%
-      {{hash=PW}{%
-         family={Pitts},
-         familyi={P\bibinitperiod},
-         given={Walter},
-         giveni={W\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{MWSPW1}
-    \strng{fullhash}{MWSPW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{number}{4}
-    \field{pages}{115\bibrangedash 133}
-    \field{title}{{A logical calculus of the ideas immanent in nervous
-  activity}}
-    \field{volume}{5}
-    \field{journaltitle}{The bulletin of mathematical biophysics}
-    \field{year}{1943}
-  \endentry
-
-  \entry{Miikkulainen2010}{incollection}{}
-    \name{author}{1}{}{%
-      {{hash=MR}{%
-         family={Miikkulainen},
-         familyi={M\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \name{editor}{2}{}{%
-      {{hash=SC}{%
-         family={Sammut},
+      {{hash=SKO}{%
+         family={Stanley},
          familyi={S\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=WG}{%
-         family={Webb},
-         familyi={W\bibinitperiod},
-         given={G.},
-         giveni={G\bibinitperiod},
+         given={Kenneth\bibnamedelima O},
+         giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Springer}%
+      {MIT Press}%
     }
-    \strng{namehash}{MR1}
-    \strng{fullhash}{MR1}
+    \strng{namehash}{LJSKO1}
+    \strng{fullhash}{LJSKO1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{booktitle}{Encyclopedia of Machine Learning}
-    \field{pages}{716\bibrangedash 720}
-    \field{title}{Neuroevolution}
-    \list{location}{1}{%
-      {New York, USA}%
-    }
-    \field{year}{2010}
-  \endentry
-
-  \entry{Miikkulainen:2010:ENN:1830761.1830902}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=MR}{%
-         family={Miikkulainen},
-         familyi={M\bibinitperiod},
-         given={Risto},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {ACM}%
-    }
-    \keyw{neural networks,evolutionary computation}
-    \strng{namehash}{MR2}
-    \strng{fullhash}{MR2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{booktitle}{Proceedings of the 12th Annual Conference Companion on
-  Genetic and Evolutionary Computation}
-    \verb{doi}
-    \verb 10.1145/1830761.1830902
-    \endverb
-    \field{isbn}{978-1-4503-0073-5}
-    \field{pages}{2441\bibrangedash 2460}
-    \field{series}{GECCO '10}
-    \field{title}{{Evolving Neural Networks}}
-    \verb{url}
-    \verb http://doi.acm.org/10.1145/1830761.1830902
-    \endverb
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{year}{2010}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{2}
+    \field{pages}{189\bibrangedash 223}
+    \field{title}{{Abandoning objectives: Evolution through the search for
+  novelty alone}}
+    \field{volume}{19}
+    \field{journaltitle}{Evolutionary computation}
+    \field{year}{2011}
   \endentry
 
   \entry{NitschkeSaEC2012}{article}{}
@@ -866,32 +496,43 @@
     \field{year}{2012}
   \endentry
 
-  \entry{russell2016artificial}{book}{}
-    \name{author}{2}{}{%
-      {{hash=RSJ}{%
-         family={Russell},
-         familyi={R\bibinitperiod},
-         given={Stuart\bibnamedelima J},
-         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+  \entry{ShenKhoshnevis2003}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SW}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
       }}%
-      {{hash=NP}{%
-         family={Norvig},
-         familyi={N\bibinitperiod},
-         given={Peter},
+      {{hash=WP}{%
+         family={Will},
+         familyi={W\bibinitperiod},
+         given={P.},
          giveni={P\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Khoshnevis},
+         familyi={K\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Malaysia; Pearson Education Limited,}%
+      {IEEE Press}%
     }
-    \strng{namehash}{RSJNP1}
-    \strng{fullhash}{RSJNP1}
+    \strng{namehash}{SWWPKB1}
+    \strng{fullhash}{SWWPKB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{title}{Artificial intelligence: a modern approach}
-    \field{year}{2016}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{IEEE International Conference on Robotics and Automation}
+    \field{pages}{2516\bibrangedash 2522}
+    \field{title}{Self-Assembly in Space via Self-Reconfigurable Robots}
+    \list{location}{1}{%
+      {Taipei, Taiwan}%
+    }
+    \field{year}{2003}
   \endentry
 
   \entry{Stanley2004}{book}{}
@@ -1008,7 +649,7 @@
       }}%
       {{hash=BYY}{%
          family={Bar-Yam},
-         familyi={B\bibinitperiod-Y\bibinitperiod},
+         familyi={B\bibinithyphendelim Y\bibinitperiod},
          given={Yaneer},
          giveni={Y\bibinitperiod},
       }}%
@@ -1063,90 +704,6 @@
     \field{volume}{87}
     \field{journaltitle}{Proceedings of the IEEE}
     \field{year}{1999}
-  \endentry
-
-  \entry{RefWorks:1}{article}{}
-    \name{author}{1}{}{%
-      {{hash=YX}{%
-         family={Yao},
-         familyi={Y\bibinitperiod},
-         given={Xin},
-         giveni={X\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{YX2}
-    \strng{fullhash}{YX2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Y}
-    \field{sortinithash}{Y}
-    \field{number}{9}
-    \field{pages}{1423\bibrangedash 1447}
-    \field{title}{{Evolving artificial neural networks}}
-    \field{volume}{87}
-    \field{journaltitle}{Proceedings of the IEEE}
-    \field{year}{1999}
-  \endentry
-
-  \entry{yegnanarayana2009artificial}{book}{}
-    \name{author}{1}{}{%
-      {{hash=YB}{%
-         family={Yegnanarayana},
-         familyi={Y\bibinitperiod},
-         given={B},
-         giveni={B},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {PHI Learning Pvt. Ltd.}%
-    }
-    \strng{namehash}{YB1}
-    \strng{fullhash}{YB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Y}
-    \field{sortinithash}{Y}
-    \field{title}{{Artificial neural networks}}
-    \field{year}{2009}
-  \endentry
-
-  \entry{zhang1998forecasting}{article}{}
-    \name{author}{3}{}{%
-      {{hash=ZG}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Guoqiang},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=PBE}{%
-         family={Patuwo},
-         familyi={P\bibinitperiod},
-         given={B\bibnamedelima Eddy},
-         giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=HMY}{%
-         family={Hu},
-         familyi={H\bibinitperiod},
-         given={Michael\bibnamedelima Y},
-         giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{ZGPBEHMY1}
-    \strng{fullhash}{ZGPBEHMY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \field{number}{1}
-    \field{pages}{35\bibrangedash 62}
-    \field{title}{{Forecasting with artificial neural networks:: The state of
-  the art}}
-    \field{volume}{14}
-    \field{journaltitle}{International journal of forecasting}
-    \field{year}{1998}
   \endentry
 \enddatalist
 \endinput
