@@ -8,6 +8,95 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
+\section{The Evolutionary Computing Metaphor}
+
+\hl{"In what is sometimes called the macroscopic view of evolution, natural selection plays a central role. Given an environment that can host only a limited number of individuals, and the basic instinct of individuals to reproduce, selection becomes inevitable if the population size is not to grow exponentially. Natural selection favours those individuals that compete for the given resources most effectively, in other words, those that are adapted or fit to the environmental conditions best. This phenomenon is also known as survival of the fittest."} \cite{EibenSmith2003}
+
+\hl{"Competition-based selection is one of the two cornerstones of evolutionary progress. The other primary force identified by Darwin results from phenotypic variations among members of the population. Phenotypic traits are those behavioural and physical features of an individual that directly affect its response to the environment (including other individuals), thus determining its fitness."} \cite{EibenSmith2003}
+
+\hl{"Each individual represents a unique combination of phenotypic traits that is evaluated by the environment. If it evaluates favourably, then it is propagated via the individual's offspring, otherwise it is discarded by dying without offspring. Darwin's insight was that small, random variations - mutations - in phenotypic traits occur during reproduction from generation to generation. Through these variations, new combinations of traits occur and get evaluated. The best ones survive and reproduce, and so evolution progresses"} \cite{EibenSmith2003}
+
+\hl{"To summarise this basic model, a population consists of a number of individuals. These individuals are the 'units of selection', that is to say that their reproductive success depends on how well they are adapted to their environment relative to the rest of the population. As the more successful individuals reproduce, occasional mutations give rise to new individuals to be tested. Thus, as time passes, there is a change in the constitution of the population"} \cite{EibenSmith2003}
+
+\hl{"This process is well captured by the intuitive metaphor of an adaptive landscape or adaptive surfacce. On this landscape the heigh dimension belongs to fitness: a high altitude stands for high fitness. The other two (or more, in the general case) dimensions correspond to biological traits "} \cite{EibenSmith2003}
+
+%% There is a sample figure of an adaptive surface in \cite{EibenSmith2003} -> should maybe find something similar to be used as an example illustration
+
+\hl{"The x-y plane holds all possible trait combinations, the z-values show their fitnesses. Hence, each peak represents a range of successful trait combinations, while troughs belong to less fit combinations. A given population can be plotted as a set of points on this landscape, where each dot is one individual realising a possible trait combination. Evolution is then the process of gradual advances of the population towards high-altitude areas, powered by variation and natural selection"} \cite{EibenSmith2003}
+
+\subsection{Actions On Individual Candidate Solutions}
+-> Reproduction/Selection - crossover/recombination
+-> Random genetic mutations
+
+\hl{"In Evolutionary Computing, the combination of features from two individuals in offspring is often called crossover. It is important to note that this is not analogous to the working of diploid organisms, where crossing-over is not a process"} \cite{EibenSmith2003}
+
+\subsection{Actions Of Populations On The Landscape}
+
+\hl{"The link with an optimisation process is as straightforward as misleading, because evolution is not a unidirectional uphill process (page 5, check ref). Because the population has a finite size, and random choices are made in the selection and variation operators, it is common to observe the phenomenon of Genetic Drift, whereby highly fit individuals may be lost from the population, or the population may suffer from a loss of variety concerning some traits. One of the effects of this is that populations can 'melt down' the hill, and enter low-fitness valleys. The combined global effects of drift and selection enable populations to move uphill as well as downhill, and of course there is no guarantee that the population will climb back up the same hill."} \cite{EibenSmith2003}
+
+\subsection{Genetics}
+
+\hl{"The microscopic view of natural evolution is offered by the discipline of molecular genetics. It sheds light on the processes below the level of visible phenotypic features, in particular relating to heredity. The fundamental observation from genetics is that each individual is a dual entity: its phenotypic properties (outside) are represented at a low genotypic level (inside). In other words, an individual's genotype encodes its phenotype. Genes are the functional units of inheritance encoding phenotypic characteristics. In natural systems this encoding is not one-to-one: one gene might affect more phenotypic traits and in turn, on phenotypic trait can be determined by more than one gene"} \cite{EibenSmith2003}
+
+\hl{"Phenotypic variations are always caused by genotypic variations, which in turn are the consequences of mutations of genes or recombination of genes by sexual reproduction."} \cite{EibenSmith2003}
+
+\hl{"Another way to think of this is that the genotype contains all the information necessary to build the particular phenotype."} \cite{EibenSmith2003}
+
+DNA -> (transcription) -> RNA -> (translation) -> Protein
+\hl{"It is one of the principal dogmas of molecular genetics that this information flow is only one-way. Speaking in terms of genotypes and phenotypes, this means that phenotypic features cannot influence genotypic information"} \cite{EibenSmith2003}
+\hl{"A consequence of this view is that changes in the genetic material of a population can only arise from random variations and natural selection and definitely not from an individual learning. It is important to understand that all variations (mutation and recombination) happen at the genotypic level, while selection is based on actual performance in a given environment, that is, at the phenotypic level"} \cite{EibenSmith2003}
+
+
+
+\hl{"There is a variety of EAs that have been proposed and studied. They all share a common set of underlying assumptions but differ in the breeding strategy to be used and representation on which EAs operate"} \cite{kicinger2005evolutionary}.
+
+
+\hl{"Historically, three major EAs have been developed: Evolutionary Strategies, Evolutionary Programming, Genetic Algorithms"} \cite{kicinger2005evolutionary}.
+The above provides some more information on how all these super similar algorithms fit together.
+
+
+\section{Genetic Algorithms}
+
+\hl{need to find an appropriate place for this section w.r.t the rest of the research. GA are the basis of NE algorithms. Since learning methods are classified based on their representations, NE makes use of genetic encodings right?}
+
+WHAT IS THE DIFFERENCE BETWEEN A GENETIC ALGORITHM AND EVOLUTIONARY ALGORITHM?
+\hl{A genetic algorithm is a class evolutionary algorithm. Although genetic algorithms are the most frequently encountered type of EA, there are other types such as Evolution Strategy}
+https://stackoverflow.com/questions/2890061/what-is-the-difference-between-genetic-and-evolutionary-algorithms
+These algorithms are defined by the way in which the agents are represented. Genetic Algorithms make use of binary strings (I think???)
+
+
+
+'Simply stated, genetic algorithms are probabilistic search procedures designed to work on large spaces involving states that can be represented by strings. These methods are inherently parallel, using a distributed set of examples from the space (population of strings) to generate a new set of samples. They also exhibit a more subtle implicit parallelism. Roughly, in processing a population of $m$ strings, a genetic algorithm implicitly evaluates substantially more than $m^3$ component substrings. It the automatically biases future populations to exploit the above average components as building blocks from which to construct structures that will exploit regularities in the environment (problem space)'' \cite{goldberg1988genetic}
+
+'The theorem that establishes this speedup and its precursors - the schema theorems - illustrate the central role of theory in the development of Genetic Algorithms. Learning programs designed to exploit this building block property gain a substantial advantage in complex spaces where they must discover both the "rules of the game" and the strategies for playing the "game"' \cite{goldberg1988genetic}.
+
+should probably just make sure of the content that I am using from \cite{goldberg1988genetic} since the paper was published 30 years ago
+
+"Although there are a number of different types of genetics-based machine learning systems, in this issue we concentrate on classifier systems and their derivatives. Classifier systems are parallel production systems that have been designed to exploit the implicit parallelism of genetic algorithms. All interactions are via standardized messages, so that conditions are simply defined in terms of the messages they send. The resulting systems are computationally complete, and the simple syntax makes it easy for a GA to discover building blocks appropriate for the construction of new candidate rules. Because classifier systems rely on competition to resolve conflicts, the need no algorithms for determining the global consistency of a set of rules. As a consequence, new rules can be inserted into an existing system, as trials or hypotheses, without disturbing established capacities. This gracefulness makes it possible for the system to operate incrementally, testing new structures and hypotheses while steadily improving its performance"
+
+
+"Genetic Algorithms are a family of adaptive search procedures that have been described and extensively analyzed in the literature" \cite{de1988learning} (just use the family of procedures part)
+
+"GA's derive their nam from the fact that they are loosely based on models of genetic change in a population of individuals" \cite{de1988learning}.
+
+"These models consist of three basic elements: " \cite{de1988learning}
+(1) 'a Darwinian notion of "fitness", which governs the extent to which an individual can influence future generations'
+(2) 'a "mating operator", which produces offspring for the next generation'
+(3) '"genetic operators," which determine the genetic makeup of offspring from the genetic makeup of the parents'
+
+\hl{what is the difference between GA and EA??}
+
+"A key point of these models is that adaptation proceeds, not by making incremental changes to a single structure, but by maintaining a population (or database) of structures from which new structures are created using genetic operators such as crossover and mutation. Each structure in the population has an associated fitness (goal-oriented evaluation), and these scores are used in a competition to determine which structures are used to form new ones" \cite{de1988learning}.
+
+"The key feature of a GA's is their ability to exploit accumulating information about an initially unknown search space in order to bias subsequent search into useful subspaces. Clearly, if one has a strong domain theory to guide the process of structural change, one would be foolish not to use it. However, for many practical domains of application, it is very difficult to construct such theories. If the space of legal structual changes is not too large, one can usuall develop an enumerative search strategy with appropriate heuristic cutoffs to keep the computation time under control. If the search space is large, however, a good deal of time and effort can be spent in developing domain-specific heuristics with sufficient cutoff power. It is precisely in these circumstances (large, complex, poorly understood search spaces) that one should consider exploiting the power of genetic algorithms" \cite{de1988learning}.
+
+"At the same time, one must understand the price to be paid for searching poorly understood spaces. It typically requires 500-1000 samples before genetic algorithms have sufficient information to strongly bias subsequent samples into useful subspaces. This means that GA's will not be appropriate searcch procedures for learning domains in which the evaluation of 500-1000 alternative structural changes is infeasible. The variety of current activity in using GAs for machine learning suggests that many interesting learning problems fall into this category" \cite{de1988learning}.
+
+"A simple and intuitive approach for effecting behavioural changes in a performance system is to identify a key set of parameters that control the system's behaviour, and to develop a strategy for changing those parameters values to improve performance. The primary advantage of this approach is that it immediately places us on the familiar terrain of parameter optimization problems, for which there is considerable understanding and guidance, and for which the simplest forms of GAs can be used. It is easy at first glance to discard this approach as trivial and not at all representative of what is meant by 'learning'. But note that significant behavioural changes can be achieved within this simple framework."
+
+
+
+
 \section{Robustness}
 
 Currently, robotic systems recover from damage via self diagnosis and selection from pre-designed contingency plans in order to be able to continue functioning (check the references for this from the GECCO Penultimate paper). However, robots using such self-diagnosis and recovery systems are problematic as such systems are expensive, require sophisticated monitoring sensors and are difficult to design since system designers must have a priori konwledge of all necessary contingency plans (also get a reference).
@@ -82,6 +171,8 @@ Sigmoid, Gaussian
 
 \section{Learning in ANN's}
 
+%% Should maybe remove this section since there is no actual ANN learning methods being performed in the HyperNEAT algorithm. Learning in ANNs like referring to Backpropagation. In the Evolutionary Algorithm, the changes to the ANN structures are random/stochastic
+
 "The variety and complexity of learning systems makes it difficult to formulate a universally accepted definition of learning. However, a common denominator of most learning systems is their capability for making structural changes to themselves over time with the intent of improving performance on tasks defined by their environment, discovering and subsequently exploiting interesting concepts, or improving the consistency and generality of internal knowledge structures " \cite{de1988learning}.
 
 "Given this perspective, one of the most important means for understanding the strengths and limitations of a particular learning system is a precise characterization of the structural changes that are permitted and how such changes are made " \cite{de1988learning} \hl{THIS IS A GOOD EXPLANATION OF HOW THE DIFFERENT LEARNING APPROACHES ARE CHARACTERIZED. THIS WILL BE A GOOD INTRODUCTION IN TO THE LATER SECTIONS ON THE ALGORITHMS AND WHAT MAKES THEM DIFFERENT TO EACH OTHER}
@@ -133,9 +224,6 @@ The components of these agents include:
 -> 'In supervised learning the agent observes some example input-output pairs and learns a function that maps from input to output. In component 1 above, the inputs are percepts and the output are provided by a teacher who says "Brake" or "Turn Left". In component 2, the inputs are camera images and the outputs again come from a teacher who says "that is a bus". In component 3, the theory of braking is a function from states and braking actions to stopping distance in feet. In this case, the output value is available directly from the agents percepts (after the fact); the environment is the teacher'
 
 
-\hl{"Never tell people how to do things. Tell them what to do and they will surprise you with their ingenuity" - George S. Patton}
-
-
 Learning in ANN's, also referred to as 'training', is typically achieved using examples. During this process, the connection weights between neurons in the network are iteratively adjusted until such a point that the network can perform the desired task \cite{XinYao1999}.
 
 Learning in ANN's can roughly be divided into supervised, unsupervised, and Reinforcement Learning.
@@ -165,6 +253,7 @@ A typical cycle of the evolution of connection weights \cite{XinYao1999}:
 \end{enumerate}
 
 \subsection{Learning Rules}
+
 In this section, we will investigate and elaborate on the details and various implementations of the learning rules that were outlined above.
 
 %https://en.wikipedia.org/wiki/Learning_rule
@@ -174,7 +263,7 @@ In this section, we will investigate and elaborate on the details and various im
 %\hl{when re-writing the content and structuring the info, try and 'peel' apart the different layers of EC. ANN's, learniong in ANN's, the learning rule describing the calculations used to adjust the weights (hebbian, delta, etc), the different types of learning based on the feedback mechanisms (supervised, unsupervised etc), then moving on to the different algorithms and what makes them different (like the different representations of information)}
 
 
-\subsection{Supervised Learning}
+\subsubsection{Supervised Learning}
 
 page 694-695 of the cited text
 
@@ -190,6 +279,8 @@ When the output $y$ is one of a finite set of values (such as \textit{sunny}, \t
 (Regression)
 Wehn $y$ is a number (such as tomorrow's temperature), the learning problem is called \textbf{regression}. (Technically, solving a regression problem is finding a conditional expectation or average value of $y$, because the probability that we have found \textit{exactly} the right real-valued number for $y$ is 0.)
 
+
+%% The below can perhaps just be included in the parent section as a brief example instead of having its own section..??
 
 \subsubsection{Backpropagation}
 %https://en.wikipedia.org/wiki/Backpropagation be sure to check for the original references
@@ -262,77 +353,7 @@ The agent 'remembers' the results of the actions that it performs. It knows whic
 Models of Optimal Behaviour
 'Before we can start thinking about algorithms for learning to behave optimally, we have to decide what our model of optimality will be. In particular, we have to specify how the agent should take the future into account in the decisions it makes about how to behave now. There are three models that have been the subject of the majority of work in this area' \cite{KaelblingLittmanMoore1996}.
 
-\subsubsection{The Finite Horizon Model} \cite{KaelblingLittmanMoore1996}
-'this is the easiest one to think about' (conceptualize?)
-'at a given moment in time, the agent should optimize its expected reward for the next $h$ steps:'
 
-\begin{equation}
-E(\sum_{t=0}^{h} r_t)
-\end{equation}
-
-
-
-\section{Genetic Algorithms}
-
-\hl{need to find an appropriate place for this section w.r.t the rest of the research. GA are the basis of NE algorithms. Since learning methods are classified based on their representations, NE makes use of genetic encodings right?}
-
-WHAT IS THE DIFFERENCE BETWEEN A GENETIC ALGORITHM AND EVOLUTIONARY ALGORITHM?
-\hl{A genetic algorithm is a class evolutionary algorithm. Although genetic algorithms are the most frequently encountered type of EA, there are other types such as Evolution Strategy}
-https://stackoverflow.com/questions/2890061/what-is-the-difference-between-genetic-and-evolutionary-algorithms
-These algorithms are defined by the way in which the agents are represented. Genetic Algorithms make use of binary strings (I think???)
-
-
-
-'Simply stated, genetic algorithms are probabilistic search procedures designed to work on large spaces involving states that can be represented by strings. These methods are inherently parallel, using a distributed set of examples from the space (population of strings) to generate a new set of samples. They also exhibit a more subtle implicit parallelism. Roughly, in processing a population of $m$ strings, a genetic algorithm implicitly evaluates substantially more than $m^3$ component substrings. It the automatically biases future populations to exploit the above average components as building blocks from which to construct structures that will exploit regularities in the environment (problem space)'' \cite{goldberg1988genetic}
-
-'The theorem that establishes this speedup and its precursors - the schema theorems - illustrate the central role of theory in the development of Genetic Algorithms. Learning programs designed to exploit this building block property gain a substantial advantage in complex spaces where they must discover both the "rules of the game" and the strategies for playing the "game"' \cite{goldberg1988genetic}.
-
-should probably just make sure of the content that I am using from \cite{goldberg1988genetic} since the paper was published 30 years ago
-
-"Although there are a number of different types of genetics-based machine learning systems, in this issue we concentrate on classifier systems and their derivatives. Classifier systems are parallel production systems that have been designed to exploit the implicit parallelism of genetic algorithms. All interactions are via standardized messages, so that conditions are simply defined in terms of the messages they send. The resulting systems are computationally complete, and the simple syntax makes it easy for a GA to discover building blocks appropriate for the construction of new candidate rules. Because classifier systems rely on competition to resolve conflicts, the need no algorithms for determining the global consistency of a set of rules. As a consequence, new rules can be inserted into an existing system, as trials or hypotheses, without disturbing established capacities. This gracefulness makes it possible for the system to operate incrementally, testing new structures and hypotheses while steadily improving its performance"
-
-
-"Genetic Algorithms are a family of adaptive search procedures that have been described and extensively analyzed in the literature" \cite{de1988learning} (just use the family of procedures part)
-
-"GA's derive their nam from the fact that they are loosely based on models of genetic change in a population of individuals" \cite{de1988learning}.
-
-"These models consist of three basic elements: " \cite{de1988learning}
-(1) 'a Darwinian notion of "fitness", which governs the extent to which an individual can influence future generations'
-(2) 'a "mating operator", which produces offspring for the next generation'
-(3) '"genetic operators," which determine the genetic makeup of offspring from the genetic makeup of the parents'
-
-\hl{what is the difference between GA and EA??}
-
-"A key point of these models is that adaptation proceeds, not by making incremental changes to a single structure, but by maintaining a population (or database) of structures from which new structures are created using genetic operators such as crossover and mutation. Each structure in the population has an associated fitness (goal-oriented evaluation), and these scores are used in a competition to determine which structures are used to form new ones" \cite{de1988learning}.
-
-"The key feature of a GA's is their ability to exploit accumulating information about an initially unknown search space in order to bias subsequent search into useful subspaces. Clearly, if one has a strong domain theory to guide the process of structural change, one would be foolish not to use it. However, for many practical domains of application, it is very difficult to construct such theories. If the space of legal structual changes is not too large, one can usuall develop an enumerative search strategy with appropriate heuristic cutoffs to keep the computation time under control. If the search space is large, however, a good deal of time and effort can be spent in developing domain-specific heuristics with sufficient cutoff power. It is precisely in these circumstances (large, complex, poorly understood search spaces) that one should consider exploiting the power of genetic algorithms" \cite{de1988learning}.
-
-"At the same time, one must understand the price to be paid for searching poorly understood spaces. It typically requires 500-1000 samples before genetic algorithms have sufficient information to strongly bias subsequent samples into useful subspaces. This means that GA's will not be appropriate searcch procedures for learning domains in which the evaluation of 500-1000 alternative structural changes is infeasible. The variety of current activity in using GAs for machine learning suggests that many interesting learning problems fall into this category" \cite{de1988learning}.
-
-"A simple and intuitive approach for effecting behavioural changes in a performance system is to identify a key set of parameters that control the system's behaviour, and to develop a strategy for changing those parameters values to improve performance. The primary advantage of this approach is that it immediately places us on the familiar terrain of parameter optimization problems, for which there is considerable understanding and guidance, and for which the simplest forms of GAs can be used. It is easy at first glance to discard this approach as trivial and not at all representative of what is meant by 'learning'. But note that significant behavioural changes can be achieved within this simple framework."
-
-\section{Evolutionary Computing / Evolutionary Algorithms}
-
-for the basic outline below, this was taken directly from the outline in \cite{XinYao1999}, but I have added an additional first step that mentnions letting the individuals in the population first attempt the task in the simulated environment. This is so that there are actually some results to analyse as part of the first step. The original one does not mention what the individuals do to 'prove' their fitness or how the fitness would be evaluated.
-
-try to find another reference where they have a general outline of an Evolutionary Algorithm. You can then reference both of these for the outline that you have created below.
-
-\hl{Basic outline of evolutionary algorithm}
-\begin{enumerate} \label{EA-Overview}
-	\item Generate the initial population $G(0)$ at random, and set $i = 0$, where $i$ refers to the initial timestamp/first generation \hl{check this understanding is correct}
-	\item REPEAT:
-		\begin{enumerate}
-			\item Let each individual run in the simulation so as to be able to view their performance.
-			\item Evaluate the performance of each of the individuals using the predetermined fitness function.
-			\item Select the parents from $G_i$ based on their fitness value (calculated using the fitness function).
-			\item Apply search operators \hl{be sure to include some more information on these search operators and the different ones that exist} to the parent generation in order to produce the offspring which form $G(i+1)$
-			\item Advance the timestep \hl{maybe rephrase this} $i=i+1$
-		\end{enumerate}
-	\item UNTIL $termination criterion$ is satisfied.
-		%\caption{fig: A General Outline of an Evolutionary Algorithm}
-\end{enumerate}
-
-\hl{in our case, the termination criterion is a set number of generations for the Evolutionary Algorithm to be performed}
 
 
 
@@ -355,6 +376,8 @@ This more refers to the fact that the agent learns through trial-and-error and t
 \section{Neuroevolution}
 
 \hl{find some more information regarding the natural processes: like the phenotype and genotype and why the encoding is so useful for representing regularities}
+
+'Neuroevolution is a method for modifying neural network weights, topologies, or ensembles in order to learn a specific task. Evolutionary computation is used to search for network parameters that maximize a fitness function that measures performance in the task. Compared to other neural network learning methods, neuroevolution is highly general, allowing learning withou explicit targets, with nondifferentiable activation functions, and with recurrent networks. It can also be combined with a standard neural network learning (eg. model biological adaptation.). Neuroevolution can also be seen as a policy search method for reinforcement learning problems, where it is well suited to continuous domains and to domains where the state is only partially observable' \cite{Miikkulainen2010}.
 
 'The primary motivation for neuroevolution is to be able to train neural networks in sequentual decision tasks with sparse reinforcement information. Most neural network learning is concerned with supervised tasks, where the desired behaviour is described in a corpus of input-output examples.' \cite{Miikkulainen2010}
 
@@ -405,19 +428,6 @@ Third, neuroevolution allows combining evolution over a population of solutions 
 'It is possible to analyze the evolved circuits and understand how they map to function, leading to insights into biological networks [ref 10]. The evolutionary behaviour approach is also useful for constructing characters in artificial environments, such as games and simulators. Non-player characters in current video games are usuall scripted and limited; neuroevolution can be used to evolve complex behaviours for them, and even adapt them in real time [ref 12] ' \cite{Miikkulainen2010}.
 
 
-
-
-
-
-\subsubsection{Definition}
-'Neuroevolution is a method for modifying neural network weights, topologies, or ensembles in order to learn a specific task. Evolutionary computation is used to search for network parameters that maximize a fitness function that measures performance in the task. Compared to other neural network learning methods, neuroevolution is highly general, allowing learning withou explicit targets, with nondifferentiable activation functions, and with recurrent networks. It can also be combined with a standard neural network learning (eg. model biological adaptation.). Neuroevolution can also be seen as a policy search method for reinforcement learning problems, where it is well suited to continuous domains and to domains where the state is only partially observable' \cite{Miikkulainen2010}.
-
-
-
-
-
-
-
 FROM THE LITERATURE REVIEW VERBATIM
 
 
@@ -446,6 +456,9 @@ Since the chromosomes in NE can be used to encode any aspect of ANNs and the cho
 \subsection{Objective Fitness}
 \subsection{Novelty Fitness}
 \subsection{Hybrid Fitness}
+
+%% Should perhaps remove the section for Hybrid Fitness since we never actually got to include the results from these experiments in this study
+%% Unless I can just use the experiments from Honours paper to support this section and then include the results in with this paper
 
 
 
