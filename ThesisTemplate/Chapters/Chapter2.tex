@@ -173,6 +173,21 @@ Sigmoid, Gaussian
 
 %% Should maybe remove this section since there is no actual ANN learning methods being performed in the HyperNEAT algorithm. Learning in ANNs like referring to Backpropagation. In the Evolutionary Algorithm, the changes to the ANN structures are random/stochastic
 
+% 'Components to be learned: ' \cite{russell2016artificial} \hl{remember to rephrase everything listed below}
+% The components of these agents include:
+% 1. A direct mapping from conditions on the current state to actions.
+% 2. A means to infer relevant properties of the world from the percept sequence (can maybe check the reference to see how to describe this)
+% 3. Information about the way the world evolves and about the results of possible actions the agent can take.
+% 4. Utility information indicating the desirability of world states.
+% 5. Action-value information indicating the desirability of actions.
+% 6. Goals that describe classes of states whose achievement maximizes the agent's utility.
+
+'There are 3 types of feedback that determine the three main types of learning: ' \cite{russell2016artificial}
+-> 'Unsupervised Learning: the agent learns patterns in the input even though no explicit feedback is supplied. The most common unsupervised learning task is clustering, detecting potentiall useful clusters of input examples. For example, a taxi agent gradually develop a concept of "good traffic days" and "bad traffic days" without ever being given labelled examples of each by a teacher'
+-> 'In Reinforcement Learning the agent learns from a series of reinforcements - rewards or punishments, For example, the lack of a tip at the end of a journey gives the taxi agent an indication that it did something wrong. The to points for a win at the end of a chess game tells the agent it did something right. It is up to the agent to decide which of the actions prior to the reinforcement were most responsible for it'
+-> 'In supervised learning the agent observes some example input-output pairs and learns a function that maps from input to output. In component 1 above, the inputs are percepts and the output are provided by a teacher who says "Brake" or "Turn Left". In component 2, the inputs are camera images and the outputs again come from a teacher who says "that is a bus". In component 3, the theory of braking is a function from states and braking actions to stopping distance in feet. In this case, the output value is available directly from the agents percepts (after the fact); the environment is the teacher'
+
+
 "The variety and complexity of learning systems makes it difficult to formulate a universally accepted definition of learning. However, a common denominator of most learning systems is their capability for making structural changes to themselves over time with the intent of improving performance on tasks defined by their environment, discovering and subsequently exploiting interesting concepts, or improving the consistency and generality of internal knowledge structures " \cite{de1988learning}.
 
 "Given this perspective, one of the most important means for understanding the strengths and limitations of a particular learning system is a precise characterization of the structural changes that are permitted and how such changes are made " \cite{de1988learning} \hl{THIS IS A GOOD EXPLANATION OF HOW THE DIFFERENT LEARNING APPROACHES ARE CHARACTERIZED. THIS WILL BE A GOOD INTRODUCTION IN TO THE LATER SECTIONS ON THE ALGORITHMS AND WHAT MAKES THEM DIFFERENT TO EACH OTHER}
@@ -196,14 +211,6 @@ what is learning
 -> 'What \textit{feedback} is available to learn from.'
 
 
-'Components to be learned: ' \cite{russell2016artificial} \hl{remember to rephrase everything listed below}
-The components of these agents include:
-1. A direct mapping from conditions on the current state to actions.
-2. A means to infer relevant properties of the world from the percept sequence (can maybe check the reference to see how to describe this)
-3. Information about the way the world evolves and about the results of possible actions the agent can take.
-4. Utility information indicating the desirability of world states.
-5. Action-value information indicating the desirability of actions.
-6. Goals that describe classes of states whose achievement maximizes the agent's utility.
 
 'Each of these components can be learned. Consider, for example, and agent training to become a taxi driver. Every time the instructor shouts "BRAKE!" the agent might learn a condition-action rule for when to brake (component 1); the agent also learns every time the instructor does not shout.' \cite{russell2016artificial}.
 
@@ -214,14 +221,6 @@ The components of these agents include:
 'Then, when it receives no tip from passengers who have been thoroughly shaken up during the trip, it can learn a useful component of its overall utility function (5)' \cite{russell2016artificial}
 
 \hl{there are no examples for the last 2 components...? check similar resources to find this}
-
-
-
-
-'There are 3 types of feedback that determine the three main types of learning: ' \cite{russell2016artificial}
--> 'Unsupervised Learning: the agent learns patterns in the input even though no explicit feedback is supplied. The most common unsupervised learning task is clustering, detecting potentiall useful clusters of input examples. For example, a taxi agent gradually develop a concept of "good traffic days" and "bad traffic days" without ever being given labelled examples of each by a teacher'
--> 'In Reinforcement Learning the agent learns from a series of reinforcements - rewards or punishments, For example, the lack of a tip at the end of a journey gives the taxi agent an indication that it did something wrong. The to points for a win at the end of a chess game tells the agent it did something right. It is up to the agent to decide which of the actions prior to the reinforcement were most responsible for it'
--> 'In supervised learning the agent observes some example input-output pairs and learns a function that maps from input to output. In component 1 above, the inputs are percepts and the output are provided by a teacher who says "Brake" or "Turn Left". In component 2, the inputs are camera images and the outputs again come from a teacher who says "that is a bus". In component 3, the theory of braking is a function from states and braking actions to stopping distance in feet. In this case, the output value is available directly from the agents percepts (after the fact); the environment is the teacher'
 
 
 Learning in ANN's, also referred to as 'training', is typically achieved using examples. During this process, the connection weights between neurons in the network are iteratively adjusted until such a point that the network can perform the desired task \cite{XinYao1999}.
@@ -431,8 +430,6 @@ Third, neuroevolution allows combining evolution over a population of solutions 
 FROM THE LITERATURE REVIEW VERBATIM
 
 
-Neuroevolution (NE) provides a way of combining EAs and ANNs \cite{RefWorks:31}. It uses EAs to evolve the connection weights, topologies and activation functions of ANNs in order to learn a specific task or behaviour \cite{gomez1999solving}. NE searches for an ANN with optimal performance based on a fitness function that determines an ANN's suitability to performing a task \cite{RefWorks:31}.
-
 Using NE to evolve ANNs addresses several weaknesses that occur in reinforcement or supervised learning techniques. Reinforcement learning (RL) requires a value function which is costly to compute whereas NE removes the need of such a function by directly searching the policy space using a EA \cite{RefWorks:32}.
 
 By searching through a population of solutions and evaluating several candidate solutions at a time, EAs are much less likely to get stuck in local minima than gradient-descent algorithms and therefore makes NE suitable for dealing with complex problems that generate numerous local optima \cite{gomez2001neuro,RefWorks:1}.
@@ -454,6 +451,9 @@ Since the chromosomes in NE can be used to encode any aspect of ANNs and the cho
 \section{Fitness Functions}
 
 \subsection{Objective Fitness}
+
+
+
 \subsection{Novelty Fitness}
 \subsection{Hybrid Fitness}
 

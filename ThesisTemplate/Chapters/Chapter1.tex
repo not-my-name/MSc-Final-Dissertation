@@ -27,13 +27,43 @@
 % 10 = \cite{fenton2001fault}
 % 21 = \cite{verma2004real}
 
-% "Autonomous robots are increasingly being applied to remote and hazardous environments [3,1], environments damage to sensory actuator systems cannot be easily repaired if damaged. An unsolved problem in the controller design for such autonomous robots is having controllers continue to effectively function given unexpected changes such as damage to robot morphology."
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	"Autonomous robots are increasingly being applied to remote and hazardous environ	%%
+%%	ments [3,1], environments damage to sensory actuator systems cannot be easily rep	%%
+%%	aired if damaged. An unsolved problem in the controller design for such autonomou	%%
+%%	s robots is having controllers continue to effectively function given unexpected 	%%
+%%	changes such as damage to robot morphology."                                    	%%
+%%	                                                                                	%%
+%%	"Currently, robotic systems recover from damage via self diagnosis and selection 	%%
+%%	from pre-designed contingency plans in order to continue functioning [10,21,2]. T	%%
+%%	hough robots using such self-diagnosis and recovery are problematic systems as th	%%
+%%	ey are expensive, requiring sophisticated monitoring sensors, and difficult to de	%%
+%%	sign as a priori knowledge of all necessary contingency plans is assumed [5]""  	%%
+%%	                                                                                	%%
+%%	"Addressing this, recent work in Evolutionary Robotics [8] elucidated the efficac	%%
+%%	y of population based stochastic trial and error methods for online damage recove	%%
+%%	ry in autonomous robots operating in physical environments [5]. This was demonstr	%%
+%%	ated as being akin to self-adaptation and injury recovery of animals observed in 	%%
+%%	nature.""                                                                       	%%
+%%	                                                                                	%%
+%%	"This study further contributes to this research area, focussing on evolutionary 	%%
+%%	controller design [11] within the broader context of collective [15] and swarm [1	%%
+%%	] robotics. That is, evolutionary controller design for robot groups that must co	%%
+%%	ntinue to accomplish tasks given that damage is sustained to the morphologies of 	%%
+%%	some or all of the robots in the group. ""
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% "Currently, robotic systems recover from damage via self diagnosis and selection from pre-designed contingency plans in order to continue functioning [10,21,2]. Though robots using such self-diagnosis and recovery are problematic systems as they are expensive, requiring sophisticated monitoring sensors, and difficult to design as a priori knowledge of all necessary contingency plans is assumed [5]""
 
-% "Addressing this, recent work in Evolutionary Robotics [8] elucidated the efficacy of population based stochastic trial and error methods for online damage recovery in autonomous robots operating in physical environments [5]. This was demonstrated as being akin to self-adaptation and injury recovery of animals observed in nature.""
+"Autonomous robots are increasingly being applied to remote and hazardous environments [3,1], environments damage to sensory actuator systems cannot be easily repaired if damaged. An unsolved problem in the controller design for such autonomous robots is having controllers continue to effectively function given unexpected changes such as damage to robot morphology."
 
-% "This study further contributes to this research area, focussing on evolutionary controller design [11] within the broader context of collective [15] and swarm [1] robotics. That is, evolutionary controller design for robot groups that must continue to accomplish tasks given that damage is sustained to the morphologies of some or all of the robots in the group. ""
+"Currently, robotic systems recover from damage via self diagnosis and selection from pre-designed contingency plans in order to continue functioning [10,21,2]. Though robots using such self-diagnosis and recovery are problematic systems as they are expensive, requiring sophisticated monitoring sensors, and difficult to design as a priori knowledge of all necessary contingency plans is assumed [5]""
+
+"Addressing this, recent work in Evolutionary Robotics [8] elucidated the efficacy of population based stochastic trial and error methods for online damage recovery in autonomous robots operating in physical environments [5]. This was demonstrated as being akin to self-adaptation and injury recovery of animals observed in nature.""
+
+"This study further contributes to this research area, focussing on evolutionary controller design [11] within the broader context of collective [15] and swarm [1] robotics. That is, evolutionary controller design for robot groups that must continue to accomplish tasks given that damage is sustained to the morphologies of some or all of the robots in the group. ""
+
+
+
 
 % ====================================================
 The design and development of automated problem solvers and autonomous robots has long been a central theme of research in the crossover between artificial intelligence and robotics \cite{RefWorks:33}. However, given the levels of complexity and non-linearity of real-world problems, traditional methods of controller design have become impractical since they rely mostly on linear mathematical models \cite{RefWorks:32}. An additional consideration is that at a certain point, designing the problem solver becomes more difficult than solving the problem, especially when there is not a distinct and well-defined set of steps to follow in order to obtain the solution.
@@ -50,28 +80,87 @@ In an attempt to try and find a solution around the complexity of automating the
 
 The problem solving power of evolution is abundantly clear in nature with the diverse range of organisms that exist (or ever have existed) on Earth, each specially designed for optimal survival in its own niche environment \cite{RefWorks:33}, making it unsurprising that computer scientists have resorted to researching natural processes for inspiration. 
 
-One such approach that draws inspiration from Darwinian evolution is Evolutionary Algorithms which relates the fundamental metaphor of the evolutionary process to a simple style of problem solving, which is that of trial-and-error (also referred to as generate-and-test) \cite{RefWorks:33}.
+One such approach that draws inspiration from Darwinian evolution is Evolutionary Algorithms; which relates the fundamental metaphor of the evolutionary process to a simple style of problem solving, which is that of trial-and-error (also referred to as generate-and-test) \cite{RefWorks:33}.
 
-\hl{"For the time being, let us consider natural evolution simply as follows. A given environment is filled with a population of individuals that strive for survival and reproduction. The fitness of these individuals - determined by the environment - relates to how well they succeed in achieving their goals, i.e., it represents their chances of survival and multiplying."} \cite{EibenSmith2003}
-
-These algorithms work by performing actions that are analagous to the process of Natural Selection (reproduction to produce subsequent generations, gene cross-over and mutation)
-
-\hl{"Natural selection favours those individuals that compete for the given resources most effectively, in other words, those that are adapted or fit to the environmental conditions best. This phenomenon is also known as Survival Of The Fittest."} \cite{EibenSmith2003}
-
-
-
-
-\hl{"Competition-based selection is the one of the two cornerstones of evolutionary progress. The other primary force identified by Darwin results from phenotypic variations among members of the population. Phenotypic traits aare those behavioural and physical features of an individual that directly affect its response to the environment (including other individuals), thus determining its fitness."} \cite{EibenSmith2003}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	Whereas traditional/standard learning...                                        	%%
+%%	NE implements the driving forces of natural selection (survival of the fittest/se	%%
+%%	lection, reproduction/crossover, random mutations) in analagous processes so as t	%%
+%%	o be able to modify the topology and connection weights between nodes to such a p	%%
+%%	oint that a desired output behaviour is achieved.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%	OVERVIEW OF THE TECHNOLOGY -- CAN POSSIBLY PUT THIS IN A SECTION IN CHAPTER 2?	
-Structure of the research field itself: \cite{EibenSmith2003}
-Based on a technology called "Evolutionary Computing"
-	-> the algorithms used by this technology are called "Evolutionary Algorithms"
-	-> considers Evolutionary Programming, Evolution Strategies, Genetic Algorithms, Genetic Programming as subareas of EC belonging to the corresponding algorithm variants
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	When compared with traditional learning in ANN's, such as Backpropagation and/or 	%%
+%%	Gradient Descent methods where there is a target configuration or at least some e	%%
+%%	rror can be calculated, Evolutionary Algorithms work in problem spaces where the 	%%
+%%	desired structure is not directly known.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-One such example of an Evolutionary Computing approach, and the method being investigated in this thesis, is called Neuroevolution and it works by combining Genetic Algorithms/Genetic Programming in order to train ANN's.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	Neuroevolution (NE) is a method of artificially evolving Artificial Neural Network	%%
+%%	s (ANN's) by implementing Evolutionary Algorithms to perform tasks such as evolvin	%%
+%%	g the network connection weights as well as the network topology \cite{Stanley2004	%%
+%%	, XinYao1999}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Neuroevolution (NE) provides a way of combining EAs and ANNs \cite{RefWorks:31}. It uses EAs to evolve the connection weights, topologies and activation functions of ANNs in order to learn a specific task or behaviour \cite{gomez1999solving}. NE searches for an ANN with optimal performance based on a fitness function that determines an ANN's suitability to performing a task \cite{RefWorks:31}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	"Neuroevolution allows combining evolution over a population of solutions with li	%%
+%%	fetime learning in individual solutions: the evolved networks can each learn furt	%%
+%%	her through eg. Backpropagation or Hebbian learning." \cite{Miikkulainen2010}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+It makes use of Evolutionary Algorithms in order to abstract the key aspects of the evolutionary process into a generational loop that will search for an optimal solution out of a population of candidates by evaluating each one in order to determine which is the fittest and thus the characteristics that persist to the next generation. Resulting in a stochastic search for the most optimal solution of the problem space.
+
+This generate-and-test approach is analogous to natural selection and survival of the fittest, in this case, the characteristics most suitable to the environment are defined by the experimenters.
+
+Extending this biological metaphor, we look at various other aspects of nature to further improve the abilities of 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	somehow relate the evolutionary metaphor to the reason for using Novelty search as	%%
+%%	well
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+A common and well-known problem that is often used as a benchmark test for automated controllers is the pole-balancing problem \cite{Stanley2004}.
+
+
+% \hl{"For the time being, let us consider natural evolution simply as follows. A given environment is filled with a population of individuals that strive for survival and reproduction. The fitness of these individuals - determined by the environment - relates to how well they succeed in achieving their goals, i.e., it represents their chances of survival and multiplying."} \cite{EibenSmith2003}
+
+% \hl{"Natural selection favours those individuals that compete for the given resources most effectively, in other words, those that are adapted or fit to the environmental conditions best. This phenomenon is also known as Survival Of The Fittest."} \cite{EibenSmith2003}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	\hl{"Competition-based selection is the one of the two cornerstones of evolutiona	%%
+%%	ry progress. The other primary force identified by Darwin results from phenotypic	%%
+%%	variations among members of the population. Phenotypic traits aare those behavio	%%
+%%	ural and physical features of an individual that directly affect its response to 	%%
+%%	the environment (including other individuals), thus determining its fitness."} \c	%%
+%%	ite{EibenSmith2003}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%		OVERVIEW OF THE TECHNOLOGY -- CAN POSSIBLY PUT THIS IN A SECTION IN CHAPTER 	%%
+%%	2?	                                                                         	%%
+%%	Structure of the research field itself: \cite{EibenSmith2003}                   	%%
+%%	Based on a technology called "Evolutionary Computing"                           	%%
+%%		-> the algorithms used by this technology are called "Evolutionary Algorithm	%%
+%%	s"                                                                              	%%
+%%		-> considers Evolutionary Programming, Evolution Strategies, Genetic Algorit	%%
+%%	hms, Genetic Programming as subareas of EC belonging to the corresponding algorit	%%
+%%	hm variants                                                                     	%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 
 \hl{"Accidents happen in nature from simple incidents like bumping into obstacles, to erroneously arriving at the wrong location, to mating with an unintended partner. Whether accidents are problematic for an animal depends on their context, frequency, and severity."} \cite{ferreira2018accidental}.
@@ -86,29 +175,20 @@ One such example of an Evolutionary Computing approach, and the method being inv
 \hl{"Evolutionary processes can be simulated in a computer, where millions of generations can be executed in a matter of hours or days and repeated under various circumstances. These possibilities go far beyond studies based on excavations and fossils, or those possible 'in vivo'. Naturally, the interpretation of such simulation experiments must be done very carefully. First, because we do not know whether the computer models represent the biological reality with sufficient fidelity. Second, it is unclear whether conclusions drawn in a digital medium, 'in silico', can be transferred to the carbon-based biological medium. These caveats and the lack of mutual awareness between biologists and computer scientists are probably the reason why there are few computer experimental studies about fundamental issues of biological evolution"} \cite{EibenSmith2003}.
 
 
-====== Motivation for investigating Novelty Search can be explained as being analagous to accidental encounters being beneficial or adaptive =======
 
-\hl{"Take, for example, the common instance3 of a MATE task where agents (eg. females) attempt to find (stationary) mates located in the environment using different mate selection strategies based on males's mating calls or displays of prowess, which are indicative of the quality of the mate and thus a crucial determinant of the quality of the offspring. Since females typically only have partial knowledge of the location of possible partners, as some males mayt not advertise their location through calls, they may end up mating with non-optimal partners by accident (eg. bumping into a potential mate causes females to simply mate with the male in some species such as tree frogs). For low quality males who might not win in a 'shouting' competition with high quality males, it might thus be beneficial to remain silent and try to intercept females instead of calling, a strategy often referred to as 'satellite' strategy; for if they decide to call, females might actively avoid them."} \cite{ferreira2018accidental}
--- The above has original references as well -> check page 2/20 LHS for full references
-
-Based on the above described patterns in natural interactions between individuals, this study also investigates the efficacy of Novelty Search as a fitness function in the Evolutionary Algorithm.
-
-
-
-===============================================================
-EDIT 1:
------------------------
-ADD SOME REAL WORLD EXAMPLES AND DESCRIPTIONS OF NE 
-"NE is the main method for controller adaptation in evolutionary robotics (the overall topic that this thesis fits into) - and within this field - NE applied to collective robotics has achieved success (evolved effective group behaviours) to solve various collective behaviour tasks - then give several example tasks that evolutionary collective robotics systems have solved - with references"
-==================================================================
+% ===============================================================
+% EDIT 1:
+% -----------------------
+% ADD SOME REAL WORLD EXAMPLES AND DESCRIPTIONS OF NE 
+% "NE is the main method for controller adaptation in evolutionary robotics (the overall topic that this thesis fits into) - and within this field - NE applied to collective robotics has achieved success (evolved effective group behaviours) to solve various collective behaviour tasks - then give several example tasks that evolutionary collective robotics systems have solved - with references"
+% ==================================================================
 
 Within the purview of collective robotics, NE is the main method used for controller evolution
 
-Neuroevolution (NE) is a method of artificially evolving Artificial Neural Networks (ANN's) by implementing Evolutionary Algorithms to perform tasks such as evolving the network connection weights as well as the network topology \cite{Stanley2004, XinYao1999}.
 
 Given that there are several learning tasks in the real world, such as game playing, vehicle control, and robotics, that are not well-suited to supervised learning methods, Neuroevolution aims to find an ANN that optimizes behaviour given only sparse information regarding how WELL the agents are performing, and without any input on WHAT they should be doing \cite{Miikkulainen2010}. 
 In the above outlined scenarios, the optimal action at each timestep is not always known and can only be determined after performing several actions to get information about the outcome of those actions and whether or not it was beneficial given the defined parameters \cite{Miikkulainen2010}.
-This makes Neuroevolution a suitable approach for this dissertation/research as it falls within the specialised problem-space.
+This makes Neuroevolution a suitable approach for this dissertation as it falls within the specialised problem-space.
 
 \hl{"Neuroevolution is a combination of neural networks and Genetic Algorithms where neural networks are the phenotype being evaluated"} \cite{Stanley2004}.
 
@@ -118,15 +198,13 @@ When compared to various other neural network learning methods, NE can be observ
 
 \hl{"As long as the performance of the networks can be evaluated over time, and the behaviour of the network can be modified through evolution, it can be applied to a wide range of network architectures, including those with nondifferentiable activation functions and recurrent and higher-order connections"} \cite{Miikkulainen2010}.
 
-\hl{"Neuroevolution allows combining evolution over a population of solutions with lifetime learning in individual solutions: the evolved networks can each learn further through eg. Backpropagation or Hebbian learning."} \cite{Miikkulainen2010}.
 
-It makes use of Evolutionary Algorithms in order to abstract the key aspects of the evolutionary process into a generational loop that will search for an optimal solution out of a population of candidates by evaluating each one in order to determine which is the fittest and thus the characteristics that persist to the next generation. Resulting in a stochastic search for the most optimal solution of the problem space.
 
 The different types of NE methods can be roughly/generally broken down into two different categories, with respect to the encoding method used to map an individual agent's genotype to its phenotype (from PTTAND010_Literature_Review.pdf)
 
 
 
-\hl{Direct Encoding: NEAT}
+%% \hl{Direct Encoding: NEAT}
 
 In direct encoding methods, each element in the genotype explicitly encodes an independent aspect of the phenotype, such that there is a one-to-one mapping between the genotype and the phenotype \cite{clune2011performance, stanley2009hypercube}.
 
@@ -142,7 +220,7 @@ An example of one such algorithm that makes use of a direct encoding method, is 
 NEAT is initialised with a small population of simple networks which are then gradually made more complex by either adding, removing, or mutating network connections \cite{RefWorks:11, Gomez2003}.
 
 
-\hl{Indirect Encoding: HyperNEAT}
+%% \hl{Indirect Encoding: HyperNEAT}
 
 This encoding scheme functions at a higher level of abstraction than direct encoding  \cite{Gomez2003}.
 
@@ -162,6 +240,20 @@ It has been shown that NE can successfully be applied to complex control tasks t
 
 %%%%%%%%%%%%%%%%%%%% EXAMPLE APPLICATIONS REAL WORLD %%%%%%%%%%%%%%%%
 
+
+
+
+
+====== Motivation for investigating Novelty Search can be explained as being analagous to accidental encounters being beneficial or adaptive =======
+
+\hl{"Take, for example, the common instance of a MATE task where agents (eg. females) attempt to find (stationary) mates located in the environment using different mate selection strategies based on males's mating calls or displays of prowess, which are indicative of the quality of the mate and thus a crucial determinant of the quality of the offspring. Since females typically only have partial knowledge of the location of possible partners, as some males mayt not advertise their location through calls, they may end up mating with non-optimal partners by accident (eg. bumping into a potential mate causes females to simply mate with the male in some species such as tree frogs). For low quality males who might not win in a 'shouting' competition with high quality males, it might thus be beneficial to remain silent and try to intercept females instead of calling, a strategy often referred to as 'satellite' strategy; for if they decide to call, females might actively avoid them."} \cite{ferreira2018accidental}
+-- The above has original references as well -> check page 2/20 LHS for full references
+
+Based on the above described patterns in natural interactions between individuals, this study also investigates the efficacy of Novelty Search as a fitness function in the Evolutionary Algorithm.
+
+
+
+
 "Disaster rescue is one of the most serious social issues which involve a very large number of heterogeneous agents in the hostile environment. "\cite{KitanoTadokoro1999}
 
 
@@ -171,16 +263,6 @@ In fact, an open problem in \textit{collective} \cite{KubeZhang1994B} and \texti
 is ascertaining appropriate sensory-motor configurations (morphologies) for robot teams that must work collectively given automatically generated controllers \cite{FloreanoDurrMattiussi2008}.
 
 Current robotic systems make use self-diagnosis and selection from pre-designed contingency plans in order to be able to recover from damage and continue its normal functioning \cite{fenton2001fault, verma2004real, BongardZykovLipson2006}. However, robots that implemented this approach of self-diagnosis and recovery proved to be somewhat problematic in that these systems are relatively expensive and are difficult to design since it requires full \textit{a priori} knowledge of the system in order to design the contingency plans \cite{CullyCluneTaraporeMouret2015}.
-
-
-
-
-
-
-
-
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -285,7 +367,7 @@ Due to the large variety of approaches and parameter tuning abilities when it co
 \begin{itemize}
 	\item Objective Search
 	\item Novelty Search
-	\item Hybrid Search
+	%\item Hybrid Search
 \end{itemize}
 
 Additionally, these experiments will be implemented using a predetermined collection of sensors that are either arranged in different physical locations on the robot or disabled to simulate damage.  The two distinctive facets of the evaluations is that the controllers are re-implemented using different morphologies as well as an additional evaluation where the sensors are randomly activated/deactivated.
