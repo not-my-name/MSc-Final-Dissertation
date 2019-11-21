@@ -212,7 +212,7 @@ The robots that were used were simplified and abstracted versions of the Khepera
 The physics of the simulated environment were relatively basic. It was implemented by using the JBox2D library for Java.
 
 The environment through which the agents move and in which they interact is continous space but the environment results are evaluated using an underlying discretised grid. This is also used to 'snap' the connected resources to a fixed location on the grid once it has been attached to the construction zone. This is determined by checking the resource's distance to a connection surface as well as the its orientation relative to the target bloc. If it is within an acceptable range, the block automatically snaps into place and becomes fixed in space.
-`'
+
 This toolkit is written in Java and it was chosen because of its consistent performance across a range of machines and its compatibility with various operating systems which would be useful in the testing phase as we had to run the simulations on a number of machines.
 
 One of the reasons for choosing the MASON Java library is because it can easily be integrated with other Java-based tools, such as the Encog Machine Learning library, which is discussed earlier on in this section (\ref{sec:method_hyperneat}).

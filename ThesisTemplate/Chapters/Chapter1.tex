@@ -165,7 +165,7 @@ A common and well-known problem that is often used as a benchmark test for autom
 
 \hl{"Accidents happen in nature from simple incidents like bumping into obstacles, to erroneously arriving at the wrong location, to mating with an unintended partner. Whether accidents are problematic for an animal depends on their context, frequency, and severity."} \cite{ferreira2018accidental}.
 
-\hl{"In this paper, we investigate the question of how accidents affect the task performance of agents in an agent-based simulation modelf for a wide class of tasks call 'Multi-Agent Territory Exploration' (MATE). In MATE tasks, agents have to visit particular locations of varying quality in partially observbable environments within a fixed time window. As such, agents have to balance the quality of the location with how much energy they are willing to expend reaching it. Arriving at the wrong location by acccident, typically reduces task performance."} \cite{ferreira2018accidental}.
+\hl{"In this paper, we investigate the question of how accidents affect the task performance of agents in an agent-based simulation modelf for a wide class of tasks call 'Multi-Agent Territory Exploration' (MATE). In MATE tasks, agents have to visit particular locations of varying quality in partially observable environments within a fixed time window. As such, agents have to balance the quality of the location with how much energy they are willing to expend reaching it. Arriving at the wrong location by acccident, typically reduces task performance."} \cite{ferreira2018accidental}.
 
 \hl{"We model agents based on two location selection strategies that are hypothesized to be widely used in nature: best-of-n and min-threshold. Our results show that the two strategies lead to different accident rates and thus overall different levels of performance based on the degree of competition among agents, as well as the quality, density, visibility, and distribution of target locations in the environment. We also show that in some cases individuual accidents can  be advantageous for noth the individual and the whole group"} \cite{ferreira2018accidental}
 
@@ -187,20 +187,35 @@ Within the purview of collective robotics, NE is the main method used for contro
 
 
 Given that there are several learning tasks in the real world, such as game playing, vehicle control, and robotics, that are not well-suited to supervised learning methods, Neuroevolution aims to find an ANN that optimizes behaviour given only sparse information regarding how WELL the agents are performing, and without any input on WHAT they should be doing \cite{Miikkulainen2010}. 
+
 In the above outlined scenarios, the optimal action at each timestep is not always known and can only be determined after performing several actions to get information about the outcome of those actions and whether or not it was beneficial given the defined parameters \cite{Miikkulainen2010}.
 This makes Neuroevolution a suitable approach for this dissertation as it falls within the specialised problem-space.
 
-\hl{"Neuroevolution is a combination of neural networks and Genetic Algorithms where neural networks are the phenotype being evaluated"} \cite{Stanley2004}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	\hl{"Neuroevolution is a combination of neural networks and Genetic Algorithms whe	%%
+%%	re neural networks are the phenotype being evaluated"} \cite{Stanley2004}.      	%%
+%%	                                                                                	%%
+%%	\hl{"The genotype is a compact representation that can be translated into an artif	%%
+%%	icial neural network. NE searches for neural networks that optimize some performan	%%
+%%	ce measure. NE can search for virtually any kind of neural network whether it be s	%%
+%%	imple, feed-forward, recurrent, or even adaptive networks"} \cite{Stanley2004}. 	%%
+%%	                                                                                	%%
+%%	When compared to various other neural network learning methods, NE can be observed	%%
+%%	to be highly general. This allows for learning to be performed without explicit t	%%
+%%	argets, with non-differentiable activation functions, as well as recurrent network	%%
+%%	s \cite{Miikkulainen2010}.                                                      	%%
+%%	                                                                                	%%
+%%	\hl{"As long as the performance of the networks can be evaluated over time, and th	%%
+%%	e behaviour of the network can be modified through evolution, it can be applied to	%%
+%%	a wide range of network architectures, including those with nondifferentiable act	%%
+%%	ivation functions and recurrent and higher-order connections"} \cite{Miikkulainen2	%%
+%%	010}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hl{"The genotype is a compact representation that can be translated into an artificial neural network. NE searches for neural networks that optimize some performance measure. NE can search for virtually any kind of neural network whether it be simple, feed-forward, recurrent, or even adaptive networks"} \cite{Stanley2004}.
-
-When compared to various other neural network learning methods, NE can be observed to be highly general. This allows for learning to be performed without explicit targets, with non-differentiable activation functions, as well as recurrent networks \cite{Miikkulainen2010}.
-
-\hl{"As long as the performance of the networks can be evaluated over time, and the behaviour of the network can be modified through evolution, it can be applied to a wide range of network architectures, including those with nondifferentiable activation functions and recurrent and higher-order connections"} \cite{Miikkulainen2010}.
 
 
 
-The different types of NE methods can be roughly/generally broken down into two different categories, with respect to the encoding method used to map an individual agent's genotype to its phenotype (from PTTAND010_Literature_Review.pdf)
+The different types of NE methods can be roughly broken down into two different categories, with respect to the encoding method used to map an individual agent's genotype to its phenotype (from PTTAND010_Literature_Review.pdf)
 
 
 
@@ -231,10 +246,6 @@ In indirect encoding (also referred to as generative or developmental encoding) 
 In other words, this algorithm transforms (decodes) the genotype to the phenotype by using any computable function \cite{koutnik2010evolving}.
 
 
-
-
-
-
 It has been shown that NE can successfully be applied to complex control tasks that require collective behaviour. These control tasks have no obvious mappings between the input from sensory configurations and motor outputs \cite{NitschkeSaEC2012}.
 
 
@@ -244,7 +255,7 @@ It has been shown that NE can successfully be applied to complex control tasks t
 
 
 
-====== Motivation for investigating Novelty Search can be explained as being analagous to accidental encounters being beneficial or adaptive =======
+%% ====== Motivation for investigating Novelty Search can be explained as being analagous to accidental encounters being beneficial or adaptive =======
 
 \hl{"Take, for example, the common instance of a MATE task where agents (eg. females) attempt to find (stationary) mates located in the environment using different mate selection strategies based on males's mating calls or displays of prowess, which are indicative of the quality of the mate and thus a crucial determinant of the quality of the offspring. Since females typically only have partial knowledge of the location of possible partners, as some males mayt not advertise their location through calls, they may end up mating with non-optimal partners by accident (eg. bumping into a potential mate causes females to simply mate with the male in some species such as tree frogs). For low quality males who might not win in a 'shouting' competition with high quality males, it might thus be beneficial to remain silent and try to intercept females instead of calling, a strategy often referred to as 'satellite' strategy; for if they decide to call, females might actively avoid them."} \cite{ferreira2018accidental}
 -- The above has original references as well -> check page 2/20 LHS for full references
@@ -286,7 +297,7 @@ Given previous non-objective controller evolution work in collective robotics
 and previous research demonstrating the efficacy of \textit{novelty search} \cite{lehman2011abandoning} for evolving behaviours that operate across various robotic morphologies, the following research objectives formed the focus of this study;
 
 \begin{enumerate}
-	\item Novelty search behaviours out-perform those of objective serach in terms of average team task performance in increasingly complexy collective construction tasks.
+	\item Novelty search behaviours out-perform those of objective search in terms of average team task performance in increasingly complexy collective construction tasks.
 	\item Novelty search is suitable for evolving morphologically robust controllers in collective construction tasks.
 \end{enumerate}
 
@@ -348,7 +359,9 @@ To test these objectives, experiments evaluated various robot morphologies in an
 That is, morphological robustness of evolved controllers was evaluated in terms of a controller's task performance coupled with alternate robot morphologies.
 
 This study's contribution was thus to elucidate the impact of specific objective versus non-objective search methods on the evolution of \textit{morphologically robust} controllers in collective robotic systems. 
+
 To date, the morphological robustness of such controller evolution approaches has not been comparatively evaluated, especially in the context of collective robotics. 
+
 Specifically, collective robotic systems that must adapt to unforeseen morphological change, such as the loss or damage of sensors on one of more robots without significant task performance degradation \cite{BongardZykovLipson2006} \cite{CullyCluneTaraporeMouret2015}
 
 
