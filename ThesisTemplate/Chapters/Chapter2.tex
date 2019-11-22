@@ -836,7 +836,8 @@ There are several different methods of Neuroevolution that have been created/def
 When it comes to more complicated tasks or difficult problem spaces, conventional approaches to Neuroevolution are prone to the following issues \cite{Miikkulainen2010}:
 \begin{itemize}
 	\item The population may converge to a single point without having found an optimal solution (premature convergence) - Similarly, the population may converge to a single local optima, resulting in a suboptimal solution. 
-	\item 
+	\item "Similar networks, such as those where the order nodes is different, may have different encodings, and much effort is wasted in trying to optimize them in parallel."
+	\item There are a large number of parameters that need to be optimized in the chosen problem space at once, which is a known difficulty in Neuroevolution.
 \end{itemize}
 
 
@@ -871,16 +872,58 @@ When it comes to more complicated tasks or difficult problem spaces, conventiona
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-'All of the above methods map the genetic encoding directly to the corresponding neural network, i.e. each part of the encoding corresponds to a part of the network, and vice versa. Indirect encoding, in contrast, specifies a process through which the network is constructed, such as cell division or generation through a grammar [refs 5, 8, 17, 21 of original paper]. Such an encoding can be highly compact, and also take advantage of modular solutions. The same structures can be repeated with minor modifications, as they often are in biology. It is, however, difficult to optimize solutions produced by indirect encoding, and realizing its full potential is still future work.' \cite{Miikkulainen2010}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	'All of the above methods map the genetic encoding directly to the corresponding n	%%
+%%	eural network, i.e. each part of the encoding corresponds to a part of the network	%%
+%%	, and vice versa. Indirect encoding, in contrast, specifies a process through whic	%%
+%%	h the network is constructed, such as cell division or generation through a gramma	%%
+%%	r [refs 5, 8, 17, 21 of original paper]. Such an encoding can be highly compact, a	%%
+%%	nd also take advantage of modular solutions. The same structures can be repeated w	%%
+%%	ith minor modifications, as they often are in biology. It is, however, difficult t	%%
+%%	o optimize solutions produced by indirect encoding, and realizing its full potenti	%%
+%%	al is still future work.' \cite{Miikkulainen2010}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+^^
+It is difficult to optimize solutions produced by indirect encoding since these solutions are encoded and/or difficult to understand from a human perspective
+
 
 'The fifth approach is to evolve an ensemble of neural networks to solve the task together, instead of a single network [ref 11]. This approach takes advantage of the diversity in the population: different networks learn different parts or aspects of the training data, and together the whole ensemble can perform better than a single network. Diversity can be created through speciation and negative correlation, encouraging useful specializations to emerge. The approach can be used to design ensembles for classification problems, but it can also be extended to control tasks ' \cite{Miikkulainen2010}.
-
-\hl{what is the difference between classification, regression, and control tasks? are these the only different options? Check if there are any different approaches that you may have missed out on}
 
 \subsection{NEAT}
 
 
-\subsection{HyperNEAT}
+
+
+\section{HyperNEAT}
+
+Hypercube-based Neuroevolution of Augmenting Topologies (HyperNEAT) is an indirect encoding method that evolves both the connection weights and the topology of controllers \cite{stanley2009hypercube}.
+
+It uses a generative encoding and is able to produce controller ANN's that are modular, regular, and with greater learning capacities than controllers produced using traditional encoding methods \cite{tonelli2013relationships}.
+
+The HyperNEAT algorithm is an extension of the NEAT algorithm, but instead of evolving the controllers directly, it works by evolving an indirect encoding of the controller's characteristics (topology and connection weights) which is referred to as a Compositional Pattern Producing Network \cite{stanley2009hypercube}.
+
+Each of these Compositional Pattern Producing Networks (CPPNs) is a computable function that produces an output (corresponding to a given input), which is used to define the various properties of a specific ANN controller \cite{clune2009evolving, hausknecht2012hyperneat}.
+
+The basic principles upon which this CPPN logic is based is found in natural processes where it is possible to describe patterns as compositions of functions where each function represents a unique stage in development \cite{DAmbrosioStanley2008}.
+
+Research into generative and developmental encoding methods have been able to show that large structures of characteristics can be compactly represented in DNA through the re-use of genetic material 
+% ^^
+% Specifically, DNA is made of only 4 base proteins (adenine, cytosine, guanine, thymine) / nucleotides. The DNA (genotype) of all biological organisms are constructed using only these 3 nucleotides (discrete building block). The possible diversity is apparent in the massive variety of vharacteristics across various species.
+
+Building on the above understanding, indirect encoding methods such as these CPPN's allow for repeated structures in the genome to be represented by a single gene that gets re-used in the process of mapping the genotype to the phenotype (decoding), making it a much more compact representation of a candidate solution \cite{stanley2009hypercube}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	"Legged robots show promise for complex mobility tasks, such as navigating rough t	%%
+%%	errain, but the design of their control software is both challenging and laborious	%%
+%%	. Traditional evolutionary algorithms can produce these controllers, but require m	%%
+%%	anual decomposition or other problem simplification because conventionally-used di	%%
+%%	rect encodings have trouble taking advantage of a problem's regularities and symme	%%
+%%	tries." \cite{clune2009evolving}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+^^
+Traditional evolutionary algorithms such as the CNE approach that we outlined previously are able to produce these controllers, but they still require designers to perform some manual decomposition (or some other form of simplifying the problem/task at hand). 
+(The inherent flaw in this is that traditional encodings are not able to take advantage of any regularities and symmetries that may be inherent within the given problem space.)
+This is because conventional direct encodings are generally not able to take advantage of any regularities and symmetries that may be inherent in the given problem space
 
 
 \section{Fitness Functions}
@@ -1015,10 +1058,3 @@ In order to perform this task successfully, the robot team will need to explore 
 
 'This project chose to investigate the collective construction task because it is sufficiently complex and it requires cooperative behaviour. It is also easy to manipulate this complexity as well as the levels of cooperation required as outlined in the previous section (in this case, this is outlined in Chapter1'
 
-
-
-\subsection{Collective Gathering Task}
-
-\subsection{Existing Collective Construction Tasks}
-In this section, go on to provide some examples and research related to existing investigations of the collective construction tasks
-Can find some examples such as the ones with the templates that need to be filled and try to find any other examples
