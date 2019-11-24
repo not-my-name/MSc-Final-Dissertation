@@ -891,7 +891,9 @@ It is difficult to optimize solutions produced by indirect encoding since these 
 
 \subsection{NEAT}
 
+The HyperNEAT algorithm is an extension of this NEAT algorithm. 
 
+\cite{StanleyMiikkulainen2002}
 
 
 \section{HyperNEAT}
@@ -906,11 +908,13 @@ Each of these Compositional Pattern Producing Networks (CPPNs) is a computable f
 
 The basic principles upon which this CPPN logic is based is found in natural processes where it is possible to describe patterns as compositions of functions where each function represents a unique stage in development \cite{DAmbrosioStanley2008}.
 
-Research into generative and developmental encoding methods have been able to show that large structures of characteristics can be compactly represented in DNA through the re-use of genetic material 
+Research into generative and developmental encoding methods have been able to show that large structures of characteristics can be compactly represented in DNA through the re-use of genetic material \cite{stanley2009hypercube}.
 % ^^
-% Specifically, DNA is made of only 4 base proteins (adenine, cytosine, guanine, thymine) / nucleotides. The DNA (genotype) of all biological organisms are constructed using only these 3 nucleotides (discrete building block). The possible diversity is apparent in the massive variety of vharacteristics across various species.
+\hl{Specifically, DNA is made of only 4 base proteins (adenine, cytosine, guanine, thymine) / nucleotides. The DNA (genotype) of all biological organisms are constructed using only these 3 nucleotides (discrete building block). The possible diversity is apparent in the massive variety of characteristics across various species.}
 
 Building on the above understanding, indirect encoding methods such as these CPPN's allow for repeated structures in the genome to be represented by a single gene that gets re-used in the process of mapping the genotype to the phenotype (decoding), making it a much more compact representation of a candidate solution \cite{stanley2009hypercube}.
+
+\hl{include a definition or explanation on what 'regularity' in a problem really is}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%	"Legged robots show promise for complex mobility tasks, such as navigating rough t	%%
@@ -921,9 +925,20 @@ Building on the above understanding, indirect encoding methods such as these CPP
 %%	tries." \cite{clune2009evolving}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ^^
-Traditional evolutionary algorithms such as the CNE approach that we outlined previously are able to produce these controllers, but they still require designers to perform some manual decomposition (or some other form of simplifying the problem/task at hand). 
-(The inherent flaw in this is that traditional encodings are not able to take advantage of any regularities and symmetries that may be inherent within the given problem space.)
-This is because conventional direct encodings are generally not able to take advantage of any regularities and symmetries that may be inherent in the given problem space
+Traditional evolutionary algorithms such as the CNE approach that we outlined previously are able to produce these controllers, but they still require designers to perform some manual decomposition (or some other form of simplifying the problem/task at hand) \cite{clune2009evolving}.
+(The inherent flaw in this is that traditional encodings are not able to take advantage of any regularities and symmetries that may be present within the given problem space.) \cite{clune2009evolving}.
+
+
+This sort of active intervention from the designer can be very time consuming, it limits the range of possible solutions, and the designer needs to have a deep understanding of the problem space in order to be able to intervene accordingly \cite{clune2009evolving}.
+
+In a similar research paper \cite{clune2009evolving}, it has been shown that the HyperNEAT algorithm is able to successfully evolve quadruped gaits for robot agents without needing a designer to decompose the problem space into discrete/distinct parts.
+The above experiment was repeated using the FT-NEAT algorithm (direct encoding approach). Comparison of these results showed that HyperNEAT was able to consistently outperform the direct encoding algorithm \cite{clune2009evolving}.
+
+Analysing the results of the HyperNEAT algorithm suggested that its success in this task is due to its ability to exploit geometric symmetries inherent in the problem space.
+
+
+
+
 
 
 \section{Fitness Functions}
