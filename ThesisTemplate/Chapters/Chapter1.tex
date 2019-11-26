@@ -108,6 +108,9 @@ One such approach that draws inspiration from Darwinian evolution is Evolutionar
 
 Neuroevolution (NE) provides a way of combining EAs and ANNs \cite{RefWorks:31}. It uses EAs to evolve the connection weights, topologies and activation functions of ANNs in order to learn a specific task or behaviour \cite{gomez1999solving}. NE searches for an ANN with optimal performance based on a fitness function that determines an ANN's suitability to performing a task \cite{RefWorks:31}.
 
+
+The proecss of natural selection/development is abstracted by using CPPN's to encode ANNs and allows for the production of complex patterns by determining the attributes of their phenotypes as functions of their geometric location \cite{clune2011performance}.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%	"Neuroevolution allows combining evolution over a population of solutions with li	%%
 %%	fetime learning in individual solutions: the evolved networks can each learn furt	%%
@@ -147,21 +150,6 @@ A common and well-known problem that is often used as a benchmark test for autom
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%		OVERVIEW OF THE TECHNOLOGY -- CAN POSSIBLY PUT THIS IN A SECTION IN CHAPTER 	%%
-%%	2?	                                                                         	%%
-%%	Structure of the research field itself: \cite{EibenSmith2003}                   	%%
-%%	Based on a technology called "Evolutionary Computing"                           	%%
-%%		-> the algorithms used by this technology are called "Evolutionary Algorithm	%%
-%%	s"                                                                              	%%
-%%		-> considers Evolutionary Programming, Evolution Strategies, Genetic Algorit	%%
-%%	hms, Genetic Programming as subareas of EC belonging to the corresponding algorit	%%
-%%	hm variants                                                                     	%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
 
 \hl{"Accidents happen in nature from simple incidents like bumping into obstacles, to erroneously arriving at the wrong location, to mating with an unintended partner. Whether accidents are problematic for an animal depends on their context, frequency, and severity."} \cite{ferreira2018accidental}.
 
@@ -189,6 +177,7 @@ Within the purview of collective robotics, NE is the main method used for contro
 Given that there are several learning tasks in the real world, such as game playing, vehicle control, and robotics, that are not well-suited to supervised learning methods, Neuroevolution aims to find an ANN that optimizes behaviour given only sparse information regarding how WELL the agents are performing, and without any input on WHAT they should be doing \cite{Miikkulainen2010}. 
 
 In the above outlined scenarios, the optimal action at each timestep is not always known and can only be determined after performing several actions to get information about the outcome of those actions and whether or not it was beneficial given the defined parameters \cite{Miikkulainen2010}.
+
 This makes Neuroevolution a suitable approach for this dissertation as it falls within the specialised problem-space.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -217,6 +206,10 @@ This makes Neuroevolution a suitable approach for this dissertation as it falls 
 
 The different types of NE methods can be roughly broken down into two different categories, with respect to the encoding method used to map an individual agent's genotype to its phenotype (from PTTAND010_Literature_Review.pdf)
 
+
+The level of regularity that an EA tends to produce is affected by the encoding, which is how the information is stored in the genome and the process by which that information produces the phenotype. 
+Regularity in evolved solutions is less likely to emerge with direct encodings, wherein each element in the genotype encodes an independent aspect of the phenotype.
+In contrast, regularities are common with indirect encodings (also known as generative or developmental encodings), wherein information in the genome can be reused to affect many parts of the phenotype
 
 
 %% \hl{Direct Encoding: NEAT}
@@ -249,6 +242,14 @@ In other words, this algorithm transforms (decodes) the genotype to the phenotyp
 It has been shown that NE can successfully be applied to complex control tasks that require collective behaviour. These control tasks have no obvious mappings between the input from sensory configurations and motor outputs \cite{NitschkeSaEC2012}.
 
 
+%% Explanation of HyperNEAT algorthim
+Instead of being directly applied to ANN's, HyperNEAT works by using the NEAT algorithm (Neuroevolution of Augmetnting Topologies) to evolve a CPPN (Compositional Pattern Producing Network \cite{StanleyMiikkulainen2002}), which is a genotype (network) representing the connections of a possibly much larger network \cite{RefWorks:14}.
+
+The topics mentioned above are discussed in greater detail later on in this paper \hl{reference to the appropriate chapter).
+
+
+
+
 %%%%%%%%%%%%%%%%%%%% EXAMPLE APPLICATIONS REAL WORLD %%%%%%%%%%%%%%%%
 
 
@@ -257,12 +258,25 @@ It has been shown that NE can successfully be applied to complex control tasks t
 
 %% ====== Motivation for investigating Novelty Search can be explained as being analagous to accidental encounters being beneficial or adaptive =======
 
-\hl{"Take, for example, the common instance of a MATE task where agents (eg. females) attempt to find (stationary) mates located in the environment using different mate selection strategies based on males's mating calls or displays of prowess, which are indicative of the quality of the mate and thus a crucial determinant of the quality of the offspring. Since females typically only have partial knowledge of the location of possible partners, as some males mayt not advertise their location through calls, they may end up mating with non-optimal partners by accident (eg. bumping into a potential mate causes females to simply mate with the male in some species such as tree frogs). For low quality males who might not win in a 'shouting' competition with high quality males, it might thus be beneficial to remain silent and try to intercept females instead of calling, a strategy often referred to as 'satellite' strategy; for if they decide to call, females might actively avoid them."} \cite{ferreira2018accidental}
--- The above has original references as well -> check page 2/20 LHS for full references
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	\hl{"Take, for example, the common instance of a MATE task where agents (eg. femal	%%
+%%	es) attempt to find (stationary) mates located in the environment using different 	%%
+%%	mate selection strategies based on males's mating calls or displays of prowess, wh	%%
+%%	ich are indicative of the quality of the mate and thus a crucial determinant of th	%%
+%%	e quality of the offspring. Since females typically only have partial knowledge of	%%
+%%	the location of possible partners, as some males mayt not advertise their locatio	%%
+%%	n through calls, they may end up mating with non-optimal partners by accident (eg.	%%
+%%	bumping into a potential mate causes females to simply mate with the male in some	%%
+%%	species such as tree frogs). For low quality males who might not win in a 'shouti	%%
+%%	ng' competition with high quality males, it might thus be beneficial to remain sil	%%
+%%	ent and try to intercept females instead of calling, a strategy often referred to 	%%
+%%	as 'satellite' strategy; for if they decide to call, females might actively avoid 	%%
+%%	them."} \cite{ferreira2018accidental}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% -- The above has original references as well -> check page 2/20 LHS for full references
 
 Based on the above described patterns in natural interactions between individuals, this study also investigates the efficacy of Novelty Search as a fitness function in the Evolutionary Algorithm.
-
-
 
 
 "Disaster rescue is one of the most serious social issues which involve a very large number of heterogeneous agents in the hostile environment. "\cite{KitanoTadokoro1999}
@@ -274,6 +288,8 @@ In fact, an open problem in \textit{collective} \cite{KubeZhang1994B} and \texti
 is ascertaining appropriate sensory-motor configurations (morphologies) for robot teams that must work collectively given automatically generated controllers \cite{FloreanoDurrMattiussi2008}.
 
 Current robotic systems make use self-diagnosis and selection from pre-designed contingency plans in order to be able to recover from damage and continue its normal functioning \cite{fenton2001fault, verma2004real, BongardZykovLipson2006}. However, robots that implemented this approach of self-diagnosis and recovery proved to be somewhat problematic in that these systems are relatively expensive and are difficult to design since it requires full \textit{a priori} knowledge of the system in order to design the contingency plans \cite{CullyCluneTaraporeMouret2015}.
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
