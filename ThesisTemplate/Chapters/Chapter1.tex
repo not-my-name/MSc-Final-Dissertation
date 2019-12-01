@@ -204,7 +204,7 @@ This makes Neuroevolution a suitable approach for this dissertation as it falls 
 
 
 
-The different types of NE methods can be roughly broken down into two different categories, with respect to the encoding method used to map an individual agent's genotype to its phenotype (from PTTAND010_Literature_Review.pdf)
+The different types of NE methods can be roughly broken down into two different categories, with respect to the encoding method used to map an individual agent's genotype to its phenotype %(from PTTAND010_Literature_Review.pdf)
 
 
 The level of regularity that an EA tends to produce is affected by the encoding, which is how the information is stored in the genome and the process by which that information produces the phenotype. 
@@ -214,7 +214,7 @@ In contrast, regularities are common with indirect encodings (also known as gene
 
 %% \hl{Direct Encoding: NEAT}
 
-In direct encoding methods, each element in the genotype explicitly encodes an independent aspect of the phenotype, such that there is a one-to-one mapping between the genotype and the phenotype \cite{clune2011performance, stanley2009hypercube}.
+In direct encoding methods, each element in the genotype explicitly encodes an independent aspect of the phenotype, such that there is a one-to-one mapping between the genotype and the phenotype \cite{clune2011performance,stanley2009hypercube}.
 
 In this encoding scheme, all the parameters of an ANN's architecture are explicitly encoded on the chromosome as binary strings \cite{Gomez2003}. Each gene in the chromosome directly relates to a specific part of the network, allowing for a direct one-to-one mapping from the genotype to the phenotype \cite{StanleyMiikkulainen2002}.
 
@@ -225,7 +225,7 @@ On the other hand, a major disadvantage of direct encoding schemes is that it do
 
 An example of one such algorithm that makes use of a direct encoding method, is the Neuroevolution of Augmenting Topologies algorithm, also referred to as NEAT \cite{Gomez2003}.
 
-NEAT is initialised with a small population of simple networks which are then gradually made more complex by either adding, removing, or mutating network connections \cite{RefWorks:11, Gomez2003}.
+NEAT is initialised with a small population of simple networks which are then gradually made more complex by either adding, removing, or mutating network connections \cite{RefWorks:11,Gomez2003}.
 
 
 %% \hl{Indirect Encoding: HyperNEAT}
@@ -234,7 +234,7 @@ This encoding scheme functions at a higher level of abstraction than direct enco
 
 An example implementation method of this encoding scheme includes using parametric functions to represent genes in a chromosome and using predetermined developmental rules to construct architectures \cite{koutnik2010evolving}.
 
-In indirect encoding (also referred to as generative or developmental encoding) methods, each element in the genotype is implicitly described by computable function allowing for a much more compact representation of the genotype \cite{clune2011performance, stanley2009hypercube}. It also allows for genetic information to be re-used.
+In indirect encoding (also referred to as generative or developmental encoding) methods, each element in the genotype is implicitly described by computable function allowing for a much more compact representation of the genotype \cite{clune2011performance,stanley2009hypercube}. It also allows for genetic information to be re-used.
 
 In other words, this algorithm transforms (decodes) the genotype to the phenotype by using any computable function \cite{koutnik2010evolving}.
 
@@ -245,7 +245,7 @@ It has been shown that NE can successfully be applied to complex control tasks t
 %% Explanation of HyperNEAT algorthim
 Instead of being directly applied to ANN's, HyperNEAT works by using the NEAT algorithm (Neuroevolution of Augmetnting Topologies) to evolve a CPPN (Compositional Pattern Producing Network \cite{StanleyMiikkulainen2002}), which is a genotype (network) representing the connections of a possibly much larger network \cite{RefWorks:14}.
 
-The topics mentioned above are discussed in greater detail later on in this paper \hl{reference to the appropriate chapter).
+%%The topics mentioned above are discussed in greater detail later on in this paper \hl{reference to the appropriate chapter}.
 
 
 
