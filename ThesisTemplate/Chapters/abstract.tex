@@ -1,0 +1,24 @@
+----- AAAMAS Extended Abstract -----
+[5] = CullyCluneTaraporeMouret2015
+[8] = DoncieuxBredecheMouretEiben2015
+[11] = FloreanoDurrMattiussi2008
+[15] = KubeZhang1994B
+
+Currently, autonomous robotic systems recover from damage by performing diagnostics on its broken system and selecting an appropriate solution from a set of predefined contingency plans \cite{fenton2001fault, verma2004real, BongardZykovLipson2006}. 
+
+Approaches such as these are inefficient and quite costly, as they require advanced monitoring sensors be implemented. 
+Additionally, these approaches present design difficulties as they require a lot of a priori knowledge, where researchers need to be able to anticipate all possible failures as well as design a recovery strategy to be implemented in such an event.
+
+Addressing these shortfalls, recent work done in the field of Evolutionary Robotics \cite{DoncieuxBredecheMouretEiben2015} elucidated the efficacy of population-based, stochastic trial-and-error methods for online damage recovery in autonomous robotic systems operating within physical environments \cite{DoncieuxBredecheMouretEiben2015}. This was demonstrated as being akin to self-adaptation and injury recovery observed in animals in the wild.
+
+This study aims to further contribute towards this research area, specifically focusing on evolutionary controller design \cite{FloreanoDurrMattiussi2008} within the broader context of collective \cite{KubeZhang1994B} and swarm \cite{FloreanoDurrMattiussi2008} robotics, by evaluating comparative behavioural search methods for evolutionary controller design in robot teams. Within these comparisons, the goal is to evaluate the morpholigical robustness of evolved controllers, such that a controller evolved with a specific sensory-motor configuration is able to continue performing its task successfully despite this input configuration degrading or being altered through sustaining physical damage.
+
+More concisely, this study investigates the ability of the HyperNEAT Evolutionary Algorithm \cite{StanleyDAmbrosioGauci2009} to evolve ANN controllers for homogenous multi-robot teams that are able to solve collective construction tasks \cite{NitschkeSaEC2012} of increasing difficulty despite experiencing degradation of their sensory input configurations.
+
+Furthermore, this study implements an Objective Fitness Function as well as a Novelty Fitness function with HyperNEAT and compares their respective abilities to guide the evolutionary search towards optimally robust controllers.
+
+Experiments were conducted using the Encog Machine Learning library to evolve the population of controllers. Robot team controllers were tested and evaluated within a continuous 2D simulated environment, results of which would be fed to the corresponding fitness function to calculate how successful the controller was at solving the task at hand.
+
+Experiments were repeated across various morphology configurations as well as levels of difficulty in the collective construction task.
+
+With some exceptions and caveats that are discussed in more detail later on, results indicate that both novelty and objective search evolve team controllers (behaviours) that are morphologically robust given degrading sensory input configurations and increasing task complexity
