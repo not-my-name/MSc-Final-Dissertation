@@ -30,17 +30,20 @@ can maybe split this section up into the above subsections
 (2) 'a "mating operator", which produces offspring for the next generation' -> survival of the fittest (macroscopic)
 (3) '"genetic operators," which determine the genetic makeup of offspring from the genetic makeup of the parents' -> Genetics, mutation, crossover, (microscopic)
 
-Both macroscopic and microscopic processes have been identified as the driving forces/actions behind evolution. Starting with the macroscopic factors....:
-
-Any given environment contains a finite number of resources. The maximum amount of life that this environment can support with these restricted resources, is referred to as its 'carrying capacity'
+Any given environment contains a finite number of resources. The maximum amount of life that this environment can support with these restricted resources, is referred to as its 'carrying capacity' \cite{EibenSmith2003}
 
 %% SURVIVAL OF THE FITTEST
-From the macroscopic view of Darwinian Evolution, the process of Natural Selection is one of the key driving forces. A specific type of environment (and its associated constraints) essentially define the characteristics needed by an individual in order for it to be successful in surviving within that environment. For example, a finite amount of resources means that an environment can only support a finite number of individuals. And given several individuals of a species with the basic instinct to survive and reproduce, their population would grow exponentially until such a point as the size outgrows the carrying capacity of the enclosing environment, resulting in individuals starving, unable to find a mate, too much competition for space and they kill each other off. But since an environment can only sustain a finite number of individuals, this results in agents competing for the available resources such that the individuals most suited to survive in the environment (equating to an advantage over their competitors) are able to survive the longest and increase the probability of them finding a mate and passing on their beneficial characteristics to their offspring.
+From the macroscopic view of Darwinian Evolution \cite{EibenSmith2003}, the process of Natural Selection is one of the key driving forces. A specific type of environment (and its associated constraints) essentially define the characteristics needed by an individual in order for it to be successful in surviving within that environment. For example, a finite amount of resources means that an environment can only support a finite number of individuals. And given several individuals of a species with the basic instinct to survive and reproduce, their population would grow exponentially until such a point as the size outgrows the carrying capacity of the enclosing environment, resulting in individuals starving, unable to find a mate, too much competition for space and they kill each other off. But since an environment can only sustain a finite number of individuals, this results in agents competing for the available resources such that the individuals most suited to survive in the environment (equating to an advantage over their competitors) are able to survive the longest and increase the probability of them finding a mate and passing on their beneficial characteristics to their offspring.
 
 
-Within a given environment are several constraints that restrict conditions under which life can survive. This maximum possible amount of living individuals is call the 'carrying capacity'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	Within a given environment are several constraints that restrict conditions under 	%%
+%%	which life can survive. This maximum possible amount of living individuals is call	%%
+%%	the 'carrying capacity'                                                        	%%
+%%	                                                                                	%%
+%%	... and is the definition of the term 'Survival of The Fittest'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-... and is the definition of the term 'Survival of The Fittest'
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,7 +76,7 @@ Within a given environment are several constraints that restrict conditions unde
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-The basic model of EC/NE can be summarised as follows \cite{EibenSmith2003}:
+The basic model of Evolutionary Computing (EC) can be briefly explained using the following considerations \cite{EibenSmith2003}:
 - A population consists of a number of individuals. These individuals can be thought of as the 'units of selection', which is to say that their chances of being able to successfully reproduce (and propagate their genes) are dependent on how well they are able to adapt to their environment and out-compete the other individuals for the limited resources.
 - During this process of reproduction of the successful candidates, random genetic mutations give rise to a a new set of characteristics within the subsequent generations that are to be tested and evaluated in the environment.
 - Based on this, we can see that there will be a change in the constitution of the population as time passes.
@@ -86,8 +89,9 @@ The basic model of EC/NE can be summarised as follows \cite{EibenSmith2003}:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-This system of finding the most suitable characteristics is intuitively described as a search for optimal points along an adaptive landscape/surface, where the height dimension (or altitude) represents an individual's fitness/suitability, and the remaining dimensions (x,y, etc.) correspond to the biological features of the individual \cite{EibenSmith2003}. 
-In other words, the remaining dimensions (that form a plane/surface) contain all the possible combinations of the phenotypical traits and the z-value represents the suitability of that combination.
+This system of finding the most suitable characteristics is intuitively described as a search for optimal points along an adaptive surface, where the height dimension, (\textit{z}), represents an individual's fitness, and the remaining dimensions (x,y, etc.) correspond to the biological features of the individual \cite{EibenSmith2003}. 
+
+In other words, the remaining dimensions (that form a plane/surface) contain all the possible combinations of the phenotypical traits and the z-value represents the suitability of that combination \cite{EibenSmith2003}.
 
 %% There is a sample figure of an adaptive surface in \cite{EibenSmith2003} -> should maybe find something similar to be used as an example illustration
 
@@ -103,7 +107,7 @@ In other words, the remaining dimensions (that form a plane/surface) contain all
 
 From this, we can understand that a peak in the fitness landscape represents a range of relatively successful trait combinations, while troughs on the other hand represent poorly suited combinations \cite{EibenSmith2003}.
 
-Each dot on the fitness landscape represents a specific individual (which is just a collection of phenotypic traits) and a collection of these represent a population. Thus, evolution of a population is represented with the gradual advances of the population towards the fittest/highest peaks, powered by abstract processes analogous to random genetic variations and natural selection \cite{EibenSmith2003}.
+Each dot on the fitness landscape represents a specific individual \hl{(which can also just be considered to be a collection of phenotypic traits)} and a collection of these represent a population. Thus, evolution of a population is represented with the gradual advances of the population towards the fittest scores at the highest peaks, powered by abstract processes analogous to random genetic variations and natural selection \cite{EibenSmith2003}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -130,15 +134,15 @@ Each dot on the fitness landscape represents a specific individual (which is jus
 %%	climb back up the same hill."} \cite{EibenSmith2003}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+"The microscopic view of natural evolution is offered by the discipline of molecular genetics. It sheds light on the processes below the level of visible phenotypic features, in particular relating to heredity. The fundamental observation from genetics is that each individual is a dual entity: its phenotypic properties (outside) are represented at a low genotypic level (inside). In other words, an individual's genotype encodes its phenotype. Genes are the functional units of inheritance encoding phenotypic characteristics. In natural systems this encoding is not one-to-one: one gene might affect more phenotypic traits and in turn, on phenotypic trait can be determined by more than one gene" \cite{EibenSmith2003}"
 
-Just as importantly:
-
-"The microscopic view of natural evolution is offered by the discipline of molecular genetics. It sheds light on the processes below the level of visible phenotypic features, in particular relating to heredity. The fundamental observation from genetics is that each individual is a dual entity: its phenotypic properties (outside) are represented at a low genotypic level (inside). In other words, an individual's genotype encodes its phenotype. Genes are the functional units of inheritance encoding phenotypic characteristics. In natural systems this encoding is not one-to-one: one gene might affect more phenotypic traits and in turn, on phenotypic trait can be determined by more than one gene" \cite{EibenSmith2003}
-
-On the other hand, random genetic mutations and crossover during sexual reproduction have been identified as the microscopic driving factors behind the process of evolution through natural selection. 
 More specifically, these factors are what occurs "behind the scenes" in the evolutionary process, and specifically provide an explanation for characteristics that are passed down between generations from parents to their offspring. 
-This observation from the field of genetics shows us that a single individual is in fact a dual entity; consisting of its phenotype (external, non-hereditary characteristics) as well as its genotype (its actual genetic make-up, which essentially provides the "skeleton/outline" of the offspring's characteristics).
+This observation from the field of genetics shows us that a single individual is in fact a dual entity; consisting of its phenotype (external, non-hereditary characteristics) as well as its genotype (its actual genetic make-up, which essentially provides the outline of the offspring's characteristics).
+
+Upon close inspection of the 
+
 In the most basic terms, an individual's genotype encodes its resulting phenotype.
+
 Genes are the functional units of inheritance encoding phenotypic characteristics
 
 
@@ -147,7 +151,7 @@ Genes are the functional units of inheritance encoding phenotypic characteristic
 %%	cessary to build the particular phenotype." \cite{EibenSmith2003}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ^^
-Essentially, the genotype is an individual unit of information that contains all of the details/characteristics necessary to construct a particular phenotype \cite{EibenSmith2003}.
+Essentially, the genotype is an individual unit of information that contains all of the characteristics necessary to construct a particular phenotype \cite{EibenSmith2003}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -156,7 +160,7 @@ Essentially, the genotype is an individual unit of information that contains all
 %%	duction." \cite{EibenSmith2003}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ^^
-Variations in the phenotype of an individual are always \it{caused} by that individual's genotype, the changes in which are caused by mutations of genes or recombinations of genes during sexual reproduction \cite{EibenSmith2003}.
+Variations in the phenotype of an individual are always \textit{caused} by that individual's genotype, the changes in which are caused by mutations of genes or recombinations of genes during sexual reproduction \cite{EibenSmith2003}.
 
 DNA -> (transcription) -> RNA -> (translation) -> Protein
 
@@ -625,8 +629,6 @@ Wehn $y$ is a number (such as tomorrow's temperature), the learning problem is c
 %%	a systematic trial-and-error, guided by a wide variety of algorithms that are the	%%
 %%	subject of later sections in this paper'
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\hl{This variety of algorithms, are they referring to the learning rules?}
 
 
 A Reinforcement Learning model formally consists of the following \cite{KaelblingLittmanMoore1996}:
