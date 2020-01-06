@@ -100,7 +100,7 @@ One such approach that draws inspiration from Darwinian evolution is Evolutionar
 Neuroevolution (NE) provides a way of combining EAs and ANNs \cite{RefWorks:31}. It uses EAs to evolve the connection weights, topologies and activation functions of ANNs in order to learn a specific task or behaviour \cite{gomez1999solving}. NE searches for an ANN with optimal performance based on a fitness function that determines an ANN's suitability to performing a task \cite{RefWorks:31}.
 
 
-The proecss of natural selection/development is abstracted by using CPPN's to encode ANNs and allows for the production of complex patterns by determining the attributes of their phenotypes as functions of their geometric location \cite{clune2011performance}.
+The process of natural selection/development is abstracted by using CPPN's to encode ANNs and allows for the production of complex patterns by determining the attributes of their phenotypes as functions of their geometric location \cite{clune2011performance}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%	"Neuroevolution allows combining evolution over a population of solutions with li	%%
@@ -142,16 +142,56 @@ A common and well-known problem that is often used as a benchmark test for autom
 
 
 
-\hl{"Accidents happen in nature from simple incidents like bumping into obstacles, to erroneously arriving at the wrong location, to mating with an unintended partner. Whether accidents are problematic for an animal depends on their context, frequency, and severity."} \cite{ferreira2018accidental}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	\hl{"Accidents happen in nature from simple incidents like bumping into obstacles,	%%
+%%	to erroneously arriving at the wrong location, to mating with an unintended partn	%%
+%%	er. Whether accidents are problematic for an animal depends on their context, freq	%%
+%%	uency, and severity."} \cite{ferreira2018accidental}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hl{"In this paper, we investigate the question of how accidents affect the task performance of agents in an agent-based simulation modelf for a wide class of tasks call 'Multi-Agent Territory Exploration' (MATE). In MATE tasks, agents have to visit particular locations of varying quality in partially observable environments within a fixed time window. As such, agents have to balance the quality of the location with how much energy they are willing to expend reaching it. Arriving at the wrong location by acccident, typically reduces task performance."} \cite{ferreira2018accidental}.
 
-\hl{"We model agents based on two location selection strategies that are hypothesized to be widely used in nature: best-of-n and min-threshold. Our results show that the two strategies lead to different accident rates and thus overall different levels of performance based on the degree of competition among agents, as well as the quality, density, visibility, and distribution of target locations in the environment. We also show that in some cases individuual accidents can  be advantageous for noth the individual and the whole group"} \cite{ferreira2018accidental}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	\hl{"In this paper, we investigate the question of how accidents affect the task p	%%
+%%	erformance of agents in an agent-based simulation modelf for a wide class of tasks	%%
+%%	call 'Multi-Agent Territory Exploration' (MATE). In MATE tasks, agents have to vi	%%
+%%	sit particular locations of varying quality in partially observable environments w	%%
+%%	ithin a fixed time window. As such, agents have to balance the quality of the loca	%%
+%%	tion with how much energy they are willing to expend reaching it. Arriving at the 	%%
+%%	wrong location by acccident, typically reduces task performance."} \cite{ferreira2	%%
+%%	018accidental}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	\hl{"We model agents based on two location selection strategies that are hypothesi	%%
+%%	zed to be widely used in nature: best-of-n and min-threshold. Our results show tha	%%
+%%	t the two strategies lead to different accident rates and thus overall different l	%%
+%%	evels of performance based on the degree of competition among agents, as well as t	%%
+%%	he quality, density, visibility, and distribution of target locations in the envir	%%
+%%	onment. We also show that in some cases individuual accidents can  be advantageous	%%
+%%	for noth the individual and the whole group"} \cite{ferreira2018accidental}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 
 %% The below can be used somewhere like Future Work or Considerations in the Experiments:
-\hl{"Evolutionary processes can be simulated in a computer, where millions of generations can be executed in a matter of hours or days and repeated under various circumstances. These possibilities go far beyond studies based on excavations and fossils, or those possible 'in vivo'. Naturally, the interpretation of such simulation experiments must be done very carefully. First, because we do not know whether the computer models represent the biological reality with sufficient fidelity. Second, it is unclear whether conclusions drawn in a digital medium, 'in silico', can be transferred to the carbon-based biological medium. These caveats and the lack of mutual awareness between biologists and computer scientists are probably the reason why there are few computer experimental studies about fundamental issues of biological evolution"} \cite{EibenSmith2003}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	\hl{"Evolutionary processes can be simulated in a computer, where millions of gene	%%
+%%	rations can be executed in a matter of hours or days and repeated under various ci	%%
+%%	rcumstances. These possibilities go far beyond studies based on excavations and fo	%%
+%%	ssils, or those possible 'in vivo'. Naturally, the interpretation of such simulati	%%
+%%	on experiments must be done very carefully. First, because we do not know whether 	%%
+%%	the computer models represent the biological reality with sufficient fidelity. Sec	%%
+%%	ond, it is unclear whether conclusions drawn in a digital medium, 'in silico', can	%%
+%%	be transferred to the carbon-based biological medium. These caveats and the lack 	%%
+%%	of mutual awareness between biologists and computer scientists are probably the re	%%
+%%	ason why there are few computer experimental studies about fundamental issues of b	%%
+%%	iological evolution"} \cite{EibenSmith2003}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 
@@ -162,10 +202,8 @@ A common and well-known problem that is often used as a benchmark test for autom
 % "NE is the main method for controller adaptation in evolutionary robotics (the overall topic that this thesis fits into) - and within this field - NE applied to collective robotics has achieved success (evolved effective group behaviours) to solve various collective behaviour tasks - then give several example tasks that evolutionary collective robotics systems have solved - with references"
 % ==================================================================
 
-Within the purview of collective robotics, NE is the main method used for controller evolution
 
-
-Given that there are several learning tasks in the real world, such as game playing, vehicle control, and robotics, that are not well-suited to supervised learning methods, Neuroevolution aims to find an ANN that optimizes behaviour given only sparse information regarding how WELL the agents are performing, and without any input on WHAT they should be doing \cite{Miikkulainen2010}. 
+Given that there are several learning tasks in the real world, such as game playing, vehicle control, and robotics, that are not well-suited to supervised learning methods, Neuroevolution aims to find an ANN that optimizes behaviour given only sparse information regarding how \textit{well} the agents are performing, and without any input on \textit{what} they should be doing \cite{Miikkulainen2010}. 
 
 In the above outlined scenarios, the optimal action at each timestep is not always known and can only be determined after performing several actions to get information about the outcome of those actions and whether or not it was beneficial given the defined parameters \cite{Miikkulainen2010}.
 
@@ -270,9 +308,6 @@ Instead of being directly applied to ANN's, HyperNEAT works by using the NEAT al
 Based on the above described patterns in natural interactions between individuals, this study also investigates the efficacy of Novelty Search as a fitness function in the Evolutionary Algorithm.
 
 
-"Disaster rescue is one of the most serious social issues which involve a very large number of heterogeneous agents in the hostile environment. "\cite{KitanoTadokoro1999}
-
-
 One of the biggest issues to overcome in order to make these agents as robust as possible (and more suited to their inherently dangerous environments) is determining some way for the robots to be able to continue performing their required tasks despite any damage to their physical morphology that they may sustain. More specifically, with regards to their sensory input devices, which are integral to the functioning of any agent.
 
 In fact, an open problem in \textit{collective} \cite{KubeZhang1994B} and \textit{swarm robotics} \cite{Beni2004}
@@ -297,7 +332,7 @@ That is, evolutionary controller design for robot groups that must continue to a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Given previous non-objective controller evolution work in collective robotics
+Given previous non-objective controller evolution work in collective robotics such as the following;
 \cite{gomes2013generic}
 \cite{RefWorks:5}
 \cite{RefWorks:11},
@@ -310,57 +345,46 @@ and previous research demonstrating the efficacy of \textit{novelty search} \cit
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Another approach to this challenge draws inspiration from self-adaptation and injury recovery that has been observed in animals in nature.
-
-
-
-%"The fundamental metaphor of evolutionary computing relates this powerful natural evolution to a particular style of problem solving - that of trial-and-error" \cite{RefWorks:33}
-
 
 
 \subsection{Research Goals}
 
-'The aims of this research project can be summarised as follows:'
+Specifically, collective robotic systems that must adapt to unforeseen morphological change, such as the loss or damage of sensors on one of more robots without significant task performance degradation \cite{BongardZykovLipson2006} \cite{CullyCluneTaraporeMouret2015}.
+
+The aims of this research project can be summarised as follows:
 \begin{itemize}
-	\item 'To investigate the morphological robustness of multi-robot team controllers evolved using the HyperNEAT algorithm with respect sensory configurations when implemented in solving increasingly complex tasks requiring collective behaviour'
-	\item 'building on the first, the second aim is to investigate the three different variations of the HyperNEAT algorithm by implementing various fitness functions'
+	\item To investigate the morphological robustness of multi-robot team controllers evolved using the evolutionary algorithm with respect sensory configurations when implemented in solving increasingly complex tasks requiring collective behaviour
+	% \item 'building on the first, the second aim is to investigate two different variations of the evolutionary algorithm by implementing  %various fitness functions'
+	\item To demonstrate the efficacy of Novelty Search (as compared to objective-based search) for evolving morphologically robust controllers over increasingly complex tasks.
+	\item To demonstrate the efficacy of Novelty Search evolved behaviours versus those evolved by objective-based search in terms of average task performance (behaviour quality) over increasing task complexity
 \end{itemize}
 
-"The complexity of the collective construction task is controlled by using a construction schema, which is implemented as a set of underlying connection rules. The level of cooperation is controlled by using the different types of resource blocks in the simulation.
-The various levels are outlined as follows:"
+% For all of the above aims, the HyperNEAT algorithm \cite{StanleyDAmbrosioGauci2009} is used to evolve homogeneous ANN controllers and all team controllers are evaluated according to their performance in the same collective construction task at various levels of complexity.
+
+To test these objectives, experiments evaluated various robot morphologies in an increasing complex collective construction task. 
+That is, morphological robustness of evolved controllers was evaluated in terms of a controller's task performance coupled with alternate robot morphologies different from that with which they were evolved originally.
+
+The HyperNEAT algorithm \cite{StanleyDAmbrosioGauci2009} was used to perform the controller evolution processes for all parts of this experiment
+
+The complexity of the collective construction task is controlled by using a construction schema, which is implemented as a set of underlying connection rules. 
+
+The level of cooperation is controlled by using the different types of resource blocks in the simulation.
+
+The various levels are outlined as follows:
 \begin{enumerate}
 	\item Level 1: no complexity or cooperation.
 	\item Level 2: no complexity and some cooperation.
 	\item Level 3: some complexity and some cooperation.
 \end{enumerate}
 
-We apply the HyperNEAT \cite{StanleyDAmbrosioGauci2009} neuro-evolution method to evolve
-behavior for a range of morphologically homogenous teams that must solve various collective construction tasks.
-
 This study's research objectives were formulated given results of the following previous related work. First, that non-objective based controller evolution has been effectively demonstrated in collective robotics \cite{RefWorks:11, gomes2013generic, RefWorks:5}.
 Second, that Novelty Search has been demonstrated as suitable for evolving controllers (behaviours) that effectively operate across a range of robot morphologies
 
 
 
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Some additional input from the GECCO abstract %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{enumerate}
-	\item To demonstrate the efficacy of Novelty Search (as compared to objective-based search) for evolving morphologically robust conrtollers over increasingly complex tasks.
-	\item To demonstrate the efficacy of Novelty Search evolved behaviours versus those evolved by objective-based search in terms of average task performance (behaviour quality) over increasing task complexity
-\end{enumerate}
-
-To test these objectives, experiments evaluated various robot morphologies in an increasing complex collective construction task. 
-That is, morphological robustness of evolved controllers was evaluated in terms of a controller's task performance coupled with alternate robot morphologies.
-
 This study's contribution was thus to elucidate the impact of specific objective versus non-objective search methods on the evolution of \textit{morphologically robust} controllers in collective robotic systems. 
 
 To date, the morphological robustness of such controller evolution approaches has not been comparatively evaluated, especially in the context of collective robotics. 
-
-Specifically, collective robotic systems that must adapt to unforeseen morphological change, such as the loss or damage of sensors on one of more robots without significant task performance degradation \cite{BongardZykovLipson2006} \cite{CullyCluneTaraporeMouret2015}
 
 
 \subsection{Contributions}
