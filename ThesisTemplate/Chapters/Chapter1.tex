@@ -27,8 +27,7 @@
 % 10 = \cite{fenton2001fault}
 % 21 = \cite{verma2004real}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%	"Autonomous robots are increasingly being applied to remote and hazardous environ	%%
+%% "Autonomous robots are increasingly being applied to remote and hazardous environment%%
 %%	ments [3,1], environments damage to sensory actuator systems cannot be easily rep	%%
 %%	aired if damaged. An unsolved problem in the controller design for such autonomou	%%
 %%	s robots is having controllers continue to effectively function given unexpected 	%%
@@ -52,8 +51,6 @@
 %%	ntinue to accomplish tasks given that damage is sustained to the morphologies of 	%%
 %%	some or all of the robots in the group. ""
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 
 % ====================================================
@@ -139,7 +136,10 @@ A common and well-known problem that is often used as a benchmark test for autom
 %%	the environment (including other individuals), thus determining its fitness."} \c	%%
 %%	ite{EibenSmith2003}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Selection of suitable individuals based on competition has been identified as one of the cornerstones of evolutionary processes \cite{EibenSmith2003}.
+Whereas the other primary force identified by Darwin is a result from the phenotypic variations amongst individuals in the same population.
 
+Phenotypic characteristics are defined as those charactersistics and physical features particular to an individual that directly influences its response to the environment \cite{EibenSmith2003}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -230,10 +230,9 @@ This makes Neuroevolution a suitable approach for this dissertation as it falls 
 %%	010}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+At its highest level, Neuroevolution can be thought of as a combination of neural networks and Genetic Algorithms where the resultant neural networks are the phenotype being evaluated as part of the Evolutionary Algorithm.
+The networks are the controllers being worked on, and the Genetic Algorithms are the methods being used to alter the networks.
 
-
-
-The different types of NE methods can be roughly broken down into two different categories, with respect to the encoding method used to map an individual agent's genotype to its phenotype %(from PTTAND010_Literature_Review.pdf)
 
 
 The level of regularity that an EA tends to produce is affected by the encoding, which is how the information is stored in the genome and the process by which that information produces the phenotype. 
@@ -241,7 +240,8 @@ Regularity in evolved solutions is less likely to emerge with direct encodings, 
 In contrast, regularities are common with indirect encodings (also known as generative or developmental encodings), wherein information in the genome can be reused to affect many parts of the phenotype
 
 
-%% \hl{Direct Encoding: NEAT}
+ 
+\hl{Direct Encoding: NEAT}
 
 In direct encoding methods, each element in the genotype explicitly encodes an independent aspect of the phenotype, such that there is a one-to-one mapping between the genotype and the phenotype \cite{clune2011performance,stanley2009hypercube}.
 
@@ -257,7 +257,7 @@ An example of one such algorithm that makes use of a direct encoding method, is 
 NEAT is initialised with a small population of simple networks which are then gradually made more complex by either adding, removing, or mutating network connections \cite{RefWorks:11,Gomez2003}.
 
 
-%% \hl{Indirect Encoding: HyperNEAT}
+\hl{Indirect Encoding: HyperNEAT}
 
 This encoding scheme functions at a higher level of abstraction than direct encoding  \cite{Gomez2003}.
 
