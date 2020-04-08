@@ -234,6 +234,16 @@ At its highest level, Neuroevolution can be thought of as a combination of neura
 The networks are the controllers being worked on, and the Genetic Algorithms are the methods being used to alter the networks.
 
 
+^^^
+An individual's genotype can be considered to be a compact representation of characteristics that can be translated/transformed into an ANN that acts as an agent's phenotype, which is a collection of the characteristics that are to be evaluated in the simulations/natural environment.
+```
+
+^^^
+In a study by \cite{Miikkulainen2010}, it has been shown that as long as the performance of a network can be evaluated over a period of time, and the behaviour of the network can be altered through some process (in this case, neuroevolution), it can be applied to a wide range of network architectures, including those with non-differential activation functions and recurrent and higher order connections /cite{Miikkulainen2010}.
+'''
+
+
+
 
 The level of regularity that an EA tends to produce is affected by the encoding, which is how the information is stored in the genome and the process by which that information produces the phenotype. 
 Regularity in evolved solutions is less likely to emerge with direct encodings, wherein each element in the genotype encodes an independent aspect of the phenotype.
@@ -305,7 +315,27 @@ Instead of being directly applied to ANN's, HyperNEAT works by using the NEAT al
 
 %% -- The above has original references as well -> check page 2/20 LHS for full references
 
+Within this study, we also investigate the efficacy of using a Novelty Search fitness function as opposed to the traditional Objective approach.
+
+%% Mention that Novelty search also addresses the functional issue of premature convergence that is often found in traditional fitness functions (specifically find a reference)
+
+In a study by Ferreira \cite{ferreira2018accidental}, they outline an example of how novel characteristics/behaviour may be beneficial to individuals in the process of evolution. More specifically, they examine the mating behaviour of frogs. 
+During mating season, male individuals of various tree frogs 'present' themselves to potential mates by calling as loudly as possible to demonstrate their dominance. Female frogs would then move in the direction of the call they desire the most in order to find a mate. 
+For low quality males of the species, broadcasting their position would most likely result in females purposely avoiding them in favour of a better potential mate. As such, some males have adopted a 'satellite' strategy in which they remain silent and position themselves nearby a more dominant male that is calling out. Since the females of the species only have partial knowledge of the environment (they only know the direction from which the desired call is coming), this may result in the female accidentally encountering the sub-optimal partner, allowing him to pass on their genes rather than the traditionally alpha male \cite{ferreira2018accidental}
+
+Another example from nature is the behaviour of cuttlefish. During mating season, dominant males would attract a harem of females and chase off other challenging males. By using its camouflaging abilities, sub-optimal males disguise themselves as females in order to infiltrate the harem and gain an opportunity to mate with a female \cite{somereference}.
+
+In this case, the above examples are used to demonstrate the feasibility of using strategies outside of the norm. All individuals are born with an inherent drive to reproduce and propagate their genes, resulting in some individuals adopting novel behaviours to gain an advantage over the competition.
+
+"Novel behaviour" => Wow! That's clever! I would never have thought of that myself
+
+
 Based on the above described patterns in natural interactions between individuals, this study also investigates the efficacy of Novelty Search as a fitness function in the Evolutionary Algorithm.
+
+
+
+
+
 
 
 One of the biggest issues to overcome in order to make these agents as robust as possible (and more suited to their inherently dangerous environments) is determining some way for the robots to be able to continue performing their required tasks despite any damage to their physical morphology that they may sustain. More specifically, with regards to their sensory input devices, which are integral to the functioning of any agent.
